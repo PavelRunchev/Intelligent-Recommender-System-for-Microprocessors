@@ -123,7 +123,6 @@ function changeLanguage(lang)
 
     });
 
-    //TODO implement!!!
    document.querySelectorAll("[data-placeholder-i18n]").forEach(element => {
             const key = element.dataset.i18n;
             console.log(key)
