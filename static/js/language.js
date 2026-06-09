@@ -97,6 +97,9 @@ const translations = {
     }
 };
 
+
+
+
 const languageSelector = document.getElementById("language-selector");
 
 languageSelector.addEventListener("change", function () {
