@@ -1,6 +1,7 @@
 window.addEventListener('DOMContentLoaded', function () {
     const data = JSON.parse(document.getElementById('data-json').textContent);
     const user = JSON.parse(document.getElementById('user-data').textContent || '{}');
+    const hasUserData = user && Object.keys(user).length > 0;
 
     const selectedBrand = user?.brand || "";
     const selectedModel = user?.model || "";
@@ -13,110 +14,82 @@ window.addEventListener('DOMContentLoaded', function () {
     modelSelect.innerHTML = '<option value="" data-i18n="choiceModel">Избери модел</option>';
     categorySelect.innerHTML = '<option value="" data-i18n="choiceCategory">Избери категория</option>';
 
-    const brands = [... new Set(data.map(d => d.cpuName.split(" ")[0]))]
-    let models = [...new Set(data.map(d => d.cpuName))];
-    const categories = [...new Set(data.map(d => d.category))];
+    let brands = [... new Set(data.map(d => d.cpuName.split(" ")[0]))];
+    let models = [];
+    let categories = [];
 
-     brands.forEach(b => {
-        const opt = document.createElement('option');
-        opt.value = b;
-        opt.textContent = b;
-        brandSelect.appendChild(opt);
-    });
+    if(!hasUserData) {
+        models = getModelsByBrand("", true);
+        categories = getCategoryByModel("", true);
+    } else {
+        models = getModelsByBrand(user.brand, false);
+        categories = getCategoryByBrand(user.brand);
+    }
 
-    models.forEach(model => {
-        const opt = document.createElement('option');
-        opt.value = model;
-        opt.textContent = model;
-        modelSelect.appendChild(opt);
-    });
+    createOption(brands, brandSelect, false);
+    createOption(models, modelSelect, false);
+    createOption(categories, categorySelect, false);
 
-     categories.forEach(category => {
-         const opt = document.createElement('option');
-         opt.value = category;
-         opt.textContent = category;
-         categorySelect.appendChild(opt);
-     });
-
-
+    //event when choice brand
     brandSelect.addEventListener('change', function () {
         const selectedBrand = this.value;
-        if (!selectedBrand || selectedBrand === 'Изберете марка на микропроцесора' || selectedBrand === 'Select processor brand') return;
-
         modelSelect.innerHTML = '<option value="" data-i18n="choiceModel">Избери модел</option>';
         categorySelect.innerHTML = '<option value="" data-i18n="choiceCategory">Избери категория</option>';
 
-        const filteringModels = [...new Set(models.filter(m => m.split(" ")[0] === selectedBrand))];
-        const filteringCategories = [...new Set(data.filter(b => b.brand === selectedBrand).map(b => b.category))];
+        const filteringModels = getModelsByBrand(selectedBrand, false);
+        const filteringCategories = getCategoryByBrand(selectedBrand);
 
-        filteringModels.forEach(m => {
-            const opt = document.createElement('option');
-            opt.value = m;
-            opt.textContent = m;
-            modelSelect.appendChild(opt);
-        });
+        if (!selectedBrand || selectedBrand === 'Изберете марка на микропроцесора' || selectedBrand === 'Select microprocessor brand') {
+            models = getModelsByBrand("", true);
+            categories = getCategoryByModel("", true);
+            createOption(models, modelSelect, false);
+            createOption(categories, categorySelect, false);
+            return;
+        }
 
-        filteringCategories.forEach(c => {
-            const opt = document.createElement('option');
-            opt.value = c;
-            opt.textContent = c;
-            categorySelect.appendChild(opt);
-        });
+        createOption(filteringModels, modelSelect, false);
+        createOption(filteringCategories, categorySelect, false);
     });
 
+    //event whe choice model
     modelSelect.addEventListener('change', function () {
         const selectedModel = this.value;
         if (!selectedModel) return;
 
         categorySelect.innerHTML = '<option value="" data-i18n="choiceCategory">Избери категория</option>';
+        const categories = getCategoryByModel(selectedModel, false);
 
-        const categories = [
-            ...new Set(data.filter(d => d.cpuName === selectedModel).map(d => d.category))
-        ];
-
-        categories.forEach(c => {
-            const opt = document.createElement('option');
-            opt.value = c;
-            opt.textContent = c;
-            categorySelect.appendChild(opt);
-        });
+        createOption(categories, categorySelect, false);
     });
 
-
-
-    if (selectedBrand && selectedBrand !== "") {
+    //After post request
+    if (selectedBrand && selectedBrand !== "" && hasUserData) {
             brandSelect.value = selectedBrand;
+            modelSelect.innerHTML = '<option value="" data-i18n="choiceModel">Избери модел</option>';
+            categorySelect.innerHTML = '<option value="" data-i18n="choiceCategory">Избери категория</option>';
+            let models = [];
 
-            const models = [
-                ...new Set(data.filter(d => d.brand === selectedBrand).map(d => d.cpuName))
-            ];
+            if (!selectedBrand || selectedBrand === 'Изберете марка на микропроцесора' || selectedBrand === 'Select microprocessor brand') {
+                models = getModelsByBrand("", true);
+            } else {
+                models = getModelsByBrand(selectedBrand, false);
+            }
 
-            models.forEach(model => {
-                const opt = document.createElement('option');
-                opt.value = model;
-                opt.textContent = model;
+            createOption(models, modelSelect, selectedModel);
 
-                if (model === selectedModel && opt.selected === false) opt.selected = true;
+            let categories = [];
+            if (selectedModel)
+                categories = getCategoryByModel(selectedModel, false);
+            else
+                categories = getCategoryByBrand(selectedBrand);
 
-                modelSelect.appendChild(opt);
-            });
+            createOption(categories, categorySelect, selectedCategory);
     }
 
-    if (selectedModel && selectedModel !== "") {
-            const categories = [
-                ...new Set(data.filter(d => d.cpuName === selectedModel).map(d => d.category))
-            ];
-
-            categories.forEach(c => {
-                const opt = document.createElement('option');
-                opt.value = c;
-                opt.textContent = c;
-
-                if (c === selectedCategory && opt.selected === false)
-                    opt.selected = true;
-
-                categorySelect.appendChild(opt);
-            });
+    if (selectedModel && selectedModel !== "" && hasUserData) {
+        categorySelect.innerHTML = '<option value="" data-i18n="choiceCategory">Избери категория</option>';
+        const categories = getCategoryByModel(selectedModel, false);
+        createOption(categories, categorySelect, selectedCategory);
     }
 
     document.getElementById("resetBtn").addEventListener("click", function () {
@@ -127,6 +100,39 @@ window.addEventListener('DOMContentLoaded', function () {
             i.value = ""
         });
     });
+
+    function createOption(arrayData, selectHTMLElement, selectedValue = null) {
+         arrayData.forEach(item => {
+            const opt = document.createElement('option');
+            opt.value = item;
+            opt.textContent = item;
+            if(item === selectedValue) opt.selected = true;
+            selectHTMLElement.appendChild(opt);
+        });
+    }
+
+    function getModelsByBrand(brand, allModels) {
+        if(allModels)
+            return [...new Set(data.map(d => d.cpuName))];
+
+        return [...new Set(data.filter(m => m.cpuName.split(" ")[0] === brand).map(d => d.cpuName))];
+    }
+
+    function getCategoryByModel(modelName, allCategories) {
+        if(allCategories)
+            return [...new Set(data.map(d => d.category))];
+
+        return [...new Set(data.filter(d => d.cpuName === modelName).map(d => d.category))];
+    }
+
+    function getCategoryByBrand(brand) {
+        return [...new Set(data.filter(d => d.brand === brand).map(d => d.category))];
+    }
 });
+
+
+
+
+
 
 

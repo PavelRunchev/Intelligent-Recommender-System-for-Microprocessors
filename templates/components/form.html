@@ -39,20 +39,40 @@
                         value="{{ user.budget if user else '' }}"
                         required
                         id="budget"
-                        data-placeholder-i18n="inputBudgetPlaceholder"
+                        data-placeholder-i18n="budgetPlaceholder"
                 >
                 <div class="text-muted fst-italic small ps-3" data-i18n="inputBudgetInfo">Въведете максимален бюджет в евро (&euro;)</div>
             </div>
 
             <div class="col-12 col-lg-6 mb-3">
                 <label class="form-label form-label-custom ps-3" data-i18n="performance">Минимална производителност</label>
-                <input type="number" min="1" max="200000" name="cpuMark" class="form-control" placeholder="например 15000" value="{{ user.performance if user else '' }}" required />
+                <input
+                        type="number"
+                        min="1"
+                        max="200000"
+                        name="cpuMark"
+                        class="form-control"
+                        placeholder="Например 15 000"
+                        value="{{ user.performance if user else '' }}"
+                        required
+                        data-placeholder-i18n="performancePlaceholder"
+                />
                 <div class="text-muted fst-italic small ps-3" data-i18n="inputPerformanceInfo">Стойност от бенчмарк (cpuMark) - по-голямо означава по-висока производителност</div>
             </div>
 
             <div class="col-12 col-lg-6 mb-3">
                 <label class="form-label form-label-custom ps-3" data-i18n="cores">Минимален брой ядра</label>
-                <input type="number" min="1" max="100" name="cores" class="form-control" placeholder="например 2" value="{{ user.cores | default('') }}" required>
+                <input
+                        type="number"
+                        min="1"
+                        max="100"
+                        name="cores"
+                        class="form-control"
+                        placeholder="Например 2"
+                        value="{{ user.cores | default('') }}"
+                        required
+                        data-placeholder-i18n="coresPlaceholder"
+                >
                 <div class="text-muted fst-italic small ps-3" data-i18n="inputCoresInfo">Минимален брой ядра, които процеса трябва да има</div>
             </div>
 
