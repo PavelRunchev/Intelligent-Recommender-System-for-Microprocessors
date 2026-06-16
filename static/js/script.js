@@ -8,12 +8,15 @@ window.addEventListener('DOMContentLoaded', function () {
     const selectedModel = user?.model || "";
     const selectedCategory = user?.category || "";
 
+
+
     const brandSelect = document.getElementById('brandSelect');
     const modelSelect = document.getElementById('modelSelect');
     const categorySelect = document.getElementById('categorySelect');
 
-    modelSelect.innerHTML = '<option value="" data-i18n="choiceModel">Избери модел</option>';
-    categorySelect.innerHTML = '<option value="" data-i18n="choiceCategory">Избери категория</option>';
+
+    modelSelect.innerHTML = getInitialOption("model")
+    categorySelect.innerHTML = getInitialOption("category")
 
     let brands = [... new Set(data.map(d => d.cpuName.split(" ")[0]))];
     let models = [];
@@ -31,11 +34,26 @@ window.addEventListener('DOMContentLoaded', function () {
     createOption(models, modelSelect, selectedModel);
     createOption(categories, categorySelect, selectedCategory);
 
+     function getInitialOption(type) {
+        const lang = localStorage.getItem("language") || "bg";
+
+        if(lang === "bg")
+            if(type === "model")
+                return '<option value="" data-i18n="choiceModel">Избери модел</option>';
+            else
+                return '<option value="" data-i18n="choiceCategory">Избери категория</option>';
+        else
+             if(type === "model")
+                return '<option value="" data-i18n="choiceModel">Select model</option>';
+            else
+                return '<option value="" data-i18n="choiceCategory">Select category</option>';
+    }
+
     //event when choice brand
     brandSelect.addEventListener('change', function () {
         const selectedBrand = this.value;
-        modelSelect.innerHTML = '<option value="" data-i18n="choiceModel">Избери модел</option>';
-        categorySelect.innerHTML = '<option value="" data-i18n="choiceCategory">Избери категория</option>';
+        modelSelect.innerHTML = getInitialOption("model");
+        categorySelect.innerHTML = getInitialOption("category");
 
         const filteringModels = getModelsByBrand(selectedBrand, false);
         const filteringCategories = getCategoryByBrand(selectedBrand);
@@ -52,11 +70,12 @@ window.addEventListener('DOMContentLoaded', function () {
         createOption(filteringCategories, categorySelect, false);
     });
 
+    //event when choice model
     modelSelect.addEventListener('change', function () {
         const selectedModel = this.value;
         if (!selectedModel) return;
 
-        categorySelect.innerHTML = '<option value="" data-i18n="choiceCategory">Избери категория</option>';
+        categorySelect.innerHTML = getInitialOption("category");
         const categories = getCategoryByModel(selectedModel, false);
         createOption(categories, categorySelect, false);
     });
@@ -64,8 +83,8 @@ window.addEventListener('DOMContentLoaded', function () {
     //After post request
     if (selectedBrand && selectedBrand !== "" && hasUserData) {
             brandSelect.value = selectedBrand;
-            modelSelect.innerHTML = '<option value="" data-i18n="choiceModel">Избери модел</option>';
-            categorySelect.innerHTML = '<option value="" data-i18n="choiceCategory">Избери категория</option>';
+            modelSelect.innerHTML = getInitialOption("model");
+            categorySelect.innerHTML = getInitialOption("category");
             let models = [];
 
             if (!selectedBrand || selectedBrand === 'Изберете марка на микропроцесора' || selectedBrand === 'Select microprocessor brand') {
@@ -86,7 +105,7 @@ window.addEventListener('DOMContentLoaded', function () {
     }
 
     if (selectedModel && selectedModel !== "" && hasUserData) {
-        categorySelect.innerHTML = '<option value="" data-i18n="choiceCategory">Избери категория</option>';
+        categorySelect.innerHTML = getInitialOption("category");
         const categories = getCategoryByModel(selectedModel, false);
         createOption(categories, categorySelect, selectedCategory);
     }
@@ -127,5 +146,6 @@ window.addEventListener('DOMContentLoaded', function () {
     function getCategoryByBrand(brand) {
         return [...new Set(data.filter(d => d.brand === brand).map(d => d.category))];
     }
+
 });
 
