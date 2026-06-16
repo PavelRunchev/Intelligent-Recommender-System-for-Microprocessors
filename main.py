@@ -44,25 +44,3 @@ result = topsis_method(result)
 print(result[["cpuName", "price", "cpuMark", "price_rating", "cpu_class", "topsis_score"]])
 print()
 
-
-#compare_regression_models()
-# print("higher is better")
-# result = compare_classification_models()
-# print(result)
-#
-# print("\nModel Evaluation:\n")
-#
-# create_comparison_table()
-
-
-
-# reg_model = train_regression_model(df)
-# class_model = train_classification_model(df)
-#
-# sample = df.sample(10).copy()
-#
-# sample = predicted_regression(df)
-# sample = predict_class(class_model, sample)
-#
-
-

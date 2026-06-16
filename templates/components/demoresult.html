@@ -1,12 +1,7 @@
 <div class="mt-5">
-
-<<<<<<< HEAD
     <h4 class="text-center" data-i18n="demoTitleTable">Топ 100 Процесори:</h4>
     <h6 class="text-center text-muted" data-i18n="demoInfoTable">Сортирани по производителност (cpuMark) – по-високата стойност означава по-добра производителност</h6>
-=======
-    <h4 class="text-center">Топ 100 Процесори:</h4>
-    <h6 class="text-center text-muted">Сортирани по производителност (cpuMark) – по-високата стойност означава по-добра производителност</h6>
->>>>>>> 3c6bff1802aa9413b5e1a79d072f6bff96c4f76d
+
     <div class="table-responsive shadow-lg">
         <table class="table table-bordered table-striped w-100 mb-0">
             <thead class="table-dark text-nowrap">
@@ -16,8 +11,7 @@
                         <div class="text-dark">N</div>
                     </th>
                     <th>
-<<<<<<< HEAD
-                        <div data-i18n="demoTableName">Наименование</div>
+                        <div class="text-center" data-i18n="demoTableName">Наименование</div>
                         <div class="text-dark">0</div>
                     </th>
                     <th>
@@ -42,33 +36,6 @@
                     </th>
                     <th>
                         <div class="text-center" data-i18n="demoTableSocket">Гнездо</div>
-=======
-                        <div>Име</div>
-                        <div class="text-dark">0</div>
-                    </th>
-                    <th>
-                        <div class="text-center">Цена</div>
-                        <div class="text-center fw-light"><small>(&#8364;)</small></div>
-                    </th>
-                    <th>
-                        <div class="text-center">Производителност</div>
-                        <div class="text-center fw-light"><small>(по-високо е по-добре)</small></div>
-                    </th>
-                    <th>
-                        <div class="text-center">Ядра</div>
-                        <div class="text-center fw-light"><small>(cores)</small></div>
-                    </th>
-                    <th>
-                        <div class="text-center">Топлинна мощност (TDP)</div>
-                        <div class="text-center fw-light"><small>(по-ниско е по-добре)</small></div>
-                    </th>
-                    <th>
-                        <div class="text-center">Категория</div>
-                        <div class="text-center fw-light"><small>(category)</small></div>
-                    </th>
-                    <th>
-                        <div class="text-center">Гнездо</div>
->>>>>>> 3c6bff1802aa9413b5e1a79d072f6bff96c4f76d
                         <div class="text-center fw-light"><small>(socket)</small></div>
                     </th>
                 </tr>
@@ -82,7 +49,7 @@
                     <td class="text-end text-nowrap">{{ cpu.price }} &#8364;</td>
                     <td class="text-center text-nowrap">{{ cpu.cpuMark }}</td>
                     <td class="text-center text-nowrap">{{ cpu.cores }}</td>
-                    <td class="text-center text-nowrap">{{ cpu.TDP }}</td>
+                    <td class="text-center text-nowrap">{{ cpu.TDP }} W</td>
                     <td class="text-center text-nowrap">{{ cpu.category}}</td>
                     <td class="text-center text-nowrap">{{ cpu.socket}}</td>
                 </tr>
