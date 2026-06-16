@@ -1,0 +1,171 @@
+2026-06-07 19:38:56,260 - INFO - Application started
+2026-06-07 19:38:56,424 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-07 19:38:56,425 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-07 19:38:56,525 - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-07 19:38:59,380 - INFO - Application started
+2026-06-07 19:38:59,425 - WARNING -  * Debugger is active!
+2026-06-07 19:38:59,434 - INFO -  * Debugger PIN: 625-847-224
+2026-06-07 19:44:04,642 - INFO - 127.0.0.1 - - [07/Jun/2026 19:44:04] "GET / HTTP/1.1" 200 -
+2026-06-07 19:44:04,787 - INFO - 127.0.0.1 - - [07/Jun/2026 19:44:04] "GET /static/style.css HTTP/1.1" 200 -
+2026-06-07 19:44:04,999 - INFO - 127.0.0.1 - - [07/Jun/2026 19:44:04] "GET /static/images/CPU.png HTTP/1.1" 200 -
+2026-06-07 19:44:05,062 - INFO - 127.0.0.1 - - [07/Jun/2026 19:44:05] "GET /static/js/script.js HTTP/1.1" 200 -
+2026-06-07 19:44:05,424 - INFO - 127.0.0.1 - - [07/Jun/2026 19:44:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-07 19:45:19,379 - INFO - Recommendation process started
+2026-06-07 19:45:19,802 - INFO - Regression prediction completed
+2026-06-07 19:45:20,398 - INFO - Classification completed
+2026-06-07 19:45:20,405 - INFO - TOPSIS ranking completed
+2026-06-07 19:45:20,610 - INFO - 127.0.0.1 - - [07/Jun/2026 19:45:20] "POST / HTTP/1.1" 200 -
+2026-06-07 19:45:20,645 - INFO - 127.0.0.1 - - [07/Jun/2026 19:45:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-07 19:45:20,962 - INFO - 127.0.0.1 - - [07/Jun/2026 19:45:20] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-06-07 19:45:20,963 - INFO - 127.0.0.1 - - [07/Jun/2026 19:45:20] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-06-07 19:45:29,764 - INFO - 127.0.0.1 - - [07/Jun/2026 19:45:29] "GET / HTTP/1.1" 200 -
+2026-06-07 19:45:29,930 - INFO - 127.0.0.1 - - [07/Jun/2026 19:45:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-07 19:45:30,103 - INFO - 127.0.0.1 - - [07/Jun/2026 19:45:30] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-06-07 19:45:30,104 - INFO - 127.0.0.1 - - [07/Jun/2026 19:45:30] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-06-07 19:46:50,888 - INFO - 127.0.0.1 - - [07/Jun/2026 19:46:50] "GET / HTTP/1.1" 200 -
+2026-06-07 19:46:51,079 - INFO - 127.0.0.1 - - [07/Jun/2026 19:46:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-07 19:46:51,237 - INFO - 127.0.0.1 - - [07/Jun/2026 19:46:51] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-06-07 19:46:51,239 - INFO - 127.0.0.1 - - [07/Jun/2026 19:46:51] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-06-08 08:10:19,099 - INFO - Application started
+2026-06-08 08:10:19,268 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-08 08:10:19,268 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-08 08:10:19,315 - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-08 08:10:22,168 - INFO - Application started
+2026-06-08 08:10:22,212 - WARNING -  * Debugger is active!
+2026-06-08 08:10:22,221 - INFO -  * Debugger PIN: 625-847-224
+2026-06-08 08:10:50,972 - INFO - 127.0.0.1 - - [08/Jun/2026 08:10:50] "GET / HTTP/1.1" 200 -
+2026-06-08 08:10:51,158 - INFO - 127.0.0.1 - - [08/Jun/2026 08:10:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-08 08:10:51,364 - INFO - 127.0.0.1 - - [08/Jun/2026 08:10:51] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-06-08 08:10:51,386 - INFO - 127.0.0.1 - - [08/Jun/2026 08:10:51] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-06-08 08:10:51,458 - INFO - 127.0.0.1 - - [08/Jun/2026 08:10:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-08 10:26:32,646 - INFO - Application started
+2026-06-08 10:26:32,813 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-08 10:26:32,813 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-08 10:26:32,918 - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-08 10:26:35,722 - INFO - Application started
+2026-06-08 10:26:35,768 - WARNING -  * Debugger is active!
+2026-06-08 10:26:35,777 - INFO -  * Debugger PIN: 625-847-224
+2026-06-08 10:27:48,001 - INFO - 127.0.0.1 - - [08/Jun/2026 10:27:48] "GET / HTTP/1.1" 200 -
+2026-06-08 10:27:48,223 - INFO - 127.0.0.1 - - [08/Jun/2026 10:27:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-08 10:27:48,363 - INFO - 127.0.0.1 - - [08/Jun/2026 10:27:48] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-06-08 10:27:48,376 - INFO - 127.0.0.1 - - [08/Jun/2026 10:27:48] "GET /static/js/language.js HTTP/1.1" 200 -
+2026-06-08 10:27:48,425 - INFO - 127.0.0.1 - - [08/Jun/2026 10:27:48] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-06-08 10:27:48,476 - INFO - 127.0.0.1 - - [08/Jun/2026 10:27:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-08 10:27:51,708 - INFO - 127.0.0.1 - - [08/Jun/2026 10:27:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-08 10:28:55,492 - INFO - 127.0.0.1 - - [08/Jun/2026 10:28:55] "GET / HTTP/1.1" 200 -
+2026-06-08 10:28:55,676 - INFO - 127.0.0.1 - - [08/Jun/2026 10:28:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-08 10:28:55,838 - INFO - 127.0.0.1 - - [08/Jun/2026 10:28:55] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-06-08 10:28:55,841 - INFO - 127.0.0.1 - - [08/Jun/2026 10:28:55] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-06-08 10:28:55,842 - INFO - 127.0.0.1 - - [08/Jun/2026 10:28:55] "GET /static/js/language.js HTTP/1.1" 200 -
+2026-06-08 10:48:19,318 - INFO -  * Detected change in 'D:\\Tu Gabrovo\\ТУ Магистратура\\Диплома  Магистър\\Intelligent Recommender System for Microprocessors\\.venv\\Lib\\site-packages\\PIL\\TgaImagePlugin.py', reloading
+2026-06-08 10:48:19,368 - INFO -  * Detected change in 'D:\\Tu Gabrovo\\ТУ Магистратура\\Диплома  Магистър\\Intelligent Recommender System for Microprocessors\\.venv\\Lib\\site-packages\\pip\\_vendor\\rich\\box.py', reloading
+2026-06-08 10:48:20,281 - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-08 10:48:24,225 - INFO - Application started
+2026-06-08 10:48:24,275 - WARNING -  * Debugger is active!
+2026-06-08 10:48:24,285 - INFO -  * Debugger PIN: 625-847-224
+2026-06-08 10:49:33,050 - INFO - 127.0.0.1 - - [08/Jun/2026 10:49:33] "GET / HTTP/1.1" 200 -
+2026-06-08 10:49:33,294 - INFO - 127.0.0.1 - - [08/Jun/2026 10:49:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-08 10:49:33,416 - INFO - 127.0.0.1 - - [08/Jun/2026 10:49:33] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-06-08 10:49:33,417 - INFO - 127.0.0.1 - - [08/Jun/2026 10:49:33] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-06-08 10:49:33,446 - INFO - 127.0.0.1 - - [08/Jun/2026 10:49:33] "GET /static/js/language.js HTTP/1.1" 200 -
+2026-06-08 11:11:13,429 - INFO -  * Detected change in 'D:\\Tu Gabrovo\\ТУ Магистратура\\Диплома  Магистър\\Intelligent Recommender System for Microprocessors\\services\\ml_pipeline.py', reloading
+2026-06-08 11:11:13,841 - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-08 11:11:16,906 - INFO - Application started
+2026-06-08 11:11:16,952 - WARNING -  * Debugger is active!
+2026-06-08 11:11:16,961 - INFO -  * Debugger PIN: 625-847-224
+2026-06-08 11:13:28,124 - INFO - 127.0.0.1 - - [08/Jun/2026 11:13:28] "GET / HTTP/1.1" 200 -
+2026-06-08 11:13:28,355 - INFO - 127.0.0.1 - - [08/Jun/2026 11:13:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-08 11:13:28,462 - INFO - 127.0.0.1 - - [08/Jun/2026 11:13:28] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-06-08 11:13:28,463 - INFO - 127.0.0.1 - - [08/Jun/2026 11:13:28] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-06-08 11:13:28,508 - INFO - 127.0.0.1 - - [08/Jun/2026 11:13:28] "GET /static/js/language.js HTTP/1.1" 200 -
+2026-06-08 11:48:27,279 - INFO - 127.0.0.1 - - [08/Jun/2026 11:48:27] "GET / HTTP/1.1" 200 -
+2026-06-08 11:48:27,465 - INFO - 127.0.0.1 - - [08/Jun/2026 11:48:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-08 11:48:27,625 - INFO - 127.0.0.1 - - [08/Jun/2026 11:48:27] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-06-08 11:48:27,626 - INFO - 127.0.0.1 - - [08/Jun/2026 11:48:27] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-06-08 11:48:27,628 - INFO - 127.0.0.1 - - [08/Jun/2026 11:48:27] "GET /static/js/language.js HTTP/1.1" 200 -
+2026-06-08 11:50:04,531 - INFO - 127.0.0.1 - - [08/Jun/2026 11:50:04] "GET / HTTP/1.1" 200 -
+2026-06-08 11:50:04,724 - INFO - 127.0.0.1 - - [08/Jun/2026 11:50:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-08 11:50:04,865 - INFO - 127.0.0.1 - - [08/Jun/2026 11:50:04] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-06-08 11:50:04,866 - INFO - 127.0.0.1 - - [08/Jun/2026 11:50:04] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-06-08 11:50:04,868 - INFO - 127.0.0.1 - - [08/Jun/2026 11:50:04] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-06-08 11:51:50,643 - INFO - 127.0.0.1 - - [08/Jun/2026 11:51:50] "GET / HTTP/1.1" 200 -
+2026-06-08 11:51:50,821 - INFO - 127.0.0.1 - - [08/Jun/2026 11:51:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-08 11:51:50,997 - INFO - 127.0.0.1 - - [08/Jun/2026 11:51:50] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-06-08 11:51:50,998 - INFO - 127.0.0.1 - - [08/Jun/2026 11:51:50] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-06-08 11:51:51,001 - INFO - 127.0.0.1 - - [08/Jun/2026 11:51:51] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-06-08 11:52:09,183 - INFO - 127.0.0.1 - - [08/Jun/2026 11:52:09] "GET / HTTP/1.1" 200 -
+2026-06-08 11:52:09,520 - INFO - 127.0.0.1 - - [08/Jun/2026 11:52:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-08 11:52:09,522 - INFO - 127.0.0.1 - - [08/Jun/2026 11:52:09] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-06-08 11:52:09,526 - INFO - 127.0.0.1 - - [08/Jun/2026 11:52:09] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-06-08 11:52:09,527 - INFO - 127.0.0.1 - - [08/Jun/2026 11:52:09] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-06-08 11:52:12,435 - INFO - 127.0.0.1 - - [08/Jun/2026 11:52:12] "GET / HTTP/1.1" 200 -
+2026-06-08 11:52:12,760 - INFO - 127.0.0.1 - - [08/Jun/2026 11:52:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-08 11:52:12,767 - INFO - 127.0.0.1 - - [08/Jun/2026 11:52:12] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-06-08 11:52:12,768 - INFO - 127.0.0.1 - - [08/Jun/2026 11:52:12] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-06-08 11:52:12,792 - INFO - 127.0.0.1 - - [08/Jun/2026 11:52:12] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-06-08 11:53:27,732 - INFO - 127.0.0.1 - - [08/Jun/2026 11:53:27] "GET / HTTP/1.1" 200 -
+2026-06-08 11:53:27,765 - INFO - 127.0.0.1 - - [08/Jun/2026 11:53:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-08 11:53:28,080 - INFO - 127.0.0.1 - - [08/Jun/2026 11:53:28] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-06-08 11:53:28,083 - INFO - 127.0.0.1 - - [08/Jun/2026 11:53:28] "GET /static/js/script.js HTTP/1.1" 200 -
+2026-06-08 11:53:28,084 - INFO - 127.0.0.1 - - [08/Jun/2026 11:53:28] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-06-08 11:57:22,136 - INFO - 127.0.0.1 - - [08/Jun/2026 11:57:22] "GET / HTTP/1.1" 200 -
+2026-06-08 11:57:22,332 - INFO - 127.0.0.1 - - [08/Jun/2026 11:57:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-08 11:57:22,476 - INFO - 127.0.0.1 - - [08/Jun/2026 11:57:22] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-06-08 11:57:22,479 - INFO - 127.0.0.1 - - [08/Jun/2026 11:57:22] "GET /static/js/script.js HTTP/1.1" 200 -
+2026-06-08 11:57:22,480 - INFO - 127.0.0.1 - - [08/Jun/2026 11:57:22] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-06-08 11:58:00,557 - INFO - 127.0.0.1 - - [08/Jun/2026 11:58:00] "GET / HTTP/1.1" 200 -
+2026-06-08 11:58:00,905 - INFO - 127.0.0.1 - - [08/Jun/2026 11:58:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-08 11:58:00,906 - INFO - 127.0.0.1 - - [08/Jun/2026 11:58:00] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-06-08 11:58:00,907 - INFO - 127.0.0.1 - - [08/Jun/2026 11:58:00] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-06-08 11:58:00,910 - INFO - 127.0.0.1 - - [08/Jun/2026 11:58:00] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-06-08 11:59:16,791 - INFO - 127.0.0.1 - - [08/Jun/2026 11:59:16] "GET / HTTP/1.1" 200 -
+2026-06-08 11:59:16,986 - INFO - 127.0.0.1 - - [08/Jun/2026 11:59:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-08 11:59:17,130 - INFO - 127.0.0.1 - - [08/Jun/2026 11:59:17] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-06-08 11:59:17,132 - INFO - 127.0.0.1 - - [08/Jun/2026 11:59:17] "GET /static/js/script.js HTTP/1.1" 200 -
+2026-06-08 11:59:17,141 - INFO - 127.0.0.1 - - [08/Jun/2026 11:59:17] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-06-08 11:59:32,909 - INFO - 127.0.0.1 - - [08/Jun/2026 11:59:32] "GET / HTTP/1.1" 200 -
+2026-06-08 11:59:33,509 - INFO - 127.0.0.1 - - [08/Jun/2026 11:59:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-08 11:59:33,513 - INFO - 127.0.0.1 - - [08/Jun/2026 11:59:33] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-06-08 11:59:33,607 - INFO - 127.0.0.1 - - [08/Jun/2026 11:59:33] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-06-08 11:59:33,608 - INFO - 127.0.0.1 - - [08/Jun/2026 11:59:33] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-06-08 12:00:55,400 - INFO - 127.0.0.1 - - [08/Jun/2026 12:00:55] "GET / HTTP/1.1" 200 -
+2026-06-08 12:00:55,534 - INFO - 127.0.0.1 - - [08/Jun/2026 12:00:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-08 12:00:55,741 - INFO - 127.0.0.1 - - [08/Jun/2026 12:00:55] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-06-08 12:00:55,743 - INFO - 127.0.0.1 - - [08/Jun/2026 12:00:55] "GET /static/js/script.js HTTP/1.1" 200 -
+2026-06-08 12:00:55,746 - INFO - 127.0.0.1 - - [08/Jun/2026 12:00:55] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-06-08 12:02:32,957 - INFO - 127.0.0.1 - - [08/Jun/2026 12:02:32] "GET / HTTP/1.1" 200 -
+2026-06-08 12:02:33,146 - INFO - 127.0.0.1 - - [08/Jun/2026 12:02:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-08 12:02:33,289 - INFO - 127.0.0.1 - - [08/Jun/2026 12:02:33] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-06-08 12:02:33,291 - INFO - 127.0.0.1 - - [08/Jun/2026 12:02:33] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-06-08 12:02:33,293 - INFO - 127.0.0.1 - - [08/Jun/2026 12:02:33] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-06-08 12:04:42,867 - INFO - 127.0.0.1 - - [08/Jun/2026 12:04:42] "GET / HTTP/1.1" 200 -
+2026-06-08 12:04:43,062 - INFO - 127.0.0.1 - - [08/Jun/2026 12:04:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-08 12:04:43,205 - INFO - 127.0.0.1 - - [08/Jun/2026 12:04:43] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-06-08 12:04:43,206 - INFO - 127.0.0.1 - - [08/Jun/2026 12:04:43] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-06-08 12:04:43,211 - INFO - 127.0.0.1 - - [08/Jun/2026 12:04:43] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-06-09 09:05:29,527 - INFO - Application started
+2026-06-09 09:05:29,712 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-09 09:05:29,712 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-09 09:05:29,771 - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-09 09:05:32,922 - INFO - Application started
+2026-06-09 09:05:33,004 - WARNING -  * Debugger is active!
+2026-06-09 09:05:33,019 - INFO -  * Debugger PIN: 625-847-224
+2026-06-09 09:05:36,661 - INFO - 127.0.0.1 - - [09/Jun/2026 09:05:36] "GET / HTTP/1.1" 200 -
+2026-06-09 09:05:36,892 - INFO - 127.0.0.1 - - [09/Jun/2026 09:05:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-09 09:05:37,024 - INFO - 127.0.0.1 - - [09/Jun/2026 09:05:37] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-06-09 09:05:37,031 - INFO - 127.0.0.1 - - [09/Jun/2026 09:05:37] "GET /static/js/language.js HTTP/1.1" 200 -
+2026-06-09 09:05:37,098 - INFO - 127.0.0.1 - - [09/Jun/2026 09:05:37] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-06-09 09:05:37,117 - INFO - 127.0.0.1 - - [09/Jun/2026 09:05:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-09 09:05:56,360 - INFO - 127.0.0.1 - - [09/Jun/2026 09:05:56] "GET / HTTP/1.1" 200 -
+2026-06-09 09:05:56,598 - INFO - 127.0.0.1 - - [09/Jun/2026 09:05:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-09 09:05:57,002 - INFO - 127.0.0.1 - - [09/Jun/2026 09:05:57] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-06-09 09:05:57,071 - INFO - 127.0.0.1 - - [09/Jun/2026 09:05:57] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-06-09 09:22:14,651 - INFO - 127.0.0.1 - - [09/Jun/2026 09:22:14] "GET / HTTP/1.1" 200 -
+2026-06-09 09:22:16,080 - INFO - 127.0.0.1 - - [09/Jun/2026 09:22:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-09 09:22:16,874 - INFO - 127.0.0.1 - - [09/Jun/2026 09:22:16] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-06-09 09:22:17,386 - INFO - 127.0.0.1 - - [09/Jun/2026 09:22:17] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-06-09 09:22:17,392 - INFO - 127.0.0.1 - - [09/Jun/2026 09:22:17] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -

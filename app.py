@@ -1,14 +1,27 @@
+<<<<<<< HEAD
 import logging
 
+=======
+
+import logging
+>>>>>>> 3c6bff1802aa9413b5e1a79d072f6bff96c4f76d
 from flask import Flask, render_template, request
 from data.data_preprocessing import get_top_cpus
 from services.ml_pipeline import run_pipeline
 from services.model_initializer import initialize_models
 from data.data_preprocessing import clean_data
+<<<<<<< HEAD
 
 app = Flask(__name__)
 
 logging.basicConfig(filename="app.log", level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
+=======
+app = Flask(__name__)
+
+logging.basicConfig(filename="app.log", level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
+
+
+>>>>>>> 3c6bff1802aa9413b5e1a79d072f6bff96c4f76d
 logging.info("Application started")
 data = clean_data()
 initialize_models(data)
@@ -22,6 +35,7 @@ def index():
     user_features = None
     searched = False
     if request.method == "POST":
+<<<<<<< HEAD
         try:
             brand = request.form.get("brand") or None
             model = request.form.get("cpuName") or None
@@ -52,6 +66,20 @@ def index():
             searched = True
         except (ValueError, TypeError):
             return "Invalid input data!", 400
+=======
+        user_features = {
+            "brand": request.form.get("brand") or None,
+            "model": request.form.get("cpuName") or None,
+            "category": request.form.get("category") or None,
+            "budget": int(request.form.get("budget")),
+            "performance": int(request.form.get("cpuMark")),
+            "cores": int(request.form.get("cores"))
+        }
+
+        result = run_pipeline(user_features)
+        searched = True
+
+>>>>>>> 3c6bff1802aa9413b5e1a79d072f6bff96c4f76d
 
     return render_template("index.html",
             searched=searched,
@@ -68,7 +96,10 @@ if __name__ == "__main__":
 
 
 
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> 3c6bff1802aa9413b5e1a79d072f6bff96c4f76d

@@ -4,7 +4,11 @@
             {% include 'components/winner.html' %}
         {% endif %}
 
+<<<<<<< HEAD
         <h4 class="text-center" data-i18n="titleResult">Намерени Микророцесори:</h4>
+=======
+        <h4 class="text-center">Намерени Процесори:</h4>
+>>>>>>> 3c6bff1802aa9413b5e1a79d072f6bff96c4f76d
         <div class="table-responsive shadow-lg">
             <table class="table table-bordered table-striped w-100 mb-0">
                 <thead class="table-dark text-nowrap">
@@ -14,6 +18,7 @@
                             <div class="text-dark">N</div>
                         </th>
                         <th>
+<<<<<<< HEAD
                             <div data-i18n="demoTableName">Наименование</div>
                             <div class="text-dark">0</div>
                         </th>
@@ -60,6 +65,54 @@
                         <th>
                             <div class="text-center" data-i18n="evaluationTopsis">Оценка TOPSIS</div>
                             <div class="text-center fw-light"><small data-i18n="evaluationTOPSISinfo">(от 0 до 1)</small></div>
+=======
+                            <div>Име</div>
+                            <div class="text-dark">0</div>
+                        </th>
+                        <th>
+                            <div class="text-center">Цена</div>
+                            <div class="text-center fw-light"><small>(&#8364;)</small></div>
+                        </th>
+                        <th>
+                            <div class="text-center">Производителност</div>
+                            <div class="text-center fw-light"><small>(по-високо е по-добре)</small></div>
+                        </th>
+                        <th>
+                            <div class="text-center">Ядра</div>
+                            <div class="text-center fw-light"><small>(cores)</small></div>
+                        </th>
+                         <th>
+                            <div class="text-center">Топлинна мощност (TDP)</div>
+                            <div class="text-center fw-light"><small>(по-ниско е по-добре)</small></div>
+                        </th>
+                        <th>
+                            <div class="text-center">Категория</div>
+                            <div class="text-center fw-light"><small>(category)</small></div>
+                        </th>
+                        <th>
+                            <div class="text-center">Гнездо</div>
+                            <div class="text-center fw-light"><small>(socket)</small></div>
+                        </th>
+                        <th>
+                            <div class="text-center">Оценка</div>
+                            <div class="text-center fw-light"><small>(по-високо е по-добре)</small></div>
+                        </th>
+                         <th>
+                            <div class="text-center">Прогнозирана цена</div>
+                            <div class="text-center fw-light"><small>(по-високо е по-добре)</small></div>
+                        </th>
+                        <th>
+                            <div class="text-center">Ценова оценка</div>
+                            <div class="text-center fw-light"><small>(по-високо е по-добре)</small></div>
+                        </th>
+                         <th>
+                             <div class="text-center">Клас</div>
+                             <div class="text-center fw-light"><small>(по-високо е по-добре)</small></div>
+                        </th>
+                        <th>
+                            <div class="text-center">Оценка TOPSIS</div>
+                            <div class="text-center fw-light"><small>(от 0 до 1)</small></div>
+>>>>>>> 3c6bff1802aa9413b5e1a79d072f6bff96c4f76d
                         </th>
                     </tr>
                 </thead>
@@ -72,6 +125,7 @@
                         <td class="text-end text-nowrap">{{ cpu.price }} &#8364;</td>
                         <td class="text-center text-nowrap">{{ cpu.cpuMark }}</td>
                         <td class="text-center text-nowrap">{{ cpu.cores }}</td>
+<<<<<<< HEAD
 {#                        <td class="text-center text-nowrap">{{ cpu.TDP }}</td>#}
                         <td class="text-center text-nowrap">{{ cpu.category}}</td>
 {#                        <td class="text-center text-nowrap">{{ cpu.socket}}</td>#}
@@ -79,6 +133,15 @@
 {#                        <td class="text-center text-nowrap">{{ cpu.predicted_price}} &#8364;</td>#}
                         <td class="text-center text-nowrap dynamic-translate">{{ cpu.price_rating}}</td>
                         <td class="text-center text-nowrap dynamic-translate">{{ cpu.cpu_class}}</td>
+=======
+                        <td class="text-center text-nowrap">{{ cpu.TDP }}</td>
+                        <td class="text-center text-nowrap">{{ cpu.category}}</td>
+                        <td class="text-center text-nowrap">{{ cpu.socket}}</td>
+                        <td class="text-center text-nowrap">{{ cpu.recommender_score}}</td>
+                        <td class="text-center text-nowrap">{{ cpu.predicted_price}} &#8364;</td>
+                        <td class="text-center text-nowrap">{{ cpu.price_rating}}</td>
+                        <td class="text-center text-nowrap">{{ cpu.cpu_class}}</td>
+>>>>>>> 3c6bff1802aa9413b5e1a79d072f6bff96c4f76d
                         <td class="text-center text-nowrap">{{ cpu.topsis_score}}</td>
                     </tr>
                     {% endfor %}

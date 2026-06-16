@@ -23,6 +23,7 @@ const translations = {
         search: "Търси",
         reset: "Нулира",
 
+<<<<<<< HEAD
         cardTitle: "Най-добър избор",
         cardPrice: "Цена",
         cardPerformance: "Производителност",
@@ -31,6 +32,8 @@ const translations = {
         cardEvaluationTopsis: "Оценка от TOPSIS",
         cardInfo: "* Резултатът показва най-балансирания микропроцесор според въведените критерии (цена, производителност и брой ядра), а не задължително най-мощния.",
 
+=======
+>>>>>>> 3c6bff1802aa9413b5e1a79d072f6bff96c4f76d
         demoTitleTable: "Топ 100 Процесори:",
         demoInfoTable: "Сортирани по производителност (cpuMark) – по-високата стойност означава по-добра производителност",
         demoTableName: "Наименование",
@@ -43,6 +46,7 @@ const translations = {
         demoTableCategory: "Категория",
         demoTableSocket: "Гнездо",
 
+<<<<<<< HEAD
         titleResult: "Намерени Микропроцесори",
         performanceInfo: "(по-високо е по-добре)",
         evaluation: "Оценка",
@@ -52,6 +56,8 @@ const translations = {
         evaluationTopsis: "Оценка TOPSIS",
         evaluationTOPSISinfo: "(oт 0 до 1)",
 
+=======
+>>>>>>> 3c6bff1802aa9413b5e1a79d072f6bff96c4f76d
         noMatchCPUs: "Не са намерени микропроцесори, отговарящи на зададените критерии!",
 
         footerTitle: "© 2026 Интелигентна система за препоръчване на микропроцесори",
@@ -63,6 +69,7 @@ const translations = {
         navbarTitle: "Intelligent Microprocessor Recommendation System",
         title: "Intelligent Microprocessor Recommendation System",
         formTitle: "Microprocessor Criteria Form",
+<<<<<<< HEAD
         brand: "Processor Brand",
         choiceBrand: "Select processor brand",
         model: "Processor Model",
@@ -93,10 +100,43 @@ const translations = {
 
         demoTitleTable: "Top 100 Processors:",
         demoInfoTable: "Sorted by performance (cpuMark) – higher values indicate better performance",
+=======
+
+        brand: "Processor Brand",
+        choiceBrand: "Select processor brand",
+
+        model: "Processor Model",
+        choiceModel: "Select model",
+        inputModelInfo: "Please select a processor brand first",
+
+        category: "Processor Category",
+        choiceCategory: "Select category",
+        inputCategoryInfo: "Please select processor brand and model first",
+
+        budget: "Maximum Budget",
+        inputBudgetPlaceholder: "e.g. 500",
+        inputBudgetInfo: "Enter maximum budget in euro (€)",
+
+        performance: "Minimum Performance",
+        inputPerformancePlaceholder: "e.g. 15,000",
+        inputPerformanceInfo: "Benchmark value (cpuMark) – higher values indicate better performance",
+
+        cores: "Minimum Number of Physical Cores",
+        inputCoresPlaceholder: "e.g. 2",
+        inputCoresInfo: "Minimum number of cores that the processor must have",
+
+        search: "Search",
+        reset: "Reset",
+
+        demoTitleTable: "Top 100 Processors:",
+        demoInfoTable: "Sorted by performance (cpuMark) – higher values indicate better performance",
+
+>>>>>>> 3c6bff1802aa9413b5e1a79d072f6bff96c4f76d
         demoTableName: "Name",
         demoTablePrice: "Price",
         demoTablePerformance: "Performance",
         demoTablePerformanceInfo: "(higher is better)",
+<<<<<<< HEAD
         demoTableCores: "Cores",
         demoTableTDP: "Thermal Design Power (TDP)",
         demoTableTDPInfo: "(lower is better)",
@@ -112,6 +152,17 @@ const translations = {
         evaluationTopsis: "TOPSIS Score",
         evaluationTOPSISinfo: "(from 0 to 1)",
 
+=======
+
+        demoTableCores: "Cores",
+
+        demoTableTDP: "Thermal Design Power (TDP)",
+        demoTableTDPInfo: "(lower is better)",
+
+        demoTableCategory: "Category",
+        demoTableSocket: "Socket",
+
+>>>>>>> 3c6bff1802aa9413b5e1a79d072f6bff96c4f76d
         noMatchCPUs: "No microprocessors found matching the specified criteria!",
 
         footerTitle: "© 2026 Intelligent Microprocessor Recommendation System",
@@ -120,6 +171,7 @@ const translations = {
     }
 };
 
+<<<<<<< HEAD
 const dynamicTranslations = {
     bg: {
         "Good Value": "Изгоден",
@@ -153,6 +205,8 @@ const translationPlaceholder = {
     }
 };
 
+=======
+>>>>>>> 3c6bff1802aa9413b5e1a79d072f6bff96c4f76d
 const languageSelector = document.getElementById("language-selector");
 
 languageSelector.addEventListener("change", function () {
@@ -170,6 +224,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+<<<<<<< HEAD
 function changeLanguage(lang) {
     document.querySelectorAll("[data-i18n]").forEach(element => {
         const key = element.dataset.i18n;
@@ -188,5 +243,21 @@ function changeLanguage(lang) {
 
         if (dynamicTranslations[lang][value])
             cell.textContent = dynamicTranslations[lang][value];
+=======
+function changeLanguage(lang)
+{
+    document.querySelectorAll("[data-i18n]").forEach(element => {
+            const key = element.dataset.i18n;
+            if (translations[lang][key])
+                element.textContent = translations[lang][key];
+
+    });
+
+   document.querySelectorAll("[data-placeholder-i18n]").forEach(element => {
+            const key = element.dataset.i18n;
+            console.log(key)
+            if (translations[lang][key])
+                element.textContent = translations[lang][key];
+>>>>>>> 3c6bff1802aa9413b5e1a79d072f6bff96c4f76d
     });
 }

@@ -39,13 +39,18 @@
                         value="{{ user.budget if user else '' }}"
                         required
                         id="budget"
+<<<<<<< HEAD
                         data-placeholder-i18n="budgetPlaceholder"
+=======
+                        data-placeholder-i18n="inputBudgetPlaceholder"
+>>>>>>> 3c6bff1802aa9413b5e1a79d072f6bff96c4f76d
                 >
                 <div class="text-muted fst-italic small ps-3" data-i18n="inputBudgetInfo">Въведете максимален бюджет в евро (&euro;)</div>
             </div>
 
             <div class="col-12 col-lg-6 mb-3">
                 <label class="form-label form-label-custom ps-3" data-i18n="performance">Минимална производителност</label>
+<<<<<<< HEAD
                 <input
                         type="number"
                         min="1"
@@ -57,11 +62,15 @@
                         required
                         data-placeholder-i18n="performancePlaceholder"
                 />
+=======
+                <input type="number" min="1" max="200000" name="cpuMark" class="form-control" placeholder="например 15000" value="{{ user.performance if user else '' }}" required />
+>>>>>>> 3c6bff1802aa9413b5e1a79d072f6bff96c4f76d
                 <div class="text-muted fst-italic small ps-3" data-i18n="inputPerformanceInfo">Стойност от бенчмарк (cpuMark) - по-голямо означава по-висока производителност</div>
             </div>
 
             <div class="col-12 col-lg-6 mb-3">
                 <label class="form-label form-label-custom ps-3" data-i18n="cores">Минимален брой ядра</label>
+<<<<<<< HEAD
                 <input
                         type="number"
                         min="1"
@@ -73,6 +82,9 @@
                         required
                         data-placeholder-i18n="coresPlaceholder"
                 >
+=======
+                <input type="number" min="1" max="100" name="cores" class="form-control" placeholder="например 2" value="{{ user.cores | default('') }}" required>
+>>>>>>> 3c6bff1802aa9413b5e1a79d072f6bff96c4f76d
                 <div class="text-muted fst-italic small ps-3" data-i18n="inputCoresInfo">Минимален брой ядра, които процеса трябва да има</div>
             </div>
 
