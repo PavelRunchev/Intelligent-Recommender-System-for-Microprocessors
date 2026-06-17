@@ -36,17 +36,17 @@ window.addEventListener('DOMContentLoaded', function () {
 
      function getInitialOption(type) {
         const lang = localStorage.getItem("language") || "bg";
-
-        if(lang === "bg")
-            if(type === "model")
+        if (type === "model") {
+            if (lang === "bg")
                 return '<option value="" data-i18n="choiceModel">Избери модел</option>';
             else
-                return '<option value="" data-i18n="choiceCategory">Избери категория</option>';
-        else
-             if(type === "model")
                 return '<option value="" data-i18n="choiceModel">Select model</option>';
-            else
-                return '<option value="" data-i18n="choiceCategory">Select category</option>';
+        }
+
+        if (lang === "bg")
+            return '<option value="" data-i18n="choiceCategory">Избери категория</option>';
+        else
+            return '<option value="" data-i18n="choiceCategory">Select category</option>';
     }
 
     //event when choice brand
