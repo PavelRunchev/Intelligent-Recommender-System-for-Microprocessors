@@ -2,9 +2,9 @@ from services.content_based_filtering import content_based_filtering
 
 def test_content_base_filtering():
     user_features = {
-        "brand": "AMD",
-        "model": "AMD Ryzen 7 5800X",
-        "category": "Desktop",
+        "brand": ["AMD"],
+        "model": ["AMD Ryzen 7 5800X"],
+        "category": ["Desktop"],
         "budget": 500,
         "performance": 20000,
         "cores": 8

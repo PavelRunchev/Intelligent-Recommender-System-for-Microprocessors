@@ -5,9 +5,9 @@ from models.classification_model import predict_class
 
 def test_random_forest_model():
     user_features = {
-        "brand": "AMD",
-        "model": "AMD Ryzen 7 5800X",
-        "category": "Desktop",
+        "brand": ["AMD"],
+        "model": ["AMD Ryzen 7 5800X"],
+        "category": ["Desktop"],
         "budget": 500,
         "performance": 20000,
         "cores": 8
