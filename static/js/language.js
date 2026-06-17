@@ -45,7 +45,7 @@ const translations = {
 
         titleResult: "Намерени Микропроцесори",
         performanceInfo: "(по-високо е по-добре)",
-        evaluation: "Оценка",
+        evaluation: "Препоръчителна оценка",
         predictPrice: "Прогнозирана цена",
         priceEvaluation: "Ценова оценка",
         class: "Клас",
@@ -108,7 +108,7 @@ const translations = {
 
         titleResult: "Matching Microprocessors",
         performanceInfo: "(higher is better)",
-        evaluation: "Rating",
+        evaluation: "Recommended rating",
         predictPrice: "Predicted Price",
         priceEvaluation: "Price Rating",
         class: "Class",

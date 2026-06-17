@@ -1,19 +1,15 @@
 window.addEventListener('DOMContentLoaded', function () {
     const data = JSON.parse(document.getElementById('data-json').textContent);
     const user = JSON.parse(document.getElementById('user-data').textContent || '{}');
-
     const hasUserData = user && Object.keys(user).length > 0;
 
     const selectedBrand = user?.brand || "";
     const selectedModel = user?.model || "";
     const selectedCategory = user?.category || "";
 
-
-
     const brandSelect = document.getElementById('brandSelect');
     const modelSelect = document.getElementById('modelSelect');
     const categorySelect = document.getElementById('categorySelect');
-
 
     modelSelect.innerHTML = getInitialOption("model")
     categorySelect.innerHTML = getInitialOption("category")
@@ -34,19 +30,32 @@ window.addEventListener('DOMContentLoaded', function () {
     createOption(models, modelSelect, selectedModel);
     createOption(categories, categorySelect, selectedCategory);
 
-     function getInitialOption(type) {
+    function getInitialOption(type) {
         const lang = localStorage.getItem("language") || "bg";
         if (type === "model") {
             if (lang === "bg")
                 return '<option value="" data-i18n="choiceModel">Избери модел</option>';
-            else
-                return '<option value="" data-i18n="choiceModel">Select model</option>';
+
+            return '<option value="" data-i18n="choiceModel">Select model</option>';
         }
 
-        if (lang === "bg")
-            return '<option value="" data-i18n="choiceCategory">Избери категория</option>';
-        else
+        if (type === "category") {
+            if (lang === "bg")
+                return '<option value="" data-i18n="choiceCategory">Избери категория</option>';
+
             return '<option value="" data-i18n="choiceCategory">Select category</option>';
+        }
+
+        if (type === "brand") {
+            if (lang === "bg")
+                return '<option value="" data-i18n="choiceBrand">Избери марка</option>';
+
+            return '<option value="" data-i18n="choiceBrand">Select brand</option>';
+        }
+    }
+
+    function getBrands() {
+        return [...new Set(data.map(d => d.brand))]
     }
 
     //event when choice brand
@@ -80,34 +89,36 @@ window.addEventListener('DOMContentLoaded', function () {
         createOption(categories, categorySelect, false);
     });
 
-    //After post request
-    if (selectedBrand && selectedBrand !== "" && hasUserData) {
-            brandSelect.value = selectedBrand;
-            modelSelect.innerHTML = getInitialOption("model");
-            categorySelect.innerHTML = getInitialOption("category");
-            let models = [];
-
-            if (!selectedBrand || selectedBrand === 'Изберете марка на микропроцесора' || selectedBrand === 'Select microprocessor brand') {
-                models = getModelsByBrand("", true);
-            } else {
-                models = getModelsByBrand(selectedBrand, false);
-            }
-
-            createOption(models, modelSelect, selectedModel);
-
-            let categories = [];
-            if (selectedModel)
-                categories = getCategoryByModel(selectedModel, false);
-            else
-                categories = getCategoryByBrand(selectedBrand);
-
-            createOption(categories, categorySelect, selectedCategory);
-    }
-
-    if (selectedModel && selectedModel !== "" && hasUserData) {
+    // After POST request
+    if (hasUserData) {
+        brandSelect.innerHTML = getInitialOption("brand");
+        modelSelect.innerHTML = getInitialOption("model");
         categorySelect.innerHTML = getInitialOption("category");
-        const categories = getCategoryByModel(selectedModel, false);
-        createOption(categories, categorySelect, selectedCategory);
+
+        const brands = getBrands();
+        createOption(brands, brandSelect, selectedBrand.length === 1 ? selectedBrand[0] : null);
+
+        let models;
+        if (selectedBrand.length === 1) {
+            models = getModelsByBrand(selectedBrand[0], false);
+        } else if (selectedModel.length === 1) {
+            models = getModelsByBrand("", true);
+        } else {
+            models = getModelsByBrand("", true);
+        }
+
+        createOption(models, modelSelect, selectedModel.length === 1 ? selectedModel[0] : null);
+
+        let categories;
+        if(selectedModel.length === 1){
+            categories = getCategoryByModel(selectedModel[0], false);
+        } else if(selectedBrand.length === 1){
+            categories = getCategoryByBrand(selectedBrand[0]);
+        } else {
+            categories = getCategoryByModel("", true);
+        }
+
+        createOption(categories, categorySelect, selectedCategory.length === 1 ? selectedCategory[0] : null);
     }
 
     document.getElementById("resetBtn").addEventListener("click", function () {
@@ -120,7 +131,7 @@ window.addEventListener('DOMContentLoaded', function () {
     });
 
     function createOption(arrayData, selectHTMLElement, selectedValue = null) {
-         arrayData.forEach(item => {
+        arrayData.forEach(item => {
             const opt = document.createElement('option');
             opt.value = item;
             opt.textContent = item;
@@ -133,19 +144,37 @@ window.addEventListener('DOMContentLoaded', function () {
         if(allModels)
             return [...new Set(data.map(d => d.cpuName))];
 
+        if(Array.isArray(brand)){
+            if(brand.length > 1)
+                return [...new Set(data.map(d => d.cpuName))];
+
+            brand = brand[0];
+        }
+
         return [...new Set(data.filter(m => m.cpuName.split(" ")[0] === brand).map(d => d.cpuName))];
     }
 
-    function getCategoryByModel(modelName, allCategories) {
+    function getCategoryByModel(modelName, allCategories, brand) {
         if(allCategories)
             return [...new Set(data.map(d => d.category))];
+
+        if(Array.isArray(brand)) {
+            if(brand.length > 1)
+                return [...new Set(data.map(d => d.category))];
+        }
 
         return [...new Set(data.filter(d => d.cpuName === modelName).map(d => d.category))];
     }
 
     function getCategoryByBrand(brand) {
+        if(Array.isArray(brand)) {
+            if(brand.length > 1)
+                return [...new Set(data.map(d => d.category))];
+
+            brand = brand[0];
+        }
+
         return [...new Set(data.filter(d => d.brand === brand).map(d => d.category))];
     }
-
 });
 

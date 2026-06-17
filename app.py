@@ -36,11 +36,29 @@ def index():
             performance = int(request.form.get("cpuMark"))
             cores = int(request.form.get("cores"))
 
-            if brand not in ["AMD", "Intel", "Celeron"]:
+            if brand == None:
+                brand = data["brand"].unique().tolist()
+            if model == None:
+                model = data["cpuName"].unique().tolist()
+            if category == None:
+                category = data["category"].unique().tolist()
+
+            valid_brands = data["brand"].unique().tolist()
+            valid_models = data["cpuName"].unique().tolist()
+            valid_categories = data["category"].unique().tolist()
+
+            if isinstance(brand, str):
+                brand = [brand]
+            if isinstance(model, str):
+                model = [model]
+            if isinstance(category, str):
+                category = [category]
+
+            if not all(b in valid_brands for b in brand):
                 return "Invalid brand!", 400
-            if not model:
+            if not all(m in valid_models for m in model):
                 return "Invalid model!", 400
-            if not category:
+            if not all(c in valid_categories for c in category):
                 return "Invalid category!", 400
             if budget < 1 or budget > 100000:
                 return "Invalid budget!", 400
