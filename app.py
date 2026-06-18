@@ -19,6 +19,35 @@ logging.info("Application started")
 data = clean_data()
 initialize_models(data)
 
+def validate_input(brand, model, category, budget, performance, cores):
+    valid_brands = data["brand"].unique().tolist()
+    valid_models = data["cpuName"].unique().tolist()
+    valid_categories = data["category"].unique().tolist()
+
+    if isinstance(brand, str):
+        brand = [brand]
+    if isinstance(model, str):
+        model = [model]
+    if isinstance(category, str):
+        category = [category]
+
+    if not all(b in valid_brands for b in brand):
+        return "Invalid brand!"
+    if not all(m in valid_models for m in model):
+        return "Invalid model!"
+    if not all(c in valid_categories for c in category):
+        return "Invalid category!"
+    if budget < 1 or budget > 100000:
+        return "Invalid budget!"
+    if performance < 1 or performance > 200000:
+        return "Invalid performance!"
+    if cores < 1 or cores > 100:
+        return "Invalid cores!"
+
+    return ({"brand": brand,"model": model,"category": category,
+        "budget": budget,"performance": performance,"cores": cores},
+        None)
+
 @app.route("/", methods=["GET", "POST"])
 def index():
     #default table with CPU by performance order
@@ -29,48 +58,24 @@ def index():
     searched = False
     if request.method == "POST":
         try:
-            brand = request.form.get("brand") or None
-            model = request.form.get("cpuName") or None
-            category = request.form.get("category") or None
+            brand = request.form.get("brand") or data["brand"].unique().tolist()
+            model = request.form.get("cpuName") or data["cpuName"].unique().tolist()
+            category = request.form.get("category") or data["category"].unique().tolist()
             budget = int(request.form.get("budget"))
             performance = int(request.form.get("cpuMark"))
             cores = int(request.form.get("cores"))
 
-            if brand == None:
-                brand = data["brand"].unique().tolist()
-            if model == None:
-                model = data["cpuName"].unique().tolist()
-            if category == None:
-                category = data["category"].unique().tolist()
+            user_features, error = validate_input(
+                brand,
+                model,
+                category,
+                budget,
+                performance,
+                cores
+            )
 
-            valid_brands = data["brand"].unique().tolist()
-            valid_models = data["cpuName"].unique().tolist()
-            valid_categories = data["category"].unique().tolist()
-
-            if isinstance(brand, str):
-                brand = [brand]
-            if isinstance(model, str):
-                model = [model]
-            if isinstance(category, str):
-                category = [category]
-
-            if not all(b in valid_brands for b in brand):
-                return "Invalid brand!", 400
-            if not all(m in valid_models for m in model):
-                return "Invalid model!", 400
-            if not all(c in valid_categories for c in category):
-                return "Invalid category!", 400
-            if budget < 1 or budget > 100000:
-                return "Invalid budget!", 400
-            if performance < 1 or performance > 200000:
-                return "Invalid performance!", 400
-            if cores < 1 or cores > 100:
-                return "Invalid cores!", 400
-
-            user_features = {"brand": brand,"model": model,"category":
-                category,"budget": budget,"performance":
-                performance,"cores": cores
-            }
+            if error:
+                return error, 400
 
             result = run_pipeline(user_features)
             searched = True

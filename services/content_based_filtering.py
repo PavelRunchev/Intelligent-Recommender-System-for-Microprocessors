@@ -6,12 +6,10 @@ def extract_cpu_series(cpu_name):
 def content_based_filtering(user_features):
     df = clean_data()
     results = df.copy()
-
     if user_features.get("brand"):
         results = results[results["brand"].isin(user_features["brand"])]
     if user_features.get("model"):
         models = user_features["model"]
-
         selected_models = []
         for cpu in results["cpuName"]:
             for model in models:
@@ -19,7 +17,6 @@ def content_based_filtering(user_features):
                 if series in cpu:
                     selected_models.append(cpu)
                     break
-
         results = results[results["cpuName"].isin(selected_models)]
     if user_features.get("category"):
         results = results[results["category"].isin(user_features["category"])]
@@ -31,13 +28,13 @@ def content_based_filtering(user_features):
         results = results[results["cores"] >= user_features["cores"]]
 
     results["recommender_score"] = (
-           (results["cpuMark"] / user_features["performance"]) * 0.5 +
-            (user_features["budget"] / results["price"]) * 0.3 +
-            (results["cores"] / user_features["cores"]) * 0.2
+        (results["cpuMark"] / user_features["performance"]) * 0.5 +
+        (user_features["budget"] / results["price"]) * 0.3 +
+        (results["cores"] / user_features["cores"]) * 0.2
     ).round(2)
-
     results = results.sort_values(by="recommender_score", ascending=False)
     return results
+
 
 
 
