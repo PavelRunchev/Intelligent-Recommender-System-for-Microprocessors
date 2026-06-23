@@ -14,7 +14,8 @@ def load_data():
         print("DataBase ERROR!")
         logging.error("DB Error!", e)
     finally:
-        connection.dispose()
+        if connection is not None:
+            connection.dispose()
 
 
 
