@@ -1,11 +1,13 @@
 
 import logging
-
 from flask import Flask, render_template, request
 from data.data_preprocessing import get_top_cpus
 from services.ml_pipeline import run_pipeline
 from services.model_initializer import initialize_models
 from data.data_preprocessing import clean_data
+from dotenv import load_dotenv
+
+load_dotenv()
 
 app = Flask(__name__)
 
@@ -18,6 +20,7 @@ logging.basicConfig(filename="app.log", level=logging.INFO, format="%(asctime)s 
 logging.info("Application started")
 data = clean_data()
 initialize_models(data)
+
 
 def validate_input(brand, model, category, budget, performance, cores):
     valid_brands = data["brand"].unique().tolist()
@@ -92,6 +95,6 @@ def index():
     )
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, use_reloader=False)
 
 

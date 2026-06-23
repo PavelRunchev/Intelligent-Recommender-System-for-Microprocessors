@@ -156,6 +156,11 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.idea/
+clean_cpu.csv
+demo.py
+.gitignore
+.idea/csv-editor.xml
 
 # Spyder project settings
 .spyderproject

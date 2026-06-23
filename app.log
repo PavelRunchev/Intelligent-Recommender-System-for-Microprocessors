@@ -1398,3 +1398,103 @@
 2026-06-18 18:13:04,348 - INFO - 127.0.0.1 - - [18/Jun/2026 18:13:04] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
 2026-06-18 18:13:04,352 - INFO - 127.0.0.1 - - [18/Jun/2026 18:13:04] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
 2026-06-18 18:13:04,730 - INFO - 127.0.0.1 - - [18/Jun/2026 18:13:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-23 00:14:09,336 - INFO - Application started
+2026-06-23 00:23:18,438 - INFO - Application started
+2026-06-23 00:23:18,996 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-23 00:23:18,996 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-23 00:23:19,097 - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-23 00:23:21,578 - INFO - Application started
+2026-06-23 00:23:21,665 - WARNING -  * Debugger is active!
+2026-06-23 00:23:21,675 - INFO -  * Debugger PIN: 625-847-224
+2026-06-23 00:25:39,849 - INFO -  * Detected change in 'D:\\Tu Gabrovo\\ТУ Магистратура\\Диплома  Магистър\\Intelligent Recommender System for Microprocessors\\app.py', reloading
+2026-06-23 00:25:40,248 - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-23 00:25:42,962 - INFO - Application started
+2026-06-23 00:25:56,005 - INFO - Application started
+2026-06-23 00:26:25,803 - INFO - Application started
+2026-06-23 00:26:25,894 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-23 00:26:25,894 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-23 00:30:14,763 - INFO - Application started
+2026-06-23 00:31:00,405 - INFO - Application started
+2026-06-23 00:31:00,568 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-23 00:31:00,568 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-23 00:31:20,643 - INFO - 127.0.0.1 - - [23/Jun/2026 00:31:20] "GET / HTTP/1.1" 200 -
+2026-06-23 00:31:20,811 - INFO - 127.0.0.1 - - [23/Jun/2026 00:31:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-23 00:31:21,046 - INFO - 127.0.0.1 - - [23/Jun/2026 00:31:21] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-06-23 00:31:21,052 - INFO - 127.0.0.1 - - [23/Jun/2026 00:31:21] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-06-23 00:31:21,063 - INFO - 127.0.0.1 - - [23/Jun/2026 00:31:21] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-06-23 00:31:21,445 - INFO - 127.0.0.1 - - [23/Jun/2026 00:31:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-23 00:31:45,167 - INFO - Recommendation process started
+2026-06-23 00:31:45,257 - INFO - Regression prediction completed
+2026-06-23 00:31:45,315 - INFO - Classification completed
+2026-06-23 00:31:45,321 - INFO - TOPSIS ranking completed
+2026-06-23 00:31:45,395 - INFO - 127.0.0.1 - - [23/Jun/2026 00:31:45] "POST / HTTP/1.1" 200 -
+2026-06-23 00:31:45,732 - INFO - 127.0.0.1 - - [23/Jun/2026 00:31:45] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-06-23 00:31:45,733 - INFO - 127.0.0.1 - - [23/Jun/2026 00:31:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-23 00:31:45,734 - INFO - 127.0.0.1 - - [23/Jun/2026 00:31:45] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-06-23 00:31:45,736 - INFO - 127.0.0.1 - - [23/Jun/2026 00:31:45] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-06-23 09:46:08,058 - INFO - Application started
+2026-06-23 09:51:36,582 - INFO - Application started
+2026-06-23 09:54:18,866 - INFO - Application started
+2026-06-23 09:54:40,802 - INFO - Application started
+2026-06-23 10:06:18,960 - INFO - Application started
+2026-06-23 10:06:20,421 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-23 10:06:20,421 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-23 10:06:46,260 - INFO - 127.0.0.1 - - [23/Jun/2026 10:06:46] "GET / HTTP/1.1" 200 -
+2026-06-23 10:06:46,435 - INFO - 127.0.0.1 - - [23/Jun/2026 10:06:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-23 10:06:46,638 - INFO - 127.0.0.1 - - [23/Jun/2026 10:06:46] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-06-23 10:06:46,695 - INFO - 127.0.0.1 - - [23/Jun/2026 10:06:46] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-06-23 10:06:46,704 - INFO - 127.0.0.1 - - [23/Jun/2026 10:06:46] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-06-23 10:06:47,086 - INFO - 127.0.0.1 - - [23/Jun/2026 10:06:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-23 10:07:36,096 - INFO - Recommendation process started
+2026-06-23 10:07:37,071 - INFO - Regression prediction completed
+2026-06-23 10:07:37,130 - INFO - Classification completed
+2026-06-23 10:07:37,137 - INFO - TOPSIS ranking completed
+2026-06-23 10:07:37,241 - INFO - 127.0.0.1 - - [23/Jun/2026 10:07:37] "POST / HTTP/1.1" 200 -
+2026-06-23 10:07:37,578 - INFO - 127.0.0.1 - - [23/Jun/2026 10:07:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-23 10:07:37,581 - INFO - 127.0.0.1 - - [23/Jun/2026 10:07:37] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-06-23 10:07:37,582 - INFO - 127.0.0.1 - - [23/Jun/2026 10:07:37] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-06-23 10:07:37,585 - INFO - 127.0.0.1 - - [23/Jun/2026 10:07:37] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-06-23 10:30:43,892 - INFO - Application started
+2026-06-23 10:32:43,183 - INFO - Application started
+2026-06-23 10:32:44,244 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-23 10:32:44,244 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-23 10:32:50,699 - INFO - 127.0.0.1 - - [23/Jun/2026 10:32:50] "GET / HTTP/1.1" 200 -
+2026-06-23 10:32:50,813 - INFO - 127.0.0.1 - - [23/Jun/2026 10:32:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-23 10:32:51,035 - INFO - 127.0.0.1 - - [23/Jun/2026 10:32:51] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-06-23 10:32:51,053 - INFO - 127.0.0.1 - - [23/Jun/2026 10:32:51] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-06-23 10:32:51,055 - INFO - 127.0.0.1 - - [23/Jun/2026 10:32:51] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-06-23 10:33:14,722 - INFO - Recommendation process started
+2026-06-23 10:33:15,625 - INFO - No matching processors found
+2026-06-23 10:33:15,691 - INFO - 127.0.0.1 - - [23/Jun/2026 10:33:15] "POST / HTTP/1.1" 200 -
+2026-06-23 10:33:15,722 - INFO - 127.0.0.1 - - [23/Jun/2026 10:33:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-23 10:33:16,036 - INFO - 127.0.0.1 - - [23/Jun/2026 10:33:16] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-06-23 10:33:16,037 - INFO - 127.0.0.1 - - [23/Jun/2026 10:33:16] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-06-23 10:33:16,038 - INFO - 127.0.0.1 - - [23/Jun/2026 10:33:16] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-06-23 10:33:28,479 - INFO - Recommendation process started
+2026-06-23 10:33:29,380 - INFO - No matching processors found
+2026-06-23 10:33:29,446 - INFO - 127.0.0.1 - - [23/Jun/2026 10:33:29] "POST / HTTP/1.1" 200 -
+2026-06-23 10:33:29,476 - INFO - 127.0.0.1 - - [23/Jun/2026 10:33:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-23 10:33:29,789 - INFO - 127.0.0.1 - - [23/Jun/2026 10:33:29] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-06-23 10:33:29,790 - INFO - 127.0.0.1 - - [23/Jun/2026 10:33:29] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-06-23 10:33:29,792 - INFO - 127.0.0.1 - - [23/Jun/2026 10:33:29] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-06-23 10:33:35,900 - INFO - Recommendation process started
+2026-06-23 10:33:36,805 - INFO - No matching processors found
+2026-06-23 10:33:36,872 - INFO - 127.0.0.1 - - [23/Jun/2026 10:33:36] "POST / HTTP/1.1" 200 -
+2026-06-23 10:33:36,901 - INFO - 127.0.0.1 - - [23/Jun/2026 10:33:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-23 10:33:37,205 - INFO - 127.0.0.1 - - [23/Jun/2026 10:33:37] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-06-23 10:33:37,207 - INFO - 127.0.0.1 - - [23/Jun/2026 10:33:37] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-06-23 10:33:37,222 - INFO - 127.0.0.1 - - [23/Jun/2026 10:33:37] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-06-23 10:33:54,015 - INFO - Recommendation process started
+2026-06-23 10:33:54,928 - INFO - Regression prediction completed
+2026-06-23 10:33:54,972 - INFO - Classification completed
+2026-06-23 10:33:54,976 - INFO - TOPSIS ranking completed
+2026-06-23 10:33:55,052 - INFO - 127.0.0.1 - - [23/Jun/2026 10:33:55] "POST / HTTP/1.1" 200 -
+2026-06-23 10:33:55,087 - INFO - 127.0.0.1 - - [23/Jun/2026 10:33:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-23 10:33:55,390 - INFO - 127.0.0.1 - - [23/Jun/2026 10:33:55] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-06-23 10:33:55,392 - INFO - 127.0.0.1 - - [23/Jun/2026 10:33:55] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-06-23 10:33:55,396 - INFO - 127.0.0.1 - - [23/Jun/2026 10:33:55] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -

@@ -42,17 +42,15 @@ def get_top_cpus():
 
 def process_missing_values():
     df = load_data()
-    # Проверка за липсващи стойности
+
     print("Липсващи стойности по колони:")
     print(df.isnull().sum())
 
-    # Попълване на числови стойности със средна стойност
     df['price'] = df['price'].fillna(df['price'].mean())
     df['cpuValue'] = df['cpuValue'].fillna(df['cpuValue'].mean())
     df['threadValue'] = df['threadValue'].fillna(df['threadValue'].mean())
     df['TDP'] = df['TDP'].fillna(df['TDP'].mean())
 
-    # Попълване на категорийни стойности с най-често срещаната стойност (mode)
     df['socket'] = df['socket'].fillna(df['socket'].mode()[0])
     df['category'] = df['category'].fillna(df['category'].mode()[0])
 
