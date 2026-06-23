@@ -9,8 +9,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-app = Flask(__name__)
-
 logging.basicConfig(filename="app.log", level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
 app = Flask(__name__)
