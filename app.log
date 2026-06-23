@@ -1498,3 +1498,21 @@
 2026-06-23 10:33:55,390 - INFO - 127.0.0.1 - - [23/Jun/2026 10:33:55] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
 2026-06-23 10:33:55,392 - INFO - 127.0.0.1 - - [23/Jun/2026 10:33:55] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
 2026-06-23 10:33:55,396 - INFO - 127.0.0.1 - - [23/Jun/2026 10:33:55] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-06-23 11:13:01,616 - INFO - Application started
+2026-06-23 11:13:02,708 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-23 11:13:02,708 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-23 11:13:08,388 - INFO - 127.0.0.1 - - [23/Jun/2026 11:13:08] "GET / HTTP/1.1" 200 -
+2026-06-23 11:13:08,509 - INFO - 127.0.0.1 - - [23/Jun/2026 11:13:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-23 11:13:08,734 - INFO - 127.0.0.1 - - [23/Jun/2026 11:13:08] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-06-23 11:13:08,740 - INFO - 127.0.0.1 - - [23/Jun/2026 11:13:08] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-06-23 11:13:08,740 - INFO - 127.0.0.1 - - [23/Jun/2026 11:13:08] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-06-23 11:13:23,049 - INFO - Recommendation process started
+2026-06-23 11:13:24,188 - INFO - Regression prediction completed
+2026-06-23 11:13:24,236 - INFO - Classification completed
+2026-06-23 11:13:24,241 - INFO - TOPSIS ranking completed
+2026-06-23 11:13:24,398 - INFO - 127.0.0.1 - - [23/Jun/2026 11:13:24] "POST / HTTP/1.1" 200 -
+2026-06-23 11:13:24,451 - INFO - 127.0.0.1 - - [23/Jun/2026 11:13:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-06-23 11:13:24,765 - INFO - 127.0.0.1 - - [23/Jun/2026 11:13:24] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-06-23 11:13:26,629 - INFO - 127.0.0.1 - - [23/Jun/2026 11:13:26] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-06-23 11:13:26,630 - INFO - 127.0.0.1 - - [23/Jun/2026 11:13:26] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -

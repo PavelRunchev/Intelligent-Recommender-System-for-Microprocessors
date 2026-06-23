@@ -1,15 +1,21 @@
 import pandas as pd
+import logging
 from data.database import get_connection
 
 def load_data():
-    #return pd.read_csv("data/CPU_benchmark_v4.csv")
+    #
     connection = get_connection()
-    query = "SELECT * FROM processors"
-    df = pd.read_sql(query, connection)
+    try:
+        if connection is None:
+            return pd.read_csv("data/CPU_benchmark_v4.csv")
 
-    connection.dispose()
+        return pd.read_sql("SELECT * FROM processors", connection)
+    except Exception as e:
+        print("DataBase ERROR!")
+        logging.error("DB Error!", e)
+    finally:
+        connection.dispose()
 
-    return df
 
 
 
