@@ -10,40 +10,23 @@ from models.regression_model import train_regression_model, predict_regression
 from tests.regression_comparison import compare_regression_models
 from tests.classification_comparison import compare_classification_models
 
+from tests.experimental_method import calculate_entropy_weights, define_classes_by_quantiles, define_classes_by_kmeans
+
 # pd.set_option('display.max_columns', None)
  # pd.set_option('display.width', None)
 # pd.set_option('display.max_colwidth', None)
 
-
- # df = clean_data()
-# #
-# # print("\n".join(df.columns))
-# #
-# df = df[df["category"] == "Desktop"]
-# train_regression_model(df)
- # train_classification_model(df)
-# #
+df = pd.read_csv("data/CPU_benchmark_v4.csv")
+data = clean_data()
 
 
-user_features = {
-        "brand": ["Intel"],
-        "model": ["Intel Core i7-12700KF"],
-        "category": [],
-        "budget": 350,
-        "performance": 12000,
-        "cores": 4
-}
 
 
-result = content_based_filtering(user_features)
-result = result.reset_index(drop=True)
+calculate_entropy_weights(df)
+calculate_entropy_weights(data)
 
-result = predict_regression(result)
+define_classes_by_quantiles(df)
+define_classes_by_quantiles(data)
 
-result = predict_class(result)
-
-result = topsis_method(result)
-
-print(result[["cpuName", "price", "cpuMark", "price_rating", "cpu_class", "topsis_score"]])
-
-
+define_classes_by_kmeans(df)
+define_classes_by_kmeans(data)

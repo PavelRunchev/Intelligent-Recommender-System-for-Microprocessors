@@ -4,6 +4,40 @@
             {% include 'components/winner.html' %}
         {% endif %}
 
+        <div class="d-flex justify-content-end">
+             <div class="dropdown ">
+                <button class="btn btn-light dropdown-toggle my-3 mx-1 shadow-sm "
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        data-i18n="export"
+                >
+                    <i class="bi bi-download"></i> Export
+                </button>
+
+                <ul class="dropdown-menu">
+                    <li>
+                        <form action="{{ url_for('export_excel') }}" method="get">
+                            <button class="dropdown-item" id="exportExcel"><i class="bi bi-file-earmark-excel text-success"></i> Excel</button>
+                        </form>
+                    </li>
+
+                    <li>
+                        <form action="{{ url_for('export_pdf') }}" method="get">
+                            <button class="dropdown-item" id="exportPdf"><i class="bi bi-file-earmark-pdf text-danger"></i> PDF</button>
+                        </form>
+                    </li>
+
+                    <li>
+                        <form action="{{ url_for('export_csv') }}" method="get">
+                            <button class="dropdown-item" id="exportCsv"><i class="bi bi-filetype-csv text-info"></i> CSV</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
         <h4 class="text-center" data-i18n="titleResult">Намерени Микророцесори:</h4>
         <div class="table-responsive shadow-lg">
             <table class="table table-bordered table-striped w-100 mb-0">
@@ -27,7 +61,7 @@
                         </th>
                         <th>
                             <div class="text-center" data-i18n="demoTableCores">Ядра</div>
-                            <div class="text-center fw-light"><small>(cores)</small></div>
+                            <div class="text-center fw-light"><small class="text-dark">(cores)</small></div>
                         </th>
                          <th>
                             <div class="text-center" data-i18n="demoTableTDP">Топлинна мощност (TDP)</div>
@@ -35,15 +69,11 @@
                         </th>
                         <th>
                             <div class="text-center" data-i18n="demoTableCategory">Категория</div>
-                            <div class="text-center fw-light"><small>(category)</small></div>
+                            <div class="text-center fw-light"><small class="text-dark">(category)</small></div>
                         </th>
                         <th>
                             <div class="text-center" data-i18n="demoTableSocket">Гнездо</div>
-                            <div class="text-center fw-light"><small data-i18n="demoTableSocket">(socket)</small></div>
-                        </th>
-                        <th>
-                            <div class="text-center" data-i18n="evaluation">Препоръчителна оценка</div>
-                            <div class="text-center fw-light"><small data-i18n="performanceInfo">(по-високо е по-добре)</small></div>
+                            <div class="text-center fw-black"><small class="text-dark">(socket)</small></div>
                         </th>
                          <th>
                             <div class="text-center" data-i18n="predictPrice">Прогнозирана цена</div>
@@ -75,7 +105,6 @@
                         <td class="text-center text-nowrap">{{ cpu.TDP }} W</td>
                         <td class="text-center text-nowrap">{{ cpu.category}}</td>
                         <td class="text-center text-nowrap">{{ cpu.socket}}</td>
-                        <td class="text-center text-nowrap">{{ cpu.recommender_score}}</td>
                         <td class="text-center text-nowrap">{{ cpu.predicted_price}} &#8364;</td>
                         <td class="text-center text-nowrap dynamic-translate">{{ cpu.price_rating}}</td>
                         <td class="text-center text-nowrap dynamic-translate">{{ cpu.cpu_class}}</td>

@@ -26,7 +26,7 @@ def run_pipeline(user_features):
         result["topsis_score"] = 1.0
         logging.info("Single result returned without TOPSIS ranking")
 
-    return result.to_dict(orient='records')
+    return result
 
 
 

@@ -32,26 +32,14 @@ window.addEventListener('DOMContentLoaded', function () {
 
     function getInitialOption(type) {
         const lang = localStorage.getItem("language") || "bg";
-        if (type === "model") {
-            if (lang === "bg")
-                return '<option value="" data-i18n="choiceModel">Избери модел</option>';
 
-            return '<option value="" data-i18n="choiceModel">Select model</option>';
-        }
+        const keyMap = { brand: "choiceBrand", model: "choiceModel", category: "choiceCategory"};
+        const key = keyMap[type];
 
-        if (type === "category") {
-            if (lang === "bg")
-                return '<option value="" data-i18n="choiceCategory">Избери категория</option>';
+        if (!key) return "";
 
-            return '<option value="" data-i18n="choiceCategory">Select category</option>';
-        }
-
-        if (type === "brand") {
-            if (lang === "bg")
-                return '<option value="" data-i18n="choiceBrand">Избери марка</option>';
-
-            return '<option value="" data-i18n="choiceBrand">Select brand</option>';
-        }
+        const text = translations[lang]?.[key] || translations.en[key];
+        return `<option value="" data-i18n="${key}">${text}</option>`;
     }
 
     function getBrands() {
@@ -177,4 +165,7 @@ window.addEventListener('DOMContentLoaded', function () {
         return [...new Set(data.filter(d => d.brand === brand).map(d => d.category))];
     }
 });
+
+
+
 

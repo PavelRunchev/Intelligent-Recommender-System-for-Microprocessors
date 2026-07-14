@@ -62,3 +62,9 @@ option:hover {
     font-weight: normal;
     padding-left: 10px;
 }
+
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
+    background-color: #f0f0f0;
+    color: black;
+}

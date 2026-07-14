@@ -27,12 +27,6 @@ def content_based_filtering(user_features):
     if user_features.get("cores"):
         results = results[results["cores"] >= user_features["cores"]]
 
-    results["recommender_score"] = (
-        (results["cpuMark"] / user_features["performance"]) * 0.5 +
-        (user_features["budget"] / results["price"]) * 0.3 +
-        (results["cores"] / user_features["cores"]) * 0.2
-    ).round(2)
-    results = results.sort_values(by="recommender_score", ascending=False)
     return results
 
 

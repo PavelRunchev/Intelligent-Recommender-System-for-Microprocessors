@@ -1,53 +1,27 @@
-
+import os
 import logging
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, session
 from data.data_preprocessing import get_top_cpus
+
 from services.ml_pipeline import run_pipeline
 from services.model_initializer import initialize_models
 from data.data_preprocessing import clean_data
 from dotenv import load_dotenv
+from services.validate_input_data import validate_input
+from export.excel_export import create_excel_report
+from export.csv_export import create_csv_report
+from export.pdf_export import create_pdf_report
 
 load_dotenv()
-
 logging.basicConfig(filename="app.log", level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
 app = Flask(__name__)
-
-logging.basicConfig(filename="app.log", level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
+app.secret_key = os.getenv("SECRET_KEY")
 
 logging.info("Application started")
 data = clean_data()
 initialize_models(data)
 
-
-def validate_input(brand, model, category, budget, performance, cores):
-    valid_brands = data["brand"].unique().tolist()
-    valid_models = data["cpuName"].unique().tolist()
-    valid_categories = data["category"].unique().tolist()
-
-    if isinstance(brand, str):
-        brand = [brand]
-    if isinstance(model, str):
-        model = [model]
-    if isinstance(category, str):
-        category = [category]
-
-    if not all(b in valid_brands for b in brand):
-        return "Invalid brand!"
-    if not all(m in valid_models for m in model):
-        return "Invalid model!"
-    if not all(c in valid_categories for c in category):
-        return "Invalid category!"
-    if budget < 1 or budget > 100000:
-        return "Invalid budget!"
-    if performance < 1 or performance > 200000:
-        return "Invalid performance!"
-    if cores < 1 or cores > 100:
-        return "Invalid cores!"
-
-    return ({"brand": brand,"model": model,"category": category,
-        "budget": budget,"performance": performance,"cores": cores},
-        None)
 
 @app.route("/", methods=["GET", "POST"])
 def index():
@@ -66,31 +40,61 @@ def index():
             performance = int(request.form.get("cpuMark"))
             cores = int(request.form.get("cores"))
 
-            user_features, error = validate_input(
-                brand,
-                model,
-                category,
-                budget,
-                performance,
-                cores
-            )
+            user_features, error = validate_input(data, brand, model, category, budget, performance, cores)
 
             if error:
                 return error, 400
 
             result = run_pipeline(user_features)
             searched = True
+            session["filters"] = user_features
         except (ValueError, TypeError):
             return "Invalid input data!", 400
 
 
     return render_template("index.html",
             searched=searched,
-            result=result,
+            result=result.to_dict(orient='records') if result is not None else [],
             data=data.to_dict(orient='records'),
             top_cpus=top_cpus.to_dict(orient='records'),
             user=user_features
     )
+
+@app.route("/export/excel")
+def export_excel():
+    filters = session.get("filters")
+    if not filters:
+        return "No search form available to export", 400
+
+    result = run_pipeline(filters)
+    if result.empty:
+        return "No data available to export!", 400
+
+    return create_excel_report(result)
+
+@app.route("/export_pdf")
+def export_pdf():
+    filters = session.get("filters")
+    if not filters:
+        return "No search form available to export", 400
+
+    result = run_pipeline(filters)
+    if result.empty:
+        return "No data available to export!", 400
+
+    return create_pdf_report(result)
+
+@app.route("/export_csv")
+def export_csv():
+    filters = session.get("filters")
+    if not filters:
+        return "No search form available to export", 400
+
+    result = run_pipeline(filters)
+    if result.empty:
+        return "No data available to export!", 400
+
+    return create_csv_report(result)
 
 if __name__ == "__main__":
     app.run(debug=True, use_reloader=False)

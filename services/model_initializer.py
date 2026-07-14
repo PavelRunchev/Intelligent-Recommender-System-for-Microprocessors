@@ -4,7 +4,7 @@ from models.classification_model import train_classification_model
 
 # loading training model on start app, only once!
 def initialize_models(data):
-    data = data[data["category"] == "Desktop"]
+    data = data[data["category"].isin(["Desktop", "Laptop"])]
 
     if not os.path.exists("models/price_model.pkl"):
         train_regression_model(data)

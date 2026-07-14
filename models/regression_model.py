@@ -1,6 +1,7 @@
 from sklearn.linear_model import Ridge
 import joblib
 
+
 features = ["cpuMark", "cores"]
 
 def train_regression_model(df):
@@ -19,11 +20,11 @@ def predict_regression(df):
 
     model = joblib.load("models/price_model.pkl")
 
-    df["predicted_price"] = model.predict(df[features]).round(2)
-    df["price_gap"] = df["predicted_price"] - df["price"]
+    df["predicted_price"] = model.predict(df[features]).clip(min=20).round(2)
+    gap = df["predicted_price"] - df["price"]
 
     ratings = []
-    for value in df["price_gap"]:
+    for value in gap:
         if value > 0:
             ratings.append("Изгоден")
         else:
