@@ -17,6 +17,10 @@ logging.basicConfig(filename="app.log", level=logging.INFO, format="%(asctime)s 
 
 app = Flask(__name__)
 app.secret_key = os.getenv("SECRET_KEY")
+if not app.secret_key:
+    raise RuntimeError("SECRET_KEY is not configured!")
+
+print("SECRET_KEY:", app.secret_key)
 
 logging.info("Application started")
 data = clean_data()
