@@ -10,6 +10,7 @@ document.querySelectorAll(".language-option").forEach(item => {
 
         changeLanguage(lang);
         localStorage.setItem("language", lang);
+        document.cookie = `language=${lang}; path=/; max-age=31536000`;
     });
 });
 
@@ -37,10 +38,11 @@ function changeLanguage(lang) {
     });
 
     document.querySelectorAll(".dynamic-translate").forEach(cell => {
-        const value = cell.textContent.trim();
+        if (!cell.dataset.original)
+            cell.dataset.original = cell.textContent.trim();
 
-        if (dynamicTranslations[lang][value])
-            cell.textContent = dynamicTranslations[lang][value];
+        const original = cell.dataset.original;
+        cell.textContent = dynamicTranslations[lang][original] || original;
     });
 }
 

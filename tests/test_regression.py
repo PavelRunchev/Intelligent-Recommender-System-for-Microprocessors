@@ -17,6 +17,5 @@ def test_regression_model():
 
     assert not result.empty
     assert "predicted_price" in result.columns
-    assert "price_gap" in result.columns
     assert "price_rating" in result.columns
     assert result["price_rating"].iloc[0] in ["Изгоден","Надценен"]

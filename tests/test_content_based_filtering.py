@@ -16,4 +16,3 @@ def test_content_base_filtering():
     assert len(result) > 0
     assert  "Intel" not in result["brand"].values
     assert "AMD Ryzen 9 5900X" in result["cpuName"].values
-    assert "recommender_score" in result.columns

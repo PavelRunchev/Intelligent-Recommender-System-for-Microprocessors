@@ -22,6 +22,8 @@ const translations = {
         inputCoresInfo: "Минимален брой ядра, които микропроцесора трябва да има",
         search: "Търси",
         reset: "Нулира",
+        export: "Експорт",
+        import: "Импорт",
 
         cardTitle: "Най-добър избор",
         cardPrice: "Цена",
@@ -83,6 +85,8 @@ const translations = {
         inputCoresInfo: "Minimum number of cores that the processor must have",
         search: "Search",
         reset: "Reset",
+        export: "Export",
+        import: "Import",
 
         cardTitle: "Best Choice",
         cardPrice: "Price",
@@ -146,6 +150,8 @@ const translations = {
         inputCoresInfo: "Mindestanzahl an Kernen, die der Prozessor besitzen muss",
         search: "Suchen",
         reset: "Zurücksetzen",
+        export: "Exportieren",
+        import: "Importieren",
 
         cardTitle: "Beste Auswahl",
         cardPrice: "Preis",
@@ -209,6 +215,8 @@ const translations = {
         inputCoresInfo: "Número mínimo de núcleos que debe tener el procesador",
         search: "Buscar",
         reset: "Restablecer",
+        export: "Exportar",
+        import: "Importar",
 
         cardTitle: "Mejor elección",
         cardPrice: "Precio",
@@ -278,6 +286,8 @@ const translations = {
 
         search: "Rechercher",
         reset: "Réinitialiser",
+        export: "Exporter",
+        import: "Importer",
 
         cardTitle: "Meilleur choix",
         cardPrice: "Prix",
@@ -345,6 +355,8 @@ const translations = {
 
         search: "Cerca",
         reset: "Reimposta",
+        export: "Esporta",
+        import: "Importa",
 
         cardTitle: "Migliore scelta",
         cardPrice: "Prezzo",
@@ -412,6 +424,8 @@ const translations = {
 
         search: "Поиск",
         reset: "Сброс",
+        export: "Экспорт",
+        import: "Импорт",
 
         cardTitle: "Лучший выбор",
         cardPrice: "Цена",
@@ -479,6 +493,8 @@ const translations = {
 
         search: "Pesquisar",
         reset: "Repor",
+        export: "Exportar",
+        import: "Importar",
 
         cardTitle: "Melhor escolha",
         cardPrice: "Preço",
@@ -546,6 +562,8 @@ const translations = {
 
         search: "搜索",
         reset: "重置",
+        export: "导出",
+        import: "导入",
 
         cardTitle: "最佳选择",
         cardPrice: "价格",
@@ -613,6 +631,8 @@ const translations = {
 
         search: "検索",
         reset: "リセット",
+        export: "エクスポート",
+        import: "インポート",
 
         cardTitle: "おすすめ",
         cardPrice: "価格",
@@ -680,6 +700,8 @@ const translations = {
 
         search: "Αναζήτηση",
         reset: "Επαναφορά",
+        export: "Εξαγωγή",
+        import: "Εισαγωγή",
 
         cardTitle: "Καλύτερη επιλογή",
         cardPrice: "Τιμή",
@@ -720,13 +742,14 @@ const translations = {
 
 const dynamicTranslations = {
     bg: {
-        "Good Value": "Изгоден",
-        "Overpriced": "Надценен",
-        "Budget": "Бюджетен",
-        "Mid-range": "Среден клас",
-        "High-end": "Висок клас",
-        "Extreme": "Екстремен"
+        "Изгоден": "Изгоден",
+        "Надценен": "Надценен",
+        "Бюджетен": "Бюджетен",
+        "Среден клас": "Среден клас",
+        "Висок клас": "Висок клас",
+        "Екстремен": "Екстремен"
     },
+
     en: {
         "Изгоден": "Good Value",
         "Надценен": "Overpriced",
@@ -755,73 +778,66 @@ const dynamicTranslations = {
     },
 
     fr: {
-        "Good Value": "Bon rapport qualité-prix",
-        "Overpriced": "Trop cher",
-
-        "Budget": "Économique",
-        "Mid-range": "Milieu de gamme",
-        "High-end": "Haut de gamme",
-        "Extreme": "Extrême"
+        "Изгоден": "Bon rapport qualité-prix",
+        "Надценен": "Trop cher",
+        "Бюджетен": "Économique",
+        "Среден клас": "Milieu de gamme",
+        "Висок клас": "Haut de gamme",
+        "Екстремен": "Extrême"
     },
 
     it: {
-        "Good Value": "Conveniente",
-        "Overpriced": "Sovrapprezzato",
-
-        "Budget": "Economico",
-        "Mid-range": "Fascia media",
-        "High-end": "Fascia alta",
-        "Extreme": "Estremo"
+        "Изгоден": "Conveniente",
+        "Надценен": "Sovrapprezzato",
+        "Бюджетен": "Economico",
+        "Среден клас": "Fascia media",
+        "Висок клас": "Fascia alta",
+        "Екстремен": "Estremo"
     },
 
     ru: {
-        "Good Value": "Выгодный",
-        "Overpriced": "Завышенная цена",
-
-        "Budget": "Бюджетный",
-        "Mid-range": "Средний класс",
-        "High-end": "Высокий класс",
-        "Extreme": "Экстремальный"
+        "Изгоден": "Выгодный",
+        "Надценен": "Завышенная цена",
+        "Бюджетен": "Бюджетный",
+        "Среден клас": "Средний класс",
+        "Висок клас": "Высокий класс",
+        "Екстремен": "Экстремальный"
     },
 
     pt: {
-        "Good Value": "Boa relação qualidade-preço",
-        "Overpriced": "Sobrevalorizado",
-
-        "Budget": "Económico",
-        "Mid-range": "Gama média",
-        "High-end": "Gama alta",
-        "Extreme": "Extremo"
+        "Изгоден": "Boa relação qualidade-preço",
+        "Надценен": "Sobrevalorizado",
+        "Бюджетен": "Gama económica",
+        "Среден клас": "Gama média",
+        "Висок клас": "Gama alta",
+        "Екстремен": "Gama extrema"
     },
 
     zh: {
-        "Good Value": "高性价比",
-        "Overpriced": "价格过高",
-
-        "Budget": "入门级",
-        "Mid-range": "中端",
-        "High-end": "高端",
-        "Extreme": "旗舰级"
+        "Изгоден": "高性价比",
+        "Надценен": "价格过高",
+        "Бюджетен": "入门级",
+        "Среден клас": "中端",
+        "Висок клас": "高端",
+        "Екстремен": "旗舰级"
     },
 
     ja: {
-        "Good Value": "お買い得",
-        "Overpriced": "価格が高すぎる",
-
-        "Budget": "エントリー",
-        "Mid-range": "ミドルレンジ",
-        "High-end": "ハイエンド",
-        "Extreme": "エクストリーム"
+        "Изгоден": "お買い得",
+        "Надценен": "価格が高すぎる",
+        "Бюджетен": "エントリー",
+        "Среден клас": "ミドルレンジ",
+        "Висок клас": "ハイエンド",
+        "Екстремен": "エクストリーム"
     },
 
     el: {
-        "Good Value": "Καλή σχέση ποιότητας-τιμής",
-        "Overpriced": "Υπερτιμημένο",
-
-        "Budget": "Οικονομική κατηγορία",
-        "Mid-range": "Μεσαία κατηγορία",
-        "High-end": "Υψηλή κατηγορία",
-        "Extreme": "Ακραία κατηγορία"
+        "Изгоден": "Καλή σχέση ποιότητας-τιμής",
+        "Надценен": "Υπερτιμημένο",
+        "Бюджетен": "Οικονομική κατηγορία",
+        "Среден клас": "Μεσαία κατηγορία",
+        "Висок клас": "Υψηλή κατηγορία",
+        "Екстремен": "Ακραία κατηγορία"
     },
 };
 
