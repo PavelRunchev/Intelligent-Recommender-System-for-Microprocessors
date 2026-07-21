@@ -10,7 +10,7 @@ from export.export_translator import translate_export
 def create_excel_report(df):
     df = prepare_export_dataframe(df)
 
-    lang = request.cookies.get("language", "bg")
+    lang = request.cookies.get("language", "en")
     df = translate_export(df, lang)
     output = BytesIO()
 

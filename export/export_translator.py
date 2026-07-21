@@ -472,7 +472,7 @@ PDF_TRANSLATIONS = {
     }
 }
 
-def translate_export(df, lang="bg"):
+def translate_export(df, lang="en"):
     df = df.copy()
     translations = EXPORT_TRANSLATIONS.get(lang, EXPORT_TRANSLATIONS["en"])
 

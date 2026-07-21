@@ -1,3 +1,4 @@
+let currentLanguage = "en";
 
 document.querySelectorAll(".language-option").forEach(item => {
     item.addEventListener("click", function (e) {
@@ -14,7 +15,7 @@ document.querySelectorAll(".language-option").forEach(item => {
     });
 });
 
-const savedLanguage = localStorage.getItem("language") || "bg";
+const savedLanguage = localStorage.getItem("language") || "en";
 
 const selected = document.querySelector(`.language-option[data-value="${savedLanguage}"]`);
 
@@ -22,9 +23,19 @@ if (selected) {
     document.getElementById("selected-language").textContent = selected.dataset.value.toUpperCase();
     document.getElementById("selected-flag").src = selected.dataset.flag;
     changeLanguage(savedLanguage);
+
+    const toast = sessionStorage.getItem("toast");
+
+    if (toast) {
+        toastr.success(translations[currentLanguage][toast]);
+        sessionStorage.removeItem("toast");
+    }
+    document.cookie = `language=${savedLanguage}; path=/; max-age=31536000`;
 }
 
 function changeLanguage(lang) {
+    currentLanguage = lang;
+
     document.querySelectorAll("[data-i18n]").forEach(element => {
         const key = element.dataset.i18n;
         if (translations[lang][key])
@@ -45,6 +56,12 @@ function changeLanguage(lang) {
         cell.textContent = dynamicTranslations[lang][original] || original;
     });
 }
+
+function t(key) {
+    return translations[currentLanguage][key] || key;
+}
+
+
 
 
 

@@ -58,7 +58,47 @@ const translations = {
 
         footerTitle: "© 2026 Интелигентна система за препоръчване на микропроцесори",
         footerDev: "Разработено от Павел Рунчев",
-        team: "Студент от Технически Университет - Габрово"
+        team: "Студент от Технически Университет - Габрово",
+
+        //Import Translation
+        selectCsvFile: "Моля, изберете CSV файл.",
+        onlyCsvSupported: "Поддържат се само CSV файлове.",
+        maximumFileSize: "Максималният размер на файла е 20 MB.",
+        uploadingDataset: "Качване на набора от данни...",
+        validatingDataset: "Проверка на набора от данни...",
+        cleaningDataset: "Почистване на набора от данни...",
+        convertingNumericValues: "Преобразуване на числовите стойности...",
+        preparingDataset: "Подготовка на набора от данни...",
+        datasetReady: "Наборът от данни е готов.",
+        datasetUploadedSuccessfully: "Наборът от данни е качен успешно.",
+        rowsUploaded: "Качени редове:",
+        rowsAfterCleaning: "Редове след почистване:",
+        removedRows: "Премахнати редове:",
+        columns: "Колони:",
+        detectedColumns: "Открити колони:",
+        datasetValidationFailed: "Проверката на набора от данни е неуспешна.",
+        missingRequiredColumns: "Липсващи задължителни колони:",
+        importFailed: "Импортирането е неуспешно.",
+        unexpectedServerError: "Неочаквана сървърна грешка.",
+
+        importDataset: "Импортиране на набор от данни",
+        importDescription: "Качете собствен CPU набор от данни във формат CSV.",
+
+        importInfo1: "Поддържат се само CSV файлове.",
+        importInfo2: "Каченият набор от данни не променя оригиналната база данни.",
+        importInfo3: "Каченият набор от данни е достъпен само за текущата сесия.",
+        importInfo4: "След приключване на сесията наборът от данни се премахва автоматично.",
+
+        chooseDataset: "Изберете набор от данни",
+
+        currency: "Валута",
+        currencyEuro: "Евро (€)",
+        currencyUSD: "Щатски долар ($)",
+        currencyInfo: "Изберете валутата, използвана в импортирания набор от данни.",
+
+        preparing: "Подготовка...",
+        done: "Готово",
+        restoreOriginalDataset: "Възстанови оригиналния набор от данни"
     },
 
     en: {
@@ -123,7 +163,49 @@ const translations = {
 
         footerTitle: "© 2026 Intelligent Microprocessor Recommendation System",
         footerDev: "Developed by Pavel Runchev",
-        team: "Student at Technical University of Gabrovo"
+        team: "Student at Technical University of Gabrovo",
+
+        //Import Translation
+        selectCsvFile: "Please select a CSV file.",
+        onlyCsvSupported: "Only CSV files are supported.",
+        maximumFileSize: "Maximum file size is 20 MB.",
+        uploadingDataset: "Uploading dataset...",
+        validatingDataset: "Validating dataset...",
+        cleaningDataset: "Cleaning dataset...",
+        convertingNumericValues: "Converting numeric values...",
+        preparingDataset: "Preparing the dataset...",
+        datasetReady: "Dataset is ready.",
+        datasetUploadedSuccessfully: "Dataset uploaded successfully.",
+        rowsUploaded: "Rows uploaded:",
+        rowsAfterCleaning: "Rows after cleaning:",
+        removedRows: "Removed rows:",
+        columns: "Columns:",
+        detectedColumns: "Detected columns:",
+        datasetValidationFailed: "Dataset validation failed.",
+        missingRequiredColumns: "Missing required columns:",
+        importFailed: "Import failed.",
+        unexpectedServerError: "Unexpected server error.",
+
+        importDataset: "Import Dataset",
+        importDescription: "Upload your own CPU dataset in CSV format.",
+
+        importInfo1: "Only CSV files are supported.",
+        importInfo2: "Your uploaded dataset does not modify the original database.",
+        importInfo3: "The uploaded dataset is available only for your current session.",
+        importInfo4: "After the session ends, the dataset is automatically removed.",
+
+        chooseDataset: "Choose Dataset",
+
+        currency: "Currency",
+        currencyEuro: "Euro (€)",
+        currencyUSD: "US Dollar ($)",
+        currencyInfo: "Select the currency used in the imported dataset.",
+
+        preparing: "Preparing...",
+        done: "Done",
+        restoreOriginalDataset: "Restore Original Dataset",
+        datasetImported: "Dataset imported successfully.",
+        defaultDatasetRestored: "Default dataset restored.",
     },
 
     de: {
@@ -188,7 +270,47 @@ const translations = {
 
         footerTitle: "© 2026 Intelligentes System zur Empfehlung von Mikroprozessoren",
         footerDev: "Entwickelt von Pavel Runchev",
-        team: "Student an der Technischen Universität Gabrovo"
+        team: "Student an der Technischen Universität Gabrovo",
+
+        //Import Translation
+        selectCsvFile: "Bitte wählen Sie eine CSV-Datei aus.",
+        onlyCsvSupported: "Es werden nur CSV-Dateien unterstützt.",
+        maximumFileSize: "Die maximale Dateigröße beträgt 20 MB.",
+        uploadingDataset: "Datensatz wird hochgeladen...",
+        validatingDataset: "Datensatz wird überprüft...",
+        cleaningDataset: "Datensatz wird bereinigt...",
+        convertingNumericValues: "Numerische Werte werden konvertiert...",
+        preparingDataset: "Datensatz wird vorbereitet...",
+        datasetReady: "Datensatz ist bereit.",
+        datasetUploadedSuccessfully: "Datensatz erfolgreich hochgeladen.",
+        rowsUploaded: "Hochgeladene Zeilen:",
+        rowsAfterCleaning: "Zeilen nach der Bereinigung:",
+        removedRows: "Entfernte Zeilen:",
+        columns: "Spalten:",
+        detectedColumns: "Erkannte Spalten:",
+        datasetValidationFailed: "Datensatzprüfung fehlgeschlagen.",
+        missingRequiredColumns: "Fehlende erforderliche Spalten:",
+        importFailed: "Import fehlgeschlagen.",
+        unexpectedServerError: "Unerwarteter Serverfehler.",
+
+        importDataset: "Datensatz importieren",
+        importDescription: "Laden Sie Ihren eigenen CPU-Datensatz im CSV-Format hoch.",
+
+        importInfo1: "Es werden nur CSV-Dateien unterstützt.",
+        importInfo2: "Der hochgeladene Datensatz verändert die ursprüngliche Datenbank nicht.",
+        importInfo3: "Der hochgeladene Datensatz ist nur während Ihrer aktuellen Sitzung verfügbar.",
+        importInfo4: "Nach Sitzungsende wird der Datensatz automatisch entfernt.",
+
+        chooseDataset: "Datensatz auswählen",
+
+        currency: "Währung",
+        currencyEuro: "Euro (€)",
+        currencyUSD: "US-Dollar ($)",
+        currencyInfo: "Wählen Sie die im Datensatz verwendete Währung aus.",
+
+        preparing: "Vorbereitung...",
+        done: "Fertig",
+        restoreOriginalDataset: "Originaldatensatz wiederherstellen"
     },
 
     es: {
@@ -253,7 +375,47 @@ const translations = {
 
         footerTitle: "© 2026 Sistema inteligente de recomendación de microprocesadores",
         footerDev: "Desarrollado por Pavel Runchev",
-        team: "Estudiante de la Universidad Técnica de Gabrovo"
+        team: "Estudiante de la Universidad Técnica de Gabrovo",
+
+        //Import Translation
+        selectCsvFile: "Seleccione un archivo CSV.",
+        onlyCsvSupported: "Solo se admiten archivos CSV.",
+        maximumFileSize: "El tamaño máximo del archivo es de 20 MB.",
+        uploadingDataset: "Cargando conjunto de datos...",
+        validatingDataset: "Validando el conjunto de datos...",
+        cleaningDataset: "Limpiando el conjunto de datos...",
+        convertingNumericValues: "Convirtiendo valores numéricos...",
+        preparingDataset: "Preparando el conjunto de datos...",
+        datasetReady: "El conjunto de datos está listo.",
+        datasetUploadedSuccessfully: "Conjunto de datos cargado correctamente.",
+        rowsUploaded: "Filas cargadas:",
+        rowsAfterCleaning: "Filas después de la limpieza:",
+        removedRows: "Filas eliminadas:",
+        columns: "Columnas:",
+        detectedColumns: "Columnas detectadas:",
+        datasetValidationFailed: "La validación del conjunto de datos ha fallado.",
+        missingRequiredColumns: "Faltan columnas obligatorias:",
+        importFailed: "La importación ha fallado.",
+        unexpectedServerError: "Error inesperado del servidor.",
+
+        importDataset: "Importar conjunto de datos",
+        importDescription: "Suba su propio conjunto de datos de CPU en formato CSV.",
+
+        importInfo1: "Solo se admiten archivos CSV.",
+        importInfo2: "El conjunto de datos cargado no modifica la base de datos original.",
+        importInfo3: "El conjunto de datos cargado solo está disponible durante la sesión actual.",
+        importInfo4: "Al finalizar la sesión, el conjunto de datos se elimina automáticamente.",
+
+        chooseDataset: "Seleccionar conjunto de datos",
+
+        currency: "Moneda",
+        currencyEuro: "Euro (€)",
+        currencyUSD: "Dólar estadounidense ($)",
+        currencyInfo: "Seleccione la moneda utilizada en el conjunto de datos importado.",
+
+        preparing: "Preparando...",
+        done: "Listo",
+        restoreOriginalDataset: "Restaurar el conjunto de datos original"
     },
 
     fr: {
@@ -322,7 +484,47 @@ const translations = {
 
         footerTitle: "© 2026 Système intelligent de recommandation de microprocesseurs",
         footerDev: "Développé par Pavel Runchev",
-        team: "Étudiant à l'Université Technique de Gabrovo"
+        team: "Étudiant à l'Université Technique de Gabrovo",
+
+        //Import Translation
+        selectCsvFile: "Veuillez sélectionner un fichier CSV.",
+        onlyCsvSupported: "Seuls les fichiers CSV sont pris en charge.",
+        maximumFileSize: "La taille maximale du fichier est de 20 Mo.",
+        uploadingDataset: "Téléchargement du jeu de données...",
+        validatingDataset: "Validation du jeu de données...",
+        cleaningDataset: "Nettoyage du jeu de données...",
+        convertingNumericValues: "Conversion des valeurs numériques...",
+        preparingDataset: "Préparation du jeu de données...",
+        datasetReady: "Le jeu de données est prêt.",
+        datasetUploadedSuccessfully: "Jeu de données téléchargé avec succès.",
+        rowsUploaded: "Lignes téléchargées :",
+        rowsAfterCleaning: "Lignes après nettoyage :",
+        removedRows: "Lignes supprimées :",
+        columns: "Colonnes :",
+        detectedColumns: "Colonnes détectées :",
+        datasetValidationFailed: "Échec de la validation du jeu de données.",
+        missingRequiredColumns: "Colonnes obligatoires manquantes :",
+        importFailed: "Échec de l'importation.",
+        unexpectedServerError: "Erreur serveur inattendue.",
+
+        importDataset: "Importer un jeu de données",
+        importDescription: "Téléchargez votre propre jeu de données CPU au format CSV.",
+
+        importInfo1: "Seuls les fichiers CSV sont pris en charge.",
+        importInfo2: "Le jeu de données importé ne modifie pas la base de données d'origine.",
+        importInfo3: "Le jeu de données importé est disponible uniquement pendant votre session actuelle.",
+        importInfo4: "À la fin de la session, le jeu de données est automatiquement supprimé.",
+
+        chooseDataset: "Choisir un jeu de données",
+
+        currency: "Devise",
+        currencyEuro: "Euro (€)",
+        currencyUSD: "Dollar américain ($)",
+        currencyInfo: "Sélectionnez la devise utilisée dans le jeu de données importé.",
+
+        preparing: "Préparation...",
+        done: "Terminé",
+        restoreOriginalDataset: "Restaurer le jeu de données d'origine"
     },
 
         it: {
@@ -391,7 +593,47 @@ const translations = {
 
         footerTitle: "© 2026 Sistema intelligente di raccomandazione dei microprocessori",
         footerDev: "Sviluppato da Pavel Runchev",
-        team: "Studente dell'Università Tecnica di Gabrovo"
+        team: "Studente dell'Università Tecnica di Gabrovo",
+
+         //Import Translation
+        selectCsvFile: "Seleziona un file CSV.",
+        onlyCsvSupported: "Sono supportati solo i file CSV.",
+        maximumFileSize: "La dimensione massima del file è 20 MB.",
+        uploadingDataset: "Caricamento del dataset...",
+        validatingDataset: "Verifica del dataset...",
+        cleaningDataset: "Pulizia del dataset...",
+        convertingNumericValues: "Conversione dei valori numerici...",
+        preparingDataset: "Preparazione del dataset...",
+        datasetReady: "Il dataset è pronto.",
+        datasetUploadedSuccessfully: "Dataset caricato con successo.",
+        rowsUploaded: "Righe caricate:",
+        rowsAfterCleaning: "Righe dopo la pulizia:",
+        removedRows: "Righe rimosse:",
+        columns: "Colonne:",
+        detectedColumns: "Colonne rilevate:",
+        datasetValidationFailed: "Verifica del dataset non riuscita.",
+        missingRequiredColumns: "Colonne obbligatorie mancanti:",
+        importFailed: "Importazione non riuscita.",
+        unexpectedServerError: "Errore imprevisto del server.",
+
+        importDataset: "Importa dataset",
+        importDescription: "Carica il tuo dataset CPU in formato CSV.",
+
+        importInfo1: "Sono supportati solo file CSV.",
+        importInfo2: "Il dataset caricato non modifica il database originale.",
+        importInfo3: "Il dataset caricato è disponibile solo durante la sessione corrente.",
+        importInfo4: "Al termine della sessione il dataset viene rimosso automaticamente.",
+
+        chooseDataset: "Seleziona dataset",
+
+        currency: "Valuta",
+        currencyEuro: "Euro (€)",
+        currencyUSD: "Dollaro statunitense ($)",
+        currencyInfo: "Seleziona la valuta utilizzata nel dataset importato.",
+
+        preparing: "Preparazione...",
+        done: "Fatto",
+        restoreOriginalDataset: "Ripristina il dataset originale"
     },
 
     ru: {
@@ -460,7 +702,47 @@ const translations = {
 
         footerTitle: "© 2026 Интеллектуальная система рекомендаций микропроцессоров",
         footerDev: "Разработано Павлом Рунчевым",
-        team: "Студент Технического университета — Габрово"
+        team: "Студент Технического университета — Габрово",
+
+        //Import Translation
+        selectCsvFile: "Выберите CSV-файл.",
+        onlyCsvSupported: "Поддерживаются только CSV-файлы.",
+        maximumFileSize: "Максимальный размер файла — 20 МБ.",
+        uploadingDataset: "Загрузка набора данных...",
+        validatingDataset: "Проверка набора данных...",
+        cleaningDataset: "Очистка набора данных...",
+        convertingNumericValues: "Преобразование числовых значений...",
+        preparingDataset: "Подготовка набора данных...",
+        datasetReady: "Набор данных готов.",
+        datasetUploadedSuccessfully: "Набор данных успешно загружен.",
+        rowsUploaded: "Загружено строк:",
+        rowsAfterCleaning: "Строк после очистки:",
+        removedRows: "Удалено строк:",
+        columns: "Столбцы:",
+        detectedColumns: "Обнаруженные столбцы:",
+        datasetValidationFailed: "Проверка набора данных не выполнена.",
+        missingRequiredColumns: "Отсутствуют обязательные столбцы:",
+        importFailed: "Ошибка импорта.",
+        unexpectedServerError: "Непредвиденная ошибка сервера.",
+
+        importDataset: "Импорт набора данных",
+        importDescription: "Загрузите собственный набор данных CPU в формате CSV.",
+
+        importInfo1: "Поддерживаются только CSV-файлы.",
+        importInfo2: "Загруженный набор данных не изменяет исходную базу данных.",
+        importInfo3: "Загруженный набор данных доступен только в течение текущей сессии.",
+        importInfo4: "После завершения сессии набор данных автоматически удаляется.",
+
+        chooseDataset: "Выберите набор данных",
+
+        currency: "Валюта",
+        currencyEuro: "Евро (€)",
+        currencyUSD: "Доллар США ($)",
+        currencyInfo: "Выберите валюту, используемую в импортируемом наборе данных.",
+
+        preparing: "Подготовка...",
+        done: "Готово",
+        restoreOriginalDataset: "Восстановить исходный набор данных"
     },
 
     pt: {
@@ -529,7 +811,47 @@ const translations = {
 
         footerTitle: "© 2026 Sistema Inteligente de Recomendação de Microprocessadores",
         footerDev: "Desenvolvido por Pavel Runchev",
-        team: "Estudante da Universidade Técnica de Gabrovo"
+        team: "Estudante da Universidade Técnica de Gabrovo",
+
+        //Import Translation
+        selectCsvFile: "Selecione um ficheiro CSV.",
+        onlyCsvSupported: "Apenas ficheiros CSV são suportados.",
+        maximumFileSize: "O tamanho máximo do ficheiro é 20 MB.",
+        uploadingDataset: "A carregar o conjunto de dados...",
+        validatingDataset: "A validar o conjunto de dados...",
+        cleaningDataset: "A limpar o conjunto de dados...",
+        convertingNumericValues: "A converter valores numéricos...",
+        preparingDataset: "A preparar o conjunto de dados...",
+        datasetReady: "O conjunto de dados está pronto.",
+        datasetUploadedSuccessfully: "Conjunto de dados carregado com sucesso.",
+        rowsUploaded: "Linhas carregadas:",
+        rowsAfterCleaning: "Linhas após a limpeza:",
+        removedRows: "Linhas removidas:",
+        columns: "Colunas:",
+        detectedColumns: "Colunas detetadas:",
+        datasetValidationFailed: "Falha na validação do conjunto de dados.",
+        missingRequiredColumns: "Colunas obrigatórias em falta:",
+        importFailed: "Falha na importação.",
+        unexpectedServerError: "Erro inesperado do servidor.",
+
+        importDataset: "Importar conjunto de dados",
+        importDescription: "Carregue o seu próprio conjunto de dados de CPU em formato CSV.",
+
+        importInfo1: "Apenas ficheiros CSV são suportados.",
+        importInfo2: "O conjunto de dados carregado não altera a base de dados original.",
+        importInfo3: "O conjunto de dados carregado está disponível apenas durante a sessão atual.",
+        importInfo4: "Após o fim da sessão, o conjunto de dados é removido automaticamente.",
+
+        chooseDataset: "Selecionar conjunto de dados",
+
+        currency: "Moeda",
+        currencyEuro: "Euro (€)",
+        currencyUSD: "Dólar americano ($)",
+        currencyInfo: "Selecione a moeda utilizada no conjunto de dados importado.",
+
+        preparing: "A preparar...",
+        done: "Concluído",
+        restoreOriginalDataset: "Restaurar conjunto de dados original"
     },
 
     zh: {
@@ -598,7 +920,47 @@ const translations = {
 
         footerTitle: "© 2026 智能微处理器推荐系统",
         footerDev: "开发者：Pavel Runchev",
-        team: "加布罗沃技术大学学生"
+        team: "加布罗沃技术大学学生",
+
+        //Import Translation
+        selectCsvFile: "请选择一个 CSV 文件。",
+        onlyCsvSupported: "仅支持 CSV 文件。",
+        maximumFileSize: "文件最大大小为 20 MB。",
+        uploadingDataset: "正在上传数据集...",
+        validatingDataset: "正在验证数据集...",
+        cleaningDataset: "正在清理数据集...",
+        convertingNumericValues: "正在转换数值...",
+        preparingDataset: "正在准备数据集...",
+        datasetReady: "数据集已准备就绪。",
+        datasetUploadedSuccessfully: "数据集上传成功。",
+        rowsUploaded: "上传的行数：",
+        rowsAfterCleaning: "清理后的行数：",
+        removedRows: "已删除的行数：",
+        columns: "列数：",
+        detectedColumns: "检测到的列：",
+        datasetValidationFailed: "数据集验证失败。",
+        missingRequiredColumns: "缺少必需的列：",
+        importFailed: "导入失败。",
+        unexpectedServerError: "发生意外的服务器错误。",
+
+        importDataset: "导入数据集",
+        importDescription: "上传您自己的 CSV 格式 CPU 数据集。",
+
+        importInfo1: "仅支持 CSV 文件。",
+        importInfo2: "上传的数据集不会修改原始数据库。",
+        importInfo3: "上传的数据集仅在当前会话期间可用。",
+        importInfo4: "会话结束后，数据集将自动删除。",
+
+        chooseDataset: "选择数据集",
+
+        currency: "货币",
+        currencyEuro: "欧元 (€)",
+        currencyUSD: "美元 ($)",
+        currencyInfo: "请选择导入数据集所使用的货币。",
+
+        preparing: "准备中...",
+        done: "完成",
+        restoreOriginalDataset: "恢复原始数据集"
     },
 
     ja: {
@@ -667,7 +1029,47 @@ const translations = {
 
         footerTitle: "© 2026 インテリジェント・マイクロプロセッサ推奨システム",
         footerDev: "開発者：Pavel Runchev",
-        team: "ガブロヴォ工科大学 学生"
+        team: "ガブロヴォ工科大学 学生",
+
+        //Import Translation
+        selectCsvFile: "CSVファイルを選択してください。",
+        onlyCsvSupported: "CSVファイルのみ対応しています。",
+        maximumFileSize: "ファイルの最大サイズは20MBです。",
+        uploadingDataset: "データセットをアップロードしています...",
+        validatingDataset: "データセットを検証しています...",
+        cleaningDataset: "データセットをクリーンアップしています...",
+        convertingNumericValues: "数値を変換しています...",
+        preparingDataset: "データセットを準備しています...",
+        datasetReady: "データセットの準備が完了しました。",
+        datasetUploadedSuccessfully: "データセットが正常にアップロードされました。",
+        rowsUploaded: "アップロードされた行数：",
+        rowsAfterCleaning: "クリーニング後の行数：",
+        removedRows: "削除された行数：",
+        columns: "列数：",
+        detectedColumns: "検出された列：",
+        datasetValidationFailed: "データセットの検証に失敗しました。",
+        missingRequiredColumns: "必須列が不足しています：",
+        importFailed: "インポートに失敗しました。",
+        unexpectedServerError: "予期しないサーバーエラーが発生しました。",
+
+        importDataset: "データセットをインポート",
+        importDescription: "CSV形式のCPUデータセットをアップロードしてください。",
+
+        importInfo1: "CSVファイルのみ対応しています。",
+        importInfo2: "アップロードしたデータセットは元のデータベースを変更しません。",
+        importInfo3: "アップロードしたデータセットは現在のセッションでのみ利用できます。",
+        importInfo4: "セッション終了後、データセットは自動的に削除されます。",
+
+        chooseDataset: "データセットを選択",
+
+        currency: "通貨",
+        currencyEuro: "ユーロ (€)",
+        currencyUSD: "米ドル ($)",
+        currencyInfo: "インポートするデータセットで使用されている通貨を選択してください。",
+
+        preparing: "準備中...",
+        done: "完了",
+        restoreOriginalDataset: "元のデータセットを復元"
     },
 
     el: {
@@ -736,7 +1138,47 @@ const translations = {
 
         footerTitle: "© 2026 Έξυπνο Σύστημα Σύστασης Μικροεπεξεργαστών",
         footerDev: "Αναπτύχθηκε από τον Pavel Runchev",
-        team: "Φοιτητής του Τεχνικού Πανεπιστημίου Γκάμπροβο"
+        team: "Φοιτητής του Τεχνικού Πανεπιστημίου Γκάμπροβο",
+
+        //Import Translation
+        selectCsvFile: "Παρακαλώ επιλέξτε ένα αρχείο CSV.",
+        onlyCsvSupported: "Υποστηρίζονται μόνο αρχεία CSV.",
+        maximumFileSize: "Το μέγιστο μέγεθος αρχείου είναι 20 MB.",
+        uploadingDataset: "Μεταφόρτωση συνόλου δεδομένων...",
+        validatingDataset: "Έλεγχος συνόλου δεδομένων...",
+        cleaningDataset: "Καθαρισμός συνόλου δεδομένων...",
+        convertingNumericValues: "Μετατροπή αριθμητικών τιμών...",
+        preparingDataset: "Προετοιμασία συνόλου δεδομένων...",
+        datasetReady: "Το σύνολο δεδομένων είναι έτοιμο.",
+        datasetUploadedSuccessfully: "Το σύνολο δεδομένων μεταφορτώθηκε με επιτυχία.",
+        rowsUploaded: "Γραμμές που μεταφορτώθηκαν:",
+        rowsAfterCleaning: "Γραμμές μετά τον καθαρισμό:",
+        removedRows: "Γραμμές που αφαιρέθηκαν:",
+        columns: "Στήλες:",
+        detectedColumns: "Εντοπισμένες στήλες:",
+        datasetValidationFailed: "Η επικύρωση του συνόλου δεδομένων απέτυχε.",
+        missingRequiredColumns: "Λείπουν υποχρεωτικές στήλες:",
+        importFailed: "Η εισαγωγή απέτυχε.",
+        unexpectedServerError: "Παρουσιάστηκε μη αναμενόμενο σφάλμα διακομιστή.",
+
+        importDataset: "Εισαγωγή συνόλου δεδομένων",
+        importDescription: "Ανεβάστε το δικό σας σύνολο δεδομένων CPU σε μορφή CSV.",
+
+        importInfo1: "Υποστηρίζονται μόνο αρχεία CSV.",
+        importInfo2: "Το σύνολο δεδομένων που ανεβάζετε δεν τροποποιεί την αρχική βάση δεδομένων.",
+        importInfo3: "Το σύνολο δεδομένων είναι διαθέσιμο μόνο κατά την τρέχουσα συνεδρία.",
+        importInfo4: "Μετά το τέλος της συνεδρίας, το σύνολο δεδομένων διαγράφεται αυτόματα.",
+
+        chooseDataset: "Επιλογή συνόλου δεδομένων",
+
+        currency: "Νόμισμα",
+        currencyEuro: "Ευρώ (€)",
+        currencyUSD: "Δολάριο ΗΠΑ ($)",
+        currencyInfo: "Επιλέξτε το νόμισμα που χρησιμοποιείται στο εισαγόμενο σύνολο δεδομένων.",
+
+        preparing: "Προετοιμασία...",
+        done: "Ολοκληρώθηκε",
+        restoreOriginalDataset: "Επαναφορά αρχικού συνόλου δεδομένων"
     },
 };
 
@@ -906,5 +1348,5 @@ const translationPlaceholder = {
         budgetPlaceholder: "Για παράδειγμα 500",
         performancePlaceholder: "Για παράδειγμα 15 000",
         coresPlaceholder: "Για παράδειγμα 2",
-    },
+    }
 };

@@ -1,0 +1,144 @@
+ <div class="dropdown me-3 my-3">
+            <button class="btn btn-light btn-md dropdown-toggle shadow-sm"
+                    type="button"
+                    id="languageDropdown"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+            >
+                <img id="selected-flag"
+                     src="{{ url_for('static', filename='images/bulgaria.png') }}"
+                     width="22"
+                     height="16"
+                     class="me-2 pb-1"
+                >
+                <span id="selected-language">BG</span>
+            </button>
+
+            <ul class="dropdown-menu dropdown-menu-end shadow" data-bs-theme="light">
+                <li>
+                    <button
+                        type="button"
+                        class="dropdown-item language-option"
+                        data-value="bg"
+                        data-flag="{{ url_for('static', filename='images/bulgaria.png') }}">
+                        <img src="{{ url_for('static', filename='images/bulgaria.png') }}" width="22" class="me-2">
+                        Bulgarian
+                    </button>
+                </li>
+
+                <li>
+                    <button
+                        type="button"
+                        class="dropdown-item language-option"
+                        data-value="en"
+                        data-flag="{{ url_for('static', filename='images/united-kingdom.png') }}">
+                        <img src="{{ url_for('static', filename='images/united-kingdom.png') }}" width="22" class="me-2">
+                        English
+                    </button>
+                </li>
+
+                <li>
+                    <button
+                        type="button"
+                        class="dropdown-item language-option "
+                        data-value="de"
+                        data-flag="{{ url_for('static', filename='images/germany.png') }}">
+                        <img src="{{ url_for('static', filename='images/germany.png') }}" width="22" class="me-2">
+                        Deutsch
+                    </button>
+                </li>
+
+
+
+                <li>
+                    <button
+                        type="button"
+                        class="dropdown-item language-option"
+                        data-value="fr"
+                        data-flag="{{ url_for('static', filename='images/french.png') }}">
+                        <img src="{{ url_for('static', filename='images/french.png') }}" width="22" class="me-2">
+                        French
+                    </button>
+                </li>
+
+                <li>
+                    <button
+                        type="button"
+                        class="dropdown-item language-option"
+                        data-value="el"
+                        data-flag="{{ url_for('static', filename='images/greece.png') }}">
+                        <img src="{{ url_for('static', filename='images/greece.png') }}" width="22" class="me-2">
+                        Greek
+                    </button>
+                </li>
+
+                 <li>
+                    <button
+                        type="button"
+                        class="dropdown-item language-option"
+                        data-value="it"
+                        data-flag="{{ url_for('static', filename='images/italy.png') }}">
+                        <img src="{{ url_for('static', filename='images/italy.png') }}" width="22" class="me-2">
+                        Italy
+                    </button>
+                </li>
+
+                 <li>
+                    <button
+                        type="button"
+                        class="dropdown-item language-option"
+                        data-value="pt"
+                        data-flag="{{ url_for('static', filename='images/portugal.png') }}">
+                        <img src="{{ url_for('static', filename='images/portugal.png') }}" width="22" class="me-2">
+                        Portugal
+                    </button>
+                </li>
+
+
+
+                 <li>
+                    <button
+                        type="button"
+                        class="dropdown-item language-option"
+                        data-value="ru"
+                        data-flag="{{ url_for('static', filename='images/russia.png') }}">
+                        <img src="{{ url_for('static', filename='images/russia.png') }}" width="22" class="me-2">
+                        Russia
+                    </button>
+                </li>
+
+                <li>
+                    <button
+                        type="button"
+                        class="dropdown-item language-option"
+                        data-value="es"
+                        data-flag="{{ url_for('static', filename='images/spain.png') }}">
+                        <img src="{{ url_for('static', filename='images/spain.png') }}" width="22" class="me-2">
+                        Spain
+                    </button>
+                </li>
+
+                 <li>
+                    <button
+                        type="button"
+                        class="dropdown-item language-option"
+                        data-value="zh"
+                        data-flag="{{ url_for('static', filename='images/china.png') }}">
+                        <img src="{{ url_for('static', filename='images/china.png') }}" width="22" class="me-2">
+                        China
+                    </button>
+                </li>
+
+                 <li>
+                    <button
+                        type="button"
+                        class="dropdown-item language-option"
+                        data-value="ja"
+                        data-flag="{{ url_for('static', filename='images/japan.png') }}">
+                        <img src="{{ url_for('static', filename='images/japan.png') }}" width="22" class="me-2">
+                        Japan
+                    </button>
+                </li>
+
+            </ul>
+        </div>

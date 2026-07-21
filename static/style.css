@@ -68,3 +68,80 @@ option:hover {
     background-color: #f0f0f0;
     color: black;
 }
+
+
+.btn-outline-blue {
+    color: rgb(14, 88, 197);
+    border-color: rgb(14, 88, 197);
+    background: white;
+}
+
+.btn-outline-blue:hover {
+    color: white;
+    background: rgb(14, 88, 197);
+    border-color: rgb(14, 88, 197);
+}
+
+.btn-outline-blue:focus,
+.btn-outline-blue:active {
+    color: white;
+    background: rgb(14, 88, 197);
+    border-color: rgb(14, 88, 197);
+    box-shadow: 0 0 0 .25rem rgba(14, 88, 197,.25);
+}
+
+.btn-outline-blue2 {
+    color: rgb(14, 88, 197);
+    border-color: white;
+    background: white;
+}
+
+.btn-outline-blue2:hover {
+    color: white;
+    background: rgb(14, 88, 197);
+    border-color: rgb(14, 88, 197);
+}
+
+.btn-outline-blue2:focus,
+.btn-outline-blue2:active {
+    color: white;
+    background: rgb(14, 88, 197);
+    border-color: rgb(14, 88, 197);
+    box-shadow: 0 0 0 .25rem rgba(14, 88, 197,.25);
+}
+
+#uploadStatus {
+    white-space: pre-line;
+}
+
+
+.btn-outline-dark2 {
+    color: rgb(0,0,0);
+    border-color: white;
+    background: white;
+}
+
+.btn-outline-dark2:hover {
+    color: white;
+    background: rgb(0,0,0);
+    border-color: rgb(0,0,0);
+}
+
+.btn-outline-dark2:focus,
+.btn-outline-dark2:active {
+    color: white;
+    background: rgb(0,0,0);
+    border-color: rgb(0,0,0);
+    box-shadow: 0 0 0 .25rem rgba(0,0,0,.25);
+}
+
+/* toastr customization */
+#toast-container > .toast {
+    opacity: 1 !important;
+    font-size: 16px;
+}
+
+#toast-container > .toast-success {
+    background-color: rgb(14, 88, 197) !important;
+    color: white !important;
+}

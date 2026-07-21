@@ -27,7 +27,7 @@ def create_pdf_report(df):
     df["Predicted Price (€)"] = df["Predicted Price (€)"].map(lambda x: f"{x:.2f}")
     df["TOPSIS Score"] = df["TOPSIS Score"].map(lambda x: f"{x:.2f}")
 
-    lang = request.cookies.get("language", "bg")
+    lang = request.cookies.get("language", "en")
     font_name = "DejaVu"
     title_font = "DejaVu-Bold"
     if lang == "zh":

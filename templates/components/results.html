@@ -1,4 +1,4 @@
-    <div class="mt-5 p-2 w-100">
+    <div class="mt-5 p-o p-xxl-2 w-100">
 
         {% if result and result|length > 0 %}
             {% include 'components/winner.html' %}
@@ -6,7 +6,7 @@
 
         <div class="d-flex justify-content-end">
              <div class="dropdown ">
-                <button class="btn btn-light dropdown-toggle my-3 mx-1 shadow-sm "
+                <button class="btn btn-md btn-outline-blue2 dropdown-toggle my-3 mx-1 shadow-sm "
                         type="button"
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
@@ -96,7 +96,7 @@
 
                 <tbody>
                     {% for cpu in result %}
-                    <tr class="{% if loop.index == 1 %}table-success{% elif loop.index == 2 %}table-warning{% endif %}">
+                    <tr class="{% if loop.index == 1 %}table-primary{% elif loop.index == 2 %}table-warning{% endif %}">
                         <td class="text-center">{{ loop.index }}</td>
                         <td>{{ cpu.cpuName }}</td>
                         <td class="text-end text-nowrap">{{ cpu.price }} &#8364;</td>

@@ -43,7 +43,7 @@
 
             <tbody>
                 {% for cpu in top_cpus %}
-                <tr class="{% if loop.index == 1 %}table-success{% elif loop.index == 2 %}table-warning{% endif %}">
+                <tr class="{% if loop.index == 1 %}table-primary{% elif loop.index == 2 %}table-warning{% endif %}">
                     <td class="text-center">{{ loop.index }}</td>
                     <td>{{ cpu.cpuName }}</td>
                     <td class="text-end text-nowrap">{{ cpu.price }} &#8364;</td>

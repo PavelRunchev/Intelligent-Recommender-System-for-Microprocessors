@@ -1,4 +1,6 @@
 from data.data_access import load_data
+from utils.session_manager import get_session_id
+from data.temporary_context import get_context
 
 def extract_brand(cpu_name):
     if not isinstance(cpu_name, str) or cpu_name.strip() == '':
@@ -36,7 +38,13 @@ def clean_data():
 
 
 def get_top_cpus():
-    df = clean_data()
+    context = get_context(get_session_id())
+
+    if context:
+        df = context["dataset"].copy()
+    else:
+        df = clean_data()
+
     return df.sort_values(by='cpuMark', ascending=False).head(100)
 
 
