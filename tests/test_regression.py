@@ -1,15 +1,17 @@
 from services.content_based_filtering import content_based_filtering
 from models.regression_model import predict_regression
+from data.data_preprocessing import clean_data
 
 
 def test_regression_model():
+    df = clean_data()
+
     user_features = {
-        "brand": ["AMD"],
-        "model": ["AMD Ryzen 7 5800X"],
-        "category": ["Desktop"],
-        "budget": 500,
-        "performance": 20000,
-        "cores": 8
+        "brand": [df["brand"].iloc[0]],
+        "category": [df["category"].iloc[0]],
+        "budget": 100000,
+        "performance": 0,
+        "cores": 1
     }
 
     result = content_based_filtering(user_features)

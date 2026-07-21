@@ -1,17 +1,12 @@
 from data.data_preprocessing import clean_data
-from utils.session_manager import get_session_id
-from data.temporary_context import get_context
+from data.temporary_context import get_active_context
+
 
 def extract_cpu_series(cpu_name):
     return cpu_name.split()[1]
 
 def content_based_filtering(user_features):
-    context = get_context(get_session_id())
-
-    if context:
-        df = context["dataset"].copy()
-    else:
-        df = clean_data()
+    df = get_dataset()
 
     results = df.copy()
     if user_features.get("brand"):
@@ -36,6 +31,17 @@ def content_based_filtering(user_features):
         results = results[results["cores"] >= user_features["cores"]]
 
     return results
+
+
+def get_dataset():
+    try:
+        context = get_active_context()
+        if context:
+            return context["dataset"].copy()
+    except RuntimeError:
+        pass
+
+    return clean_data()
 
 
 

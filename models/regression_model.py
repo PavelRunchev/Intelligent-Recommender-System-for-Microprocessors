@@ -1,7 +1,6 @@
 from sklearn.linear_model import Ridge
 import joblib
-from data.temporary_context import get_context
-from utils.session_manager import get_session_id
+from data.temporary_context import get_active_context
 
 features = ["cpuMark", "cores"]
 def train_regression_model(df):
@@ -24,10 +23,10 @@ def train_regression_model_temp(df):
     return model
 
 def predict_regression(df):
-    if df.empty:
-        return df
-
-    context = get_context(get_session_id())
+    try:
+        context = get_active_context()
+    except RuntimeError:
+        context = None
 
     if context and context["regression_model"] is not None:
         model = context["regression_model"]

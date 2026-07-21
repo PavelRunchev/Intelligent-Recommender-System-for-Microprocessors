@@ -55,6 +55,8 @@ function changeLanguage(lang) {
         const original = cell.dataset.original;
         cell.textContent = dynamicTranslations[lang][original] || original;
     });
+
+    document.documentElement.style.visibility = "visible";
 }
 
 function t(key) {

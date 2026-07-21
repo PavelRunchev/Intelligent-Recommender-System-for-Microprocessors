@@ -98,7 +98,10 @@ const translations = {
 
         preparing: "Подготовка...",
         done: "Готово",
-        restoreOriginalDataset: "Възстанови оригиналния набор от данни"
+        restoreOriginalDataset: "Възстанови оригиналния набор от данни",
+
+        datasetImported: "Наборът от данни е зареден успешно.",
+        defaultDatasetRestored: "Оригиналният набор от данни е възстановен.",
     },
 
     en: {
@@ -204,6 +207,7 @@ const translations = {
         preparing: "Preparing...",
         done: "Done",
         restoreOriginalDataset: "Restore Original Dataset",
+
         datasetImported: "Dataset imported successfully.",
         defaultDatasetRestored: "Default dataset restored.",
     },
@@ -310,7 +314,10 @@ const translations = {
 
         preparing: "Vorbereitung...",
         done: "Fertig",
-        restoreOriginalDataset: "Originaldatensatz wiederherstellen"
+        restoreOriginalDataset: "Originaldatensatz wiederherstellen",
+
+        datasetImported: "Datensatz erfolgreich importiert.",
+        defaultDatasetRestored: "Originaldatensatz wurde wiederhergestellt.",
     },
 
     es: {
@@ -415,7 +422,10 @@ const translations = {
 
         preparing: "Preparando...",
         done: "Listo",
-        restoreOriginalDataset: "Restaurar el conjunto de datos original"
+        restoreOriginalDataset: "Restaurar el conjunto de datos original",
+
+        datasetImported: "El conjunto de datos se ha importado correctamente.",
+        defaultDatasetRestored: "Se ha restaurado el conjunto de datos original.",
     },
 
     fr: {
@@ -524,7 +534,10 @@ const translations = {
 
         preparing: "Préparation...",
         done: "Terminé",
-        restoreOriginalDataset: "Restaurer le jeu de données d'origine"
+        restoreOriginalDataset: "Restaurer le jeu de données d'origine",
+
+        datasetImported: "Le jeu de données a été importé avec succès.",
+        defaultDatasetRestored: "Le jeu de données d'origine a été restauré.",
     },
 
         it: {
@@ -633,7 +646,10 @@ const translations = {
 
         preparing: "Preparazione...",
         done: "Fatto",
-        restoreOriginalDataset: "Ripristina il dataset originale"
+        restoreOriginalDataset: "Ripristina il dataset originale",
+
+        datasetImported: "Il dataset è stato importato correttamente.",
+        defaultDatasetRestored: "Il dataset originale è stato ripristinato.",
     },
 
     ru: {
@@ -742,7 +758,10 @@ const translations = {
 
         preparing: "Подготовка...",
         done: "Готово",
-        restoreOriginalDataset: "Восстановить исходный набор данных"
+        restoreOriginalDataset: "Восстановить исходный набор данных",
+
+        datasetImported: "Набор данных успешно импортирован.",
+        defaultDatasetRestored: "Исходный набор данных восстановлен.",
     },
 
     pt: {
@@ -851,7 +870,10 @@ const translations = {
 
         preparing: "A preparar...",
         done: "Concluído",
-        restoreOriginalDataset: "Restaurar conjunto de dados original"
+        restoreOriginalDataset: "Restaurar conjunto de dados original",
+
+        datasetImported: "O conjunto de dados foi importado com sucesso.",
+        defaultDatasetRestored: "O conjunto de dados original foi restaurado.",
     },
 
     zh: {
@@ -960,7 +982,10 @@ const translations = {
 
         preparing: "准备中...",
         done: "完成",
-        restoreOriginalDataset: "恢复原始数据集"
+        restoreOriginalDataset: "恢复原始数据集",
+
+        datasetImported: "数据集已成功导入。",
+        defaultDatasetRestored: "原始数据集已恢复。",
     },
 
     ja: {
@@ -1069,7 +1094,10 @@ const translations = {
 
         preparing: "準備中...",
         done: "完了",
-        restoreOriginalDataset: "元のデータセットを復元"
+        restoreOriginalDataset: "元のデータセットを復元",
+
+        datasetImported: "データセットが正常にインポートされました。",
+        defaultDatasetRestored: "元のデータセットが復元されました。"
     },
 
     el: {
@@ -1178,7 +1206,10 @@ const translations = {
 
         preparing: "Προετοιμασία...",
         done: "Ολοκληρώθηκε",
-        restoreOriginalDataset: "Επαναφορά αρχικού συνόλου δεδομένων"
+        restoreOriginalDataset: "Επαναφορά αρχικού συνόλου δεδομένων",
+
+        datasetImported: "Το σύνολο δεδομένων εισήχθη με επιτυχία.",
+        defaultDatasetRestored: "Το αρχικό σύνολο δεδομένων αποκαταστάθηκε.",
     },
 };
 

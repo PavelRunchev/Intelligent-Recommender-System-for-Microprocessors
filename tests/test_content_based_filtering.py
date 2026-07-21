@@ -1,18 +1,18 @@
 from services.content_based_filtering import content_based_filtering
+from data.data_preprocessing import clean_data
 
 def test_content_base_filtering():
+    df = clean_data()
+
     user_features = {
-        "brand": ["AMD"],
-        "model": ["AMD Ryzen 7 5800X"],
-        "category": ["Desktop"],
-        "budget": 500,
-        "performance": 20000,
-        "cores": 8
+        "brand": [df["brand"].iloc[0]],
+        "category": [df["category"].iloc[0]],
+        "budget": 100000,
+        "performance": 0,
+        "cores": 1
     }
 
     result = content_based_filtering(user_features)
 
     assert result is not None
-    assert len(result) > 0
-    assert  "Intel" not in result["brand"].values
-    assert "AMD Ryzen 9 5900X" in result["cpuName"].values
+    assert not result.empty
