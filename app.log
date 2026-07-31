@@ -10646,3 +10646,599 @@
 2026-07-21 23:07:02,947 - INFO - 127.0.0.1 - - [21/Jul/2026 23:07:02] "[36mGET /static/images/spain.png HTTP/1.1[0m" 304 -
 2026-07-21 23:07:02,949 - INFO - 127.0.0.1 - - [21/Jul/2026 23:07:02] "[36mGET /static/images/china.png HTTP/1.1[0m" 304 -
 2026-07-21 23:07:02,951 - INFO - 127.0.0.1 - - [21/Jul/2026 23:07:02] "[36mGET /static/images/japan.png HTTP/1.1[0m" 304 -
+2026-07-30 22:23:36,653 - INFO - Application started
+2026-07-30 22:23:38,467 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-07-30 22:23:38,468 - INFO - [33mPress CTRL+C to quit[0m
+2026-07-30 22:23:48,337 - INFO - 127.0.0.1 - - [30/Jul/2026 22:23:48] "GET / HTTP/1.1" 200 -
+2026-07-30 22:23:48,421 - INFO - 127.0.0.1 - - [30/Jul/2026 22:23:48] "GET /static/style.css HTTP/1.1" 200 -
+2026-07-30 22:23:48,989 - INFO - 127.0.0.1 - - [30/Jul/2026 22:23:48] "GET /static/images/united-kingdom.png HTTP/1.1" 200 -
+2026-07-30 22:23:49,245 - INFO - 127.0.0.1 - - [30/Jul/2026 22:23:49] "GET /static/images/germany.png HTTP/1.1" 200 -
+2026-07-30 22:23:49,247 - INFO - 127.0.0.1 - - [30/Jul/2026 22:23:49] "GET /static/images/CPU.png HTTP/1.1" 200 -
+2026-07-30 22:23:49,250 - INFO - 127.0.0.1 - - [30/Jul/2026 22:23:49] "GET /static/images/bulgaria.png HTTP/1.1" 200 -
+2026-07-30 22:23:49,251 - INFO - 127.0.0.1 - - [30/Jul/2026 22:23:49] "GET /static/images/french.png HTTP/1.1" 200 -
+2026-07-30 22:23:49,323 - INFO - 127.0.0.1 - - [30/Jul/2026 22:23:49] "GET /static/js/data-language.js HTTP/1.1" 200 -
+2026-07-30 22:23:49,670 - INFO - 127.0.0.1 - - [30/Jul/2026 22:23:49] "GET /static/js/import-dataset.js HTTP/1.1" 200 -
+2026-07-30 22:23:49,670 - INFO - 127.0.0.1 - - [30/Jul/2026 22:23:49] "GET /static/js/script.js HTTP/1.1" 200 -
+2026-07-30 22:23:49,672 - INFO - 127.0.0.1 - - [30/Jul/2026 22:23:49] "GET /static/images/portugal.png HTTP/1.1" 200 -
+2026-07-30 22:23:49,674 - INFO - 127.0.0.1 - - [30/Jul/2026 22:23:49] "GET /static/images/greece.png HTTP/1.1" 200 -
+2026-07-30 22:23:49,683 - INFO - 127.0.0.1 - - [30/Jul/2026 22:23:49] "GET /static/images/italy.png HTTP/1.1" 200 -
+2026-07-30 22:23:49,701 - INFO - 127.0.0.1 - - [30/Jul/2026 22:23:49] "GET /static/js/language.js HTTP/1.1" 200 -
+2026-07-30 22:23:49,995 - INFO - 127.0.0.1 - - [30/Jul/2026 22:23:49] "GET /static/images/russia.png HTTP/1.1" 200 -
+2026-07-30 22:23:50,005 - INFO - 127.0.0.1 - - [30/Jul/2026 22:23:50] "GET /static/images/spain.png HTTP/1.1" 200 -
+2026-07-30 22:23:50,006 - INFO - 127.0.0.1 - - [30/Jul/2026 22:23:50] "GET /static/images/japan.png HTTP/1.1" 200 -
+2026-07-30 22:23:50,016 - INFO - 127.0.0.1 - - [30/Jul/2026 22:23:50] "GET /static/images/china.png HTTP/1.1" 200 -
+2026-07-30 22:23:50,334 - INFO - 127.0.0.1 - - [30/Jul/2026 22:23:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-07-30 22:24:09,841 - INFO - Recommendation process started
+2026-07-30 22:24:10,927 - INFO - Regression prediction completed
+2026-07-30 22:24:11,018 - INFO - Classification completed
+2026-07-30 22:24:11,033 - INFO - TOPSIS ranking completed
+2026-07-30 22:24:11,166 - INFO - 127.0.0.1 - - [30/Jul/2026 22:24:11] "POST / HTTP/1.1" 200 -
+2026-07-30 22:24:11,520 - INFO - 127.0.0.1 - - [30/Jul/2026 22:24:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-07-30 22:24:11,521 - INFO - 127.0.0.1 - - [30/Jul/2026 22:24:11] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-07-30 22:24:11,523 - INFO - 127.0.0.1 - - [30/Jul/2026 22:24:11] "[36mGET /static/images/germany.png HTTP/1.1[0m" 304 -
+2026-07-30 22:24:11,525 - INFO - 127.0.0.1 - - [30/Jul/2026 22:24:11] "[36mGET /static/images/united-kingdom.png HTTP/1.1[0m" 304 -
+2026-07-30 22:24:11,529 - INFO - 127.0.0.1 - - [30/Jul/2026 22:24:11] "[36mGET /static/images/french.png HTTP/1.1[0m" 304 -
+2026-07-30 22:24:11,530 - INFO - 127.0.0.1 - - [30/Jul/2026 22:24:11] "[36mGET /static/images/bulgaria.png HTTP/1.1[0m" 304 -
+2026-07-30 22:24:11,833 - INFO - 127.0.0.1 - - [30/Jul/2026 22:24:11] "[36mGET /static/js/data-language.js HTTP/1.1[0m" 304 -
+2026-07-30 22:24:11,833 - INFO - 127.0.0.1 - - [30/Jul/2026 22:24:11] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-07-30 22:24:11,838 - INFO - 127.0.0.1 - - [30/Jul/2026 22:24:11] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-07-30 22:24:11,840 - INFO - 127.0.0.1 - - [30/Jul/2026 22:24:11] "[36mGET /static/js/import-dataset.js HTTP/1.1[0m" 304 -
+2026-07-30 22:24:11,848 - INFO - 127.0.0.1 - - [30/Jul/2026 22:24:11] "[36mGET /static/images/italy.png HTTP/1.1[0m" 304 -
+2026-07-30 22:24:11,854 - INFO - 127.0.0.1 - - [30/Jul/2026 22:24:11] "[36mGET /static/images/greece.png HTTP/1.1[0m" 304 -
+2026-07-30 22:24:12,149 - INFO - 127.0.0.1 - - [30/Jul/2026 22:24:12] "[36mGET /static/images/portugal.png HTTP/1.1[0m" 304 -
+2026-07-30 22:24:12,152 - INFO - 127.0.0.1 - - [30/Jul/2026 22:24:12] "[36mGET /static/images/russia.png HTTP/1.1[0m" 304 -
+2026-07-30 22:24:12,153 - INFO - 127.0.0.1 - - [30/Jul/2026 22:24:12] "[36mGET /static/images/spain.png HTTP/1.1[0m" 304 -
+2026-07-30 22:24:12,155 - INFO - 127.0.0.1 - - [30/Jul/2026 22:24:12] "[36mGET /static/images/china.png HTTP/1.1[0m" 304 -
+2026-07-30 22:24:12,157 - INFO - 127.0.0.1 - - [30/Jul/2026 22:24:12] "[36mGET /static/images/japan.png HTTP/1.1[0m" 304 -
+2026-07-30 22:24:19,714 - INFO - 127.0.0.1 - - [30/Jul/2026 22:24:19] "[31m[1mGET /export_pdf HTTP/1.1[0m" 400 -
+2026-07-30 22:27:13,068 - INFO - Application started
+2026-07-30 22:27:14,427 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-07-30 22:27:14,428 - INFO - [33mPress CTRL+C to quit[0m
+2026-07-30 22:27:28,834 - INFO - 127.0.0.1 - - [30/Jul/2026 22:27:28] "GET / HTTP/1.1" 200 -
+2026-07-30 22:27:28,925 - INFO - 127.0.0.1 - - [30/Jul/2026 22:27:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-07-30 22:27:29,234 - INFO - 127.0.0.1 - - [30/Jul/2026 22:27:29] "[36mGET /static/images/french.png HTTP/1.1[0m" 304 -
+2026-07-30 22:27:29,235 - INFO - 127.0.0.1 - - [30/Jul/2026 22:27:29] "[36mGET /static/images/germany.png HTTP/1.1[0m" 304 -
+2026-07-30 22:27:29,236 - INFO - 127.0.0.1 - - [30/Jul/2026 22:27:29] "[36mGET /static/images/united-kingdom.png HTTP/1.1[0m" 304 -
+2026-07-30 22:27:29,237 - INFO - 127.0.0.1 - - [30/Jul/2026 22:27:29] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-07-30 22:27:29,244 - INFO - 127.0.0.1 - - [30/Jul/2026 22:27:29] "[36mGET /static/js/data-language.js HTTP/1.1[0m" 304 -
+2026-07-30 22:27:29,316 - INFO - 127.0.0.1 - - [30/Jul/2026 22:27:29] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-07-30 22:27:29,563 - INFO - 127.0.0.1 - - [30/Jul/2026 22:27:29] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-07-30 22:27:29,577 - INFO - 127.0.0.1 - - [30/Jul/2026 22:27:29] "[36mGET /static/images/bulgaria.png HTTP/1.1[0m" 304 -
+2026-07-30 22:27:29,583 - INFO - 127.0.0.1 - - [30/Jul/2026 22:27:29] "[36mGET /static/js/import-dataset.js HTTP/1.1[0m" 304 -
+2026-07-30 22:27:29,591 - INFO - 127.0.0.1 - - [30/Jul/2026 22:27:29] "[36mGET /static/images/italy.png HTTP/1.1[0m" 304 -
+2026-07-30 22:27:29,592 - INFO - 127.0.0.1 - - [30/Jul/2026 22:27:29] "[36mGET /static/images/greece.png HTTP/1.1[0m" 304 -
+2026-07-30 22:27:29,636 - INFO - 127.0.0.1 - - [30/Jul/2026 22:27:29] "[36mGET /static/images/portugal.png HTTP/1.1[0m" 304 -
+2026-07-30 22:27:29,888 - INFO - 127.0.0.1 - - [30/Jul/2026 22:27:29] "[36mGET /static/images/russia.png HTTP/1.1[0m" 304 -
+2026-07-30 22:27:29,900 - INFO - 127.0.0.1 - - [30/Jul/2026 22:27:29] "[36mGET /static/images/spain.png HTTP/1.1[0m" 304 -
+2026-07-30 22:27:29,902 - INFO - 127.0.0.1 - - [30/Jul/2026 22:27:29] "[36mGET /static/images/china.png HTTP/1.1[0m" 304 -
+2026-07-30 22:27:29,913 - INFO - 127.0.0.1 - - [30/Jul/2026 22:27:29] "[36mGET /static/images/japan.png HTTP/1.1[0m" 304 -
+2026-07-30 22:27:43,945 - INFO - Recommendation process started
+2026-07-30 22:27:45,184 - INFO - Regression prediction completed
+2026-07-30 22:27:45,241 - INFO - Classification completed
+2026-07-30 22:27:45,246 - INFO - TOPSIS ranking completed
+2026-07-30 22:27:45,353 - INFO - 127.0.0.1 - - [30/Jul/2026 22:27:45] "POST / HTTP/1.1" 200 -
+2026-07-30 22:27:45,390 - INFO - 127.0.0.1 - - [30/Jul/2026 22:27:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-07-30 22:27:45,696 - INFO - 127.0.0.1 - - [30/Jul/2026 22:27:45] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-07-30 22:27:45,697 - INFO - 127.0.0.1 - - [30/Jul/2026 22:27:45] "[36mGET /static/images/united-kingdom.png HTTP/1.1[0m" 304 -
+2026-07-30 22:27:45,701 - INFO - 127.0.0.1 - - [30/Jul/2026 22:27:45] "[36mGET /static/images/germany.png HTTP/1.1[0m" 304 -
+2026-07-30 22:27:45,703 - INFO - 127.0.0.1 - - [30/Jul/2026 22:27:45] "[36mGET /static/images/french.png HTTP/1.1[0m" 304 -
+2026-07-30 22:27:45,705 - INFO - 127.0.0.1 - - [30/Jul/2026 22:27:45] "[36mGET /static/js/data-language.js HTTP/1.1[0m" 304 -
+2026-07-30 22:27:45,707 - INFO - 127.0.0.1 - - [30/Jul/2026 22:27:45] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-07-30 22:27:46,013 - INFO - 127.0.0.1 - - [30/Jul/2026 22:27:46] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-07-30 22:27:46,014 - INFO - 127.0.0.1 - - [30/Jul/2026 22:27:46] "[36mGET /static/js/import-dataset.js HTTP/1.1[0m" 304 -
+2026-07-30 22:27:46,016 - INFO - 127.0.0.1 - - [30/Jul/2026 22:27:46] "[36mGET /static/images/bulgaria.png HTTP/1.1[0m" 304 -
+2026-07-30 22:27:46,018 - INFO - 127.0.0.1 - - [30/Jul/2026 22:27:46] "[36mGET /static/images/greece.png HTTP/1.1[0m" 304 -
+2026-07-30 22:27:46,021 - INFO - 127.0.0.1 - - [30/Jul/2026 22:27:46] "[36mGET /static/images/italy.png HTTP/1.1[0m" 304 -
+2026-07-30 22:27:46,022 - INFO - 127.0.0.1 - - [30/Jul/2026 22:27:46] "[36mGET /static/images/portugal.png HTTP/1.1[0m" 304 -
+2026-07-30 22:27:46,330 - INFO - 127.0.0.1 - - [30/Jul/2026 22:27:46] "[36mGET /static/images/spain.png HTTP/1.1[0m" 304 -
+2026-07-30 22:27:46,331 - INFO - 127.0.0.1 - - [30/Jul/2026 22:27:46] "[36mGET /static/images/russia.png HTTP/1.1[0m" 304 -
+2026-07-30 22:27:46,332 - INFO - 127.0.0.1 - - [30/Jul/2026 22:27:46] "[36mGET /static/images/china.png HTTP/1.1[0m" 304 -
+2026-07-30 22:27:46,334 - INFO - 127.0.0.1 - - [30/Jul/2026 22:27:46] "[36mGET /static/images/japan.png HTTP/1.1[0m" 304 -
+2026-07-30 22:27:49,893 - INFO - 127.0.0.1 - - [30/Jul/2026 22:27:49] "[31m[1mGET /export_pdf HTTP/1.1[0m" 400 -
+2026-07-30 22:28:25,123 - INFO - 127.0.0.1 - - [30/Jul/2026 22:28:25] "GET / HTTP/1.1" 200 -
+2026-07-30 22:28:25,472 - INFO - 127.0.0.1 - - [30/Jul/2026 22:28:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-07-30 22:28:25,473 - INFO - 127.0.0.1 - - [30/Jul/2026 22:28:25] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-07-30 22:28:25,478 - INFO - 127.0.0.1 - - [30/Jul/2026 22:28:25] "[36mGET /static/images/united-kingdom.png HTTP/1.1[0m" 304 -
+2026-07-30 22:28:25,482 - INFO - 127.0.0.1 - - [30/Jul/2026 22:28:25] "[36mGET /static/images/germany.png HTTP/1.1[0m" 304 -
+2026-07-30 22:28:25,484 - INFO - 127.0.0.1 - - [30/Jul/2026 22:28:25] "[36mGET /static/images/french.png HTTP/1.1[0m" 304 -
+2026-07-30 22:28:25,485 - INFO - 127.0.0.1 - - [30/Jul/2026 22:28:25] "[36mGET /static/images/bulgaria.png HTTP/1.1[0m" 304 -
+2026-07-30 22:28:25,782 - INFO - 127.0.0.1 - - [30/Jul/2026 22:28:25] "[36mGET /static/js/data-language.js HTTP/1.1[0m" 304 -
+2026-07-30 22:28:25,786 - INFO - 127.0.0.1 - - [30/Jul/2026 22:28:25] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-07-30 22:28:25,789 - INFO - 127.0.0.1 - - [30/Jul/2026 22:28:25] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-07-30 22:28:25,791 - INFO - 127.0.0.1 - - [30/Jul/2026 22:28:25] "[36mGET /static/js/import-dataset.js HTTP/1.1[0m" 304 -
+2026-07-30 22:28:25,796 - INFO - 127.0.0.1 - - [30/Jul/2026 22:28:25] "[36mGET /static/images/greece.png HTTP/1.1[0m" 304 -
+2026-07-30 22:28:25,799 - INFO - 127.0.0.1 - - [30/Jul/2026 22:28:25] "[36mGET /static/images/italy.png HTTP/1.1[0m" 304 -
+2026-07-30 22:28:26,096 - INFO - 127.0.0.1 - - [30/Jul/2026 22:28:26] "[36mGET /static/images/portugal.png HTTP/1.1[0m" 304 -
+2026-07-30 22:28:26,098 - INFO - 127.0.0.1 - - [30/Jul/2026 22:28:26] "[36mGET /static/images/russia.png HTTP/1.1[0m" 304 -
+2026-07-30 22:28:26,101 - INFO - 127.0.0.1 - - [30/Jul/2026 22:28:26] "[36mGET /static/images/spain.png HTTP/1.1[0m" 304 -
+2026-07-30 22:28:26,102 - INFO - 127.0.0.1 - - [30/Jul/2026 22:28:26] "[36mGET /static/images/china.png HTTP/1.1[0m" 304 -
+2026-07-30 22:28:26,105 - INFO - 127.0.0.1 - - [30/Jul/2026 22:28:26] "[36mGET /static/images/japan.png HTTP/1.1[0m" 304 -
+2026-07-30 22:28:37,694 - INFO - Recommendation process started
+2026-07-30 22:28:38,742 - INFO - Regression prediction completed
+2026-07-30 22:28:38,788 - INFO - Classification completed
+2026-07-30 22:28:38,792 - INFO - TOPSIS ranking completed
+2026-07-30 22:28:38,863 - INFO - 127.0.0.1 - - [30/Jul/2026 22:28:38] "POST / HTTP/1.1" 200 -
+2026-07-30 22:28:38,901 - INFO - 127.0.0.1 - - [30/Jul/2026 22:28:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-07-30 22:28:39,219 - INFO - 127.0.0.1 - - [30/Jul/2026 22:28:39] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-07-30 22:28:39,220 - INFO - 127.0.0.1 - - [30/Jul/2026 22:28:39] "[36mGET /static/images/united-kingdom.png HTTP/1.1[0m" 304 -
+2026-07-30 22:28:39,220 - INFO - 127.0.0.1 - - [30/Jul/2026 22:28:39] "[36mGET /static/images/germany.png HTTP/1.1[0m" 304 -
+2026-07-30 22:28:39,223 - INFO - 127.0.0.1 - - [30/Jul/2026 22:28:39] "[36mGET /static/images/french.png HTTP/1.1[0m" 304 -
+2026-07-30 22:28:39,226 - INFO - 127.0.0.1 - - [30/Jul/2026 22:28:39] "[36mGET /static/js/data-language.js HTTP/1.1[0m" 304 -
+2026-07-30 22:28:39,227 - INFO - 127.0.0.1 - - [30/Jul/2026 22:28:39] "[36mGET /static/images/bulgaria.png HTTP/1.1[0m" 304 -
+2026-07-30 22:28:39,534 - INFO - 127.0.0.1 - - [30/Jul/2026 22:28:39] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-07-30 22:28:39,534 - INFO - 127.0.0.1 - - [30/Jul/2026 22:28:39] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-07-30 22:28:39,539 - INFO - 127.0.0.1 - - [30/Jul/2026 22:28:39] "[36mGET /static/js/import-dataset.js HTTP/1.1[0m" 304 -
+2026-07-30 22:28:39,542 - INFO - 127.0.0.1 - - [30/Jul/2026 22:28:39] "[36mGET /static/images/greece.png HTTP/1.1[0m" 304 -
+2026-07-30 22:28:39,545 - INFO - 127.0.0.1 - - [30/Jul/2026 22:28:39] "[36mGET /static/images/italy.png HTTP/1.1[0m" 304 -
+2026-07-30 22:28:39,546 - INFO - 127.0.0.1 - - [30/Jul/2026 22:28:39] "[36mGET /static/images/portugal.png HTTP/1.1[0m" 304 -
+2026-07-30 22:28:39,852 - INFO - 127.0.0.1 - - [30/Jul/2026 22:28:39] "[36mGET /static/images/russia.png HTTP/1.1[0m" 304 -
+2026-07-30 22:28:39,853 - INFO - 127.0.0.1 - - [30/Jul/2026 22:28:39] "[36mGET /static/images/china.png HTTP/1.1[0m" 304 -
+2026-07-30 22:28:39,853 - INFO - 127.0.0.1 - - [30/Jul/2026 22:28:39] "[36mGET /static/images/spain.png HTTP/1.1[0m" 304 -
+2026-07-30 22:28:39,856 - INFO - 127.0.0.1 - - [30/Jul/2026 22:28:39] "[36mGET /static/images/japan.png HTTP/1.1[0m" 304 -
+2026-07-30 22:28:42,744 - INFO - 127.0.0.1 - - [30/Jul/2026 22:28:42] "[31m[1mGET /export_pdf HTTP/1.1[0m" 400 -
+2026-07-30 22:28:58,076 - INFO - Application started
+2026-07-30 22:28:59,207 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-07-30 22:28:59,207 - INFO - [33mPress CTRL+C to quit[0m
+2026-07-30 22:29:15,584 - INFO - 127.0.0.1 - - [30/Jul/2026 22:29:15] "GET / HTTP/1.1" 200 -
+2026-07-30 22:29:15,630 - INFO - 127.0.0.1 - - [30/Jul/2026 22:29:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-07-30 22:29:15,944 - INFO - 127.0.0.1 - - [30/Jul/2026 22:29:15] "[36mGET /static/images/united-kingdom.png HTTP/1.1[0m" 304 -
+2026-07-30 22:29:15,947 - INFO - 127.0.0.1 - - [30/Jul/2026 22:29:15] "[36mGET /static/images/germany.png HTTP/1.1[0m" 304 -
+2026-07-30 22:29:15,947 - INFO - 127.0.0.1 - - [30/Jul/2026 22:29:15] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-07-30 22:29:15,951 - INFO - 127.0.0.1 - - [30/Jul/2026 22:29:15] "[36mGET /static/images/french.png HTTP/1.1[0m" 304 -
+2026-07-30 22:29:15,953 - INFO - 127.0.0.1 - - [30/Jul/2026 22:29:15] "[36mGET /static/js/data-language.js HTTP/1.1[0m" 304 -
+2026-07-30 22:29:15,954 - INFO - 127.0.0.1 - - [30/Jul/2026 22:29:15] "[36mGET /static/images/bulgaria.png HTTP/1.1[0m" 304 -
+2026-07-30 22:29:16,265 - INFO - 127.0.0.1 - - [30/Jul/2026 22:29:16] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-07-30 22:29:16,266 - INFO - 127.0.0.1 - - [30/Jul/2026 22:29:16] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-07-30 22:29:16,270 - INFO - 127.0.0.1 - - [30/Jul/2026 22:29:16] "[36mGET /static/js/import-dataset.js HTTP/1.1[0m" 304 -
+2026-07-30 22:29:16,272 - INFO - 127.0.0.1 - - [30/Jul/2026 22:29:16] "[36mGET /static/images/greece.png HTTP/1.1[0m" 304 -
+2026-07-30 22:29:16,275 - INFO - 127.0.0.1 - - [30/Jul/2026 22:29:16] "[36mGET /static/images/italy.png HTTP/1.1[0m" 304 -
+2026-07-30 22:29:16,277 - INFO - 127.0.0.1 - - [30/Jul/2026 22:29:16] "[36mGET /static/images/portugal.png HTTP/1.1[0m" 304 -
+2026-07-30 22:29:16,841 - INFO - 127.0.0.1 - - [30/Jul/2026 22:29:16] "[36mGET /static/images/russia.png HTTP/1.1[0m" 304 -
+2026-07-30 22:29:16,844 - INFO - 127.0.0.1 - - [30/Jul/2026 22:29:16] "[36mGET /static/images/spain.png HTTP/1.1[0m" 304 -
+2026-07-30 22:29:16,846 - INFO - 127.0.0.1 - - [30/Jul/2026 22:29:16] "[36mGET /static/images/china.png HTTP/1.1[0m" 304 -
+2026-07-30 22:29:16,847 - INFO - 127.0.0.1 - - [30/Jul/2026 22:29:16] "[36mGET /static/images/japan.png HTTP/1.1[0m" 304 -
+2026-07-30 22:29:30,560 - INFO - Recommendation process started
+2026-07-30 22:29:31,576 - INFO - Regression prediction completed
+2026-07-30 22:29:31,622 - INFO - Classification completed
+2026-07-30 22:29:31,627 - INFO - TOPSIS ranking completed
+2026-07-30 22:29:31,707 - INFO - 127.0.0.1 - - [30/Jul/2026 22:29:31] "POST / HTTP/1.1" 200 -
+2026-07-30 22:29:31,754 - INFO - 127.0.0.1 - - [30/Jul/2026 22:29:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-07-30 22:29:32,073 - INFO - 127.0.0.1 - - [30/Jul/2026 22:29:32] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-07-30 22:29:32,074 - INFO - 127.0.0.1 - - [30/Jul/2026 22:29:32] "[36mGET /static/images/united-kingdom.png HTTP/1.1[0m" 304 -
+2026-07-30 22:29:32,075 - INFO - 127.0.0.1 - - [30/Jul/2026 22:29:32] "[36mGET /static/images/germany.png HTTP/1.1[0m" 304 -
+2026-07-30 22:29:32,077 - INFO - 127.0.0.1 - - [30/Jul/2026 22:29:32] "[36mGET /static/images/french.png HTTP/1.1[0m" 304 -
+2026-07-30 22:29:32,078 - INFO - 127.0.0.1 - - [30/Jul/2026 22:29:32] "[36mGET /static/js/data-language.js HTTP/1.1[0m" 304 -
+2026-07-30 22:29:32,080 - INFO - 127.0.0.1 - - [30/Jul/2026 22:29:32] "[36mGET /static/images/bulgaria.png HTTP/1.1[0m" 304 -
+2026-07-30 22:29:32,389 - INFO - 127.0.0.1 - - [30/Jul/2026 22:29:32] "[36mGET /static/js/import-dataset.js HTTP/1.1[0m" 304 -
+2026-07-30 22:29:32,390 - INFO - 127.0.0.1 - - [30/Jul/2026 22:29:32] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-07-30 22:29:32,391 - INFO - 127.0.0.1 - - [30/Jul/2026 22:29:32] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-07-30 22:29:32,396 - INFO - 127.0.0.1 - - [30/Jul/2026 22:29:32] "[36mGET /static/images/greece.png HTTP/1.1[0m" 304 -
+2026-07-30 22:29:32,399 - INFO - 127.0.0.1 - - [30/Jul/2026 22:29:32] "[36mGET /static/images/italy.png HTTP/1.1[0m" 304 -
+2026-07-30 22:29:32,400 - INFO - 127.0.0.1 - - [30/Jul/2026 22:29:32] "[36mGET /static/images/portugal.png HTTP/1.1[0m" 304 -
+2026-07-30 22:29:32,699 - INFO - 127.0.0.1 - - [30/Jul/2026 22:29:32] "[36mGET /static/images/russia.png HTTP/1.1[0m" 304 -
+2026-07-30 22:29:32,702 - INFO - 127.0.0.1 - - [30/Jul/2026 22:29:32] "[36mGET /static/images/spain.png HTTP/1.1[0m" 304 -
+2026-07-30 22:29:32,705 - INFO - 127.0.0.1 - - [30/Jul/2026 22:29:32] "[36mGET /static/images/china.png HTTP/1.1[0m" 304 -
+2026-07-30 22:29:32,706 - INFO - 127.0.0.1 - - [30/Jul/2026 22:29:32] "[36mGET /static/images/japan.png HTTP/1.1[0m" 304 -
+2026-07-30 22:29:35,385 - INFO - 127.0.0.1 - - [30/Jul/2026 22:29:35] "[31m[1mGET /export_pdf HTTP/1.1[0m" 400 -
+2026-07-30 22:47:15,117 - INFO - Application started
+2026-07-30 22:47:16,402 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-07-30 22:47:16,402 - INFO - [33mPress CTRL+C to quit[0m
+2026-07-30 22:47:31,305 - INFO - 127.0.0.1 - - [30/Jul/2026 22:47:31] "GET / HTTP/1.1" 200 -
+2026-07-30 22:47:31,395 - INFO - 127.0.0.1 - - [30/Jul/2026 22:47:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-07-30 22:47:31,704 - INFO - 127.0.0.1 - - [30/Jul/2026 22:47:31] "[36mGET /static/images/germany.png HTTP/1.1[0m" 304 -
+2026-07-30 22:47:31,704 - INFO - 127.0.0.1 - - [30/Jul/2026 22:47:31] "[36mGET /static/images/french.png HTTP/1.1[0m" 304 -
+2026-07-30 22:47:31,714 - INFO - 127.0.0.1 - - [30/Jul/2026 22:47:31] "[36mGET /static/images/united-kingdom.png HTTP/1.1[0m" 304 -
+2026-07-30 22:47:31,714 - INFO - 127.0.0.1 - - [30/Jul/2026 22:47:31] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-07-30 22:47:31,726 - INFO - 127.0.0.1 - - [30/Jul/2026 22:47:31] "[36mGET /static/js/data-language.js HTTP/1.1[0m" 304 -
+2026-07-30 22:47:31,741 - INFO - 127.0.0.1 - - [30/Jul/2026 22:47:31] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-07-30 22:47:32,011 - INFO - 127.0.0.1 - - [30/Jul/2026 22:47:32] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-07-30 22:47:32,016 - INFO - 127.0.0.1 - - [30/Jul/2026 22:47:32] "[36mGET /static/js/import-dataset.js HTTP/1.1[0m" 304 -
+2026-07-30 22:47:32,022 - INFO - 127.0.0.1 - - [30/Jul/2026 22:47:32] "[36mGET /static/images/bulgaria.png HTTP/1.1[0m" 304 -
+2026-07-30 22:47:32,027 - INFO - 127.0.0.1 - - [30/Jul/2026 22:47:32] "[36mGET /static/images/greece.png HTTP/1.1[0m" 304 -
+2026-07-30 22:47:32,049 - INFO - 127.0.0.1 - - [30/Jul/2026 22:47:32] "[36mGET /static/images/italy.png HTTP/1.1[0m" 304 -
+2026-07-30 22:47:32,058 - INFO - 127.0.0.1 - - [30/Jul/2026 22:47:32] "[36mGET /static/images/portugal.png HTTP/1.1[0m" 304 -
+2026-07-30 22:47:32,326 - INFO - 127.0.0.1 - - [30/Jul/2026 22:47:32] "[36mGET /static/images/russia.png HTTP/1.1[0m" 304 -
+2026-07-30 22:47:32,331 - INFO - 127.0.0.1 - - [30/Jul/2026 22:47:32] "[36mGET /static/images/china.png HTTP/1.1[0m" 304 -
+2026-07-30 22:47:32,335 - INFO - 127.0.0.1 - - [30/Jul/2026 22:47:32] "[36mGET /static/images/spain.png HTTP/1.1[0m" 304 -
+2026-07-30 22:47:32,336 - INFO - 127.0.0.1 - - [30/Jul/2026 22:47:32] "[36mGET /static/images/japan.png HTTP/1.1[0m" 304 -
+2026-07-30 22:47:43,803 - INFO - Recommendation process started
+2026-07-30 22:47:45,016 - INFO - Regression prediction completed
+2026-07-30 22:47:45,073 - INFO - Classification completed
+2026-07-30 22:47:45,078 - INFO - TOPSIS ranking completed
+2026-07-30 22:47:45,193 - INFO - 127.0.0.1 - - [30/Jul/2026 22:47:45] "POST / HTTP/1.1" 200 -
+2026-07-30 22:47:45,236 - INFO - 127.0.0.1 - - [30/Jul/2026 22:47:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-07-30 22:47:45,546 - INFO - 127.0.0.1 - - [30/Jul/2026 22:47:45] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-07-30 22:47:45,547 - INFO - 127.0.0.1 - - [30/Jul/2026 22:47:45] "[36mGET /static/images/united-kingdom.png HTTP/1.1[0m" 304 -
+2026-07-30 22:47:45,548 - INFO - 127.0.0.1 - - [30/Jul/2026 22:47:45] "[36mGET /static/images/germany.png HTTP/1.1[0m" 304 -
+2026-07-30 22:47:45,552 - INFO - 127.0.0.1 - - [30/Jul/2026 22:47:45] "[36mGET /static/images/french.png HTTP/1.1[0m" 304 -
+2026-07-30 22:47:45,555 - INFO - 127.0.0.1 - - [30/Jul/2026 22:47:45] "[36mGET /static/js/data-language.js HTTP/1.1[0m" 304 -
+2026-07-30 22:47:45,556 - INFO - 127.0.0.1 - - [30/Jul/2026 22:47:45] "[36mGET /static/images/bulgaria.png HTTP/1.1[0m" 304 -
+2026-07-30 22:47:45,860 - INFO - 127.0.0.1 - - [30/Jul/2026 22:47:45] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-07-30 22:47:45,861 - INFO - 127.0.0.1 - - [30/Jul/2026 22:47:45] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-07-30 22:47:45,864 - INFO - 127.0.0.1 - - [30/Jul/2026 22:47:45] "[36mGET /static/js/import-dataset.js HTTP/1.1[0m" 304 -
+2026-07-30 22:47:45,867 - INFO - 127.0.0.1 - - [30/Jul/2026 22:47:45] "[36mGET /static/images/greece.png HTTP/1.1[0m" 304 -
+2026-07-30 22:47:45,869 - INFO - 127.0.0.1 - - [30/Jul/2026 22:47:45] "[36mGET /static/images/italy.png HTTP/1.1[0m" 304 -
+2026-07-30 22:47:45,873 - INFO - 127.0.0.1 - - [30/Jul/2026 22:47:45] "[36mGET /static/images/portugal.png HTTP/1.1[0m" 304 -
+2026-07-30 22:47:46,180 - INFO - 127.0.0.1 - - [30/Jul/2026 22:47:46] "[36mGET /static/images/spain.png HTTP/1.1[0m" 304 -
+2026-07-30 22:47:46,181 - INFO - 127.0.0.1 - - [30/Jul/2026 22:47:46] "[36mGET /static/images/russia.png HTTP/1.1[0m" 304 -
+2026-07-30 22:47:46,183 - INFO - 127.0.0.1 - - [30/Jul/2026 22:47:46] "[36mGET /static/images/china.png HTTP/1.1[0m" 304 -
+2026-07-30 22:47:46,185 - INFO - 127.0.0.1 - - [30/Jul/2026 22:47:46] "[36mGET /static/images/japan.png HTTP/1.1[0m" 304 -
+2026-07-30 22:48:04,363 - INFO - 127.0.0.1 - - [30/Jul/2026 22:48:04] "[31m[1mGET /export_pdf HTTP/1.1[0m" 400 -
+2026-07-30 22:57:07,216 - INFO - 127.0.0.1 - - [30/Jul/2026 22:57:07] "GET / HTTP/1.1" 200 -
+2026-07-30 22:57:07,269 - INFO - 127.0.0.1 - - [30/Jul/2026 22:57:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-07-30 22:57:07,574 - INFO - 127.0.0.1 - - [30/Jul/2026 22:57:07] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-07-30 22:57:07,575 - INFO - 127.0.0.1 - - [30/Jul/2026 22:57:07] "[36mGET /static/images/united-kingdom.png HTTP/1.1[0m" 304 -
+2026-07-30 22:57:07,641 - INFO - 127.0.0.1 - - [30/Jul/2026 22:57:07] "[36mGET /static/images/french.png HTTP/1.1[0m" 304 -
+2026-07-30 22:57:07,642 - INFO - 127.0.0.1 - - [30/Jul/2026 22:57:07] "[36mGET /static/images/germany.png HTTP/1.1[0m" 304 -
+2026-07-30 22:57:07,646 - INFO - 127.0.0.1 - - [30/Jul/2026 22:57:07] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-07-30 22:57:07,647 - INFO - 127.0.0.1 - - [30/Jul/2026 22:57:07] "[36mGET /static/js/data-language.js HTTP/1.1[0m" 304 -
+2026-07-30 22:57:07,885 - INFO - 127.0.0.1 - - [30/Jul/2026 22:57:07] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-07-30 22:57:07,887 - INFO - 127.0.0.1 - - [30/Jul/2026 22:57:07] "[36mGET /static/js/import-dataset.js HTTP/1.1[0m" 304 -
+2026-07-30 22:57:07,952 - INFO - 127.0.0.1 - - [30/Jul/2026 22:57:07] "[36mGET /static/images/bulgaria.png HTTP/1.1[0m" 304 -
+2026-07-30 22:57:07,954 - INFO - 127.0.0.1 - - [30/Jul/2026 22:57:07] "[36mGET /static/images/greece.png HTTP/1.1[0m" 304 -
+2026-07-30 22:57:07,957 - INFO - 127.0.0.1 - - [30/Jul/2026 22:57:07] "[36mGET /static/images/italy.png HTTP/1.1[0m" 304 -
+2026-07-30 22:57:07,959 - INFO - 127.0.0.1 - - [30/Jul/2026 22:57:07] "[36mGET /static/images/portugal.png HTTP/1.1[0m" 304 -
+2026-07-30 22:57:08,206 - INFO - 127.0.0.1 - - [30/Jul/2026 22:57:08] "[36mGET /static/images/russia.png HTTP/1.1[0m" 304 -
+2026-07-30 22:57:08,206 - INFO - 127.0.0.1 - - [30/Jul/2026 22:57:08] "[36mGET /static/images/spain.png HTTP/1.1[0m" 304 -
+2026-07-30 22:57:08,267 - INFO - 127.0.0.1 - - [30/Jul/2026 22:57:08] "[36mGET /static/images/china.png HTTP/1.1[0m" 304 -
+2026-07-30 22:57:08,268 - INFO - 127.0.0.1 - - [30/Jul/2026 22:57:08] "[36mGET /static/images/japan.png HTTP/1.1[0m" 304 -
+2026-07-30 22:57:40,574 - INFO - Recommendation process started
+2026-07-30 22:57:41,627 - INFO - Regression prediction completed
+2026-07-30 22:57:41,673 - INFO - Classification completed
+2026-07-30 22:57:41,677 - INFO - TOPSIS ranking completed
+2026-07-30 22:57:41,748 - INFO - 127.0.0.1 - - [30/Jul/2026 22:57:41] "POST / HTTP/1.1" 200 -
+2026-07-30 22:57:41,797 - INFO - 127.0.0.1 - - [30/Jul/2026 22:57:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-07-30 22:57:42,111 - INFO - 127.0.0.1 - - [30/Jul/2026 22:57:42] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-07-30 22:57:42,111 - INFO - 127.0.0.1 - - [30/Jul/2026 22:57:42] "[36mGET /static/images/united-kingdom.png HTTP/1.1[0m" 304 -
+2026-07-30 22:57:42,169 - INFO - 127.0.0.1 - - [30/Jul/2026 22:57:42] "[36mGET /static/images/germany.png HTTP/1.1[0m" 304 -
+2026-07-30 22:57:42,171 - INFO - 127.0.0.1 - - [30/Jul/2026 22:57:42] "[36mGET /static/images/french.png HTTP/1.1[0m" 304 -
+2026-07-30 22:57:42,174 - INFO - 127.0.0.1 - - [30/Jul/2026 22:57:42] "[36mGET /static/js/data-language.js HTTP/1.1[0m" 304 -
+2026-07-30 22:57:42,174 - INFO - 127.0.0.1 - - [30/Jul/2026 22:57:42] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-07-30 22:57:42,424 - INFO - 127.0.0.1 - - [30/Jul/2026 22:57:42] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-07-30 22:57:42,425 - INFO - 127.0.0.1 - - [30/Jul/2026 22:57:42] "[36mGET /static/js/import-dataset.js HTTP/1.1[0m" 304 -
+2026-07-30 22:57:42,488 - INFO - 127.0.0.1 - - [30/Jul/2026 22:57:42] "[36mGET /static/images/greece.png HTTP/1.1[0m" 304 -
+2026-07-30 22:57:42,489 - INFO - 127.0.0.1 - - [30/Jul/2026 22:57:42] "[36mGET /static/images/italy.png HTTP/1.1[0m" 304 -
+2026-07-30 22:57:42,490 - INFO - 127.0.0.1 - - [30/Jul/2026 22:57:42] "[36mGET /static/images/bulgaria.png HTTP/1.1[0m" 304 -
+2026-07-30 22:57:42,492 - INFO - 127.0.0.1 - - [30/Jul/2026 22:57:42] "[36mGET /static/images/portugal.png HTTP/1.1[0m" 304 -
+2026-07-30 22:57:42,733 - INFO - 127.0.0.1 - - [30/Jul/2026 22:57:42] "[36mGET /static/images/russia.png HTTP/1.1[0m" 304 -
+2026-07-30 22:57:42,734 - INFO - 127.0.0.1 - - [30/Jul/2026 22:57:42] "[36mGET /static/images/spain.png HTTP/1.1[0m" 304 -
+2026-07-30 22:57:42,801 - INFO - 127.0.0.1 - - [30/Jul/2026 22:57:42] "[36mGET /static/images/china.png HTTP/1.1[0m" 304 -
+2026-07-30 22:57:42,803 - INFO - 127.0.0.1 - - [30/Jul/2026 22:57:42] "[36mGET /static/images/japan.png HTTP/1.1[0m" 304 -
+2026-07-30 22:57:54,613 - INFO - Recommendation process started
+2026-07-30 22:57:55,683 - INFO - Regression prediction completed
+2026-07-30 22:57:55,733 - INFO - Classification completed
+2026-07-30 22:57:55,738 - INFO - TOPSIS ranking completed
+2026-07-30 22:57:55,776 - INFO - 127.0.0.1 - - [30/Jul/2026 22:57:55] "GET /export_pdf HTTP/1.1" 200 -
+2026-07-30 23:08:35,783 - INFO - Application started
+2026-07-30 23:08:37,007 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-07-30 23:08:37,007 - INFO - [33mPress CTRL+C to quit[0m
+2026-07-30 23:08:43,668 - INFO - 127.0.0.1 - - [30/Jul/2026 23:08:43] "GET / HTTP/1.1" 200 -
+2026-07-30 23:08:43,723 - INFO - 127.0.0.1 - - [30/Jul/2026 23:08:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-07-30 23:08:44,037 - INFO - 127.0.0.1 - - [30/Jul/2026 23:08:44] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-07-30 23:08:44,038 - INFO - 127.0.0.1 - - [30/Jul/2026 23:08:44] "[36mGET /static/images/united-kingdom.png HTTP/1.1[0m" 304 -
+2026-07-30 23:08:44,096 - INFO - 127.0.0.1 - - [30/Jul/2026 23:08:44] "[36mGET /static/images/germany.png HTTP/1.1[0m" 304 -
+2026-07-30 23:08:44,097 - INFO - 127.0.0.1 - - [30/Jul/2026 23:08:44] "[36mGET /static/images/french.png HTTP/1.1[0m" 304 -
+2026-07-30 23:08:44,102 - INFO - 127.0.0.1 - - [30/Jul/2026 23:08:44] "[36mGET /static/js/data-language.js HTTP/1.1[0m" 304 -
+2026-07-30 23:08:44,103 - INFO - 127.0.0.1 - - [30/Jul/2026 23:08:44] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-07-30 23:08:44,352 - INFO - 127.0.0.1 - - [30/Jul/2026 23:08:44] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-07-30 23:08:44,353 - INFO - 127.0.0.1 - - [30/Jul/2026 23:08:44] "[36mGET /static/js/import-dataset.js HTTP/1.1[0m" 304 -
+2026-07-30 23:08:44,418 - INFO - 127.0.0.1 - - [30/Jul/2026 23:08:44] "[36mGET /static/images/bulgaria.png HTTP/1.1[0m" 304 -
+2026-07-30 23:08:44,425 - INFO - 127.0.0.1 - - [30/Jul/2026 23:08:44] "[36mGET /static/images/greece.png HTTP/1.1[0m" 304 -
+2026-07-30 23:08:44,427 - INFO - 127.0.0.1 - - [30/Jul/2026 23:08:44] "[36mGET /static/images/portugal.png HTTP/1.1[0m" 304 -
+2026-07-30 23:08:44,427 - INFO - 127.0.0.1 - - [30/Jul/2026 23:08:44] "[36mGET /static/images/italy.png HTTP/1.1[0m" 304 -
+2026-07-30 23:08:44,859 - INFO - 127.0.0.1 - - [30/Jul/2026 23:08:44] "[36mGET /static/images/china.png HTTP/1.1[0m" 304 -
+2026-07-30 23:08:44,866 - INFO - 127.0.0.1 - - [30/Jul/2026 23:08:44] "[36mGET /static/images/spain.png HTTP/1.1[0m" 304 -
+2026-07-30 23:08:44,867 - INFO - 127.0.0.1 - - [30/Jul/2026 23:08:44] "[36mGET /static/images/russia.png HTTP/1.1[0m" 304 -
+2026-07-30 23:08:44,871 - INFO - 127.0.0.1 - - [30/Jul/2026 23:08:44] "[36mGET /static/images/japan.png HTTP/1.1[0m" 304 -
+2026-07-30 23:09:01,546 - INFO - Recommendation process started
+2026-07-30 23:09:02,588 - INFO - Regression prediction completed
+2026-07-30 23:09:02,635 - INFO - Classification completed
+2026-07-30 23:09:02,639 - INFO - TOPSIS ranking completed
+2026-07-30 23:09:02,719 - INFO - 127.0.0.1 - - [30/Jul/2026 23:09:02] "POST / HTTP/1.1" 200 -
+2026-07-30 23:09:02,760 - INFO - 127.0.0.1 - - [30/Jul/2026 23:09:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-07-30 23:09:03,066 - INFO - 127.0.0.1 - - [30/Jul/2026 23:09:03] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-07-30 23:09:03,068 - INFO - 127.0.0.1 - - [30/Jul/2026 23:09:03] "[36mGET /static/images/united-kingdom.png HTTP/1.1[0m" 304 -
+2026-07-30 23:09:03,101 - INFO - 127.0.0.1 - - [30/Jul/2026 23:09:03] "[36mGET /static/images/germany.png HTTP/1.1[0m" 304 -
+2026-07-30 23:09:03,105 - INFO - 127.0.0.1 - - [30/Jul/2026 23:09:03] "[36mGET /static/images/french.png HTTP/1.1[0m" 304 -
+2026-07-30 23:09:03,105 - INFO - 127.0.0.1 - - [30/Jul/2026 23:09:03] "[36mGET /static/js/data-language.js HTTP/1.1[0m" 304 -
+2026-07-30 23:09:03,108 - INFO - 127.0.0.1 - - [30/Jul/2026 23:09:03] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-07-30 23:09:03,375 - INFO - 127.0.0.1 - - [30/Jul/2026 23:09:03] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-07-30 23:09:03,376 - INFO - 127.0.0.1 - - [30/Jul/2026 23:09:03] "[36mGET /static/js/import-dataset.js HTTP/1.1[0m" 304 -
+2026-07-30 23:09:03,411 - INFO - 127.0.0.1 - - [30/Jul/2026 23:09:03] "[36mGET /static/images/bulgaria.png HTTP/1.1[0m" 304 -
+2026-07-30 23:09:03,414 - INFO - 127.0.0.1 - - [30/Jul/2026 23:09:03] "[36mGET /static/images/greece.png HTTP/1.1[0m" 304 -
+2026-07-30 23:09:03,420 - INFO - 127.0.0.1 - - [30/Jul/2026 23:09:03] "[36mGET /static/images/italy.png HTTP/1.1[0m" 304 -
+2026-07-30 23:09:03,422 - INFO - 127.0.0.1 - - [30/Jul/2026 23:09:03] "[36mGET /static/images/portugal.png HTTP/1.1[0m" 304 -
+2026-07-30 23:09:03,686 - INFO - 127.0.0.1 - - [30/Jul/2026 23:09:03] "[36mGET /static/images/russia.png HTTP/1.1[0m" 304 -
+2026-07-30 23:09:03,688 - INFO - 127.0.0.1 - - [30/Jul/2026 23:09:03] "[36mGET /static/images/spain.png HTTP/1.1[0m" 304 -
+2026-07-30 23:09:03,733 - INFO - 127.0.0.1 - - [30/Jul/2026 23:09:03] "[36mGET /static/images/china.png HTTP/1.1[0m" 304 -
+2026-07-30 23:09:03,735 - INFO - 127.0.0.1 - - [30/Jul/2026 23:09:03] "[36mGET /static/images/japan.png HTTP/1.1[0m" 304 -
+2026-07-30 23:09:10,166 - INFO - Recommendation process started
+2026-07-30 23:09:11,193 - INFO - Regression prediction completed
+2026-07-30 23:09:11,238 - INFO - Classification completed
+2026-07-30 23:09:11,243 - INFO - TOPSIS ranking completed
+2026-07-30 23:09:11,283 - INFO - 127.0.0.1 - - [30/Jul/2026 23:09:11] "GET /export_pdf HTTP/1.1" 200 -
+2026-07-30 23:10:00,515 - INFO - Recommendation process started
+2026-07-30 23:10:01,555 - INFO - Regression prediction completed
+2026-07-30 23:10:01,602 - INFO - Classification completed
+2026-07-30 23:10:01,607 - INFO - TOPSIS ranking completed
+2026-07-30 23:10:01,695 - INFO - 127.0.0.1 - - [30/Jul/2026 23:10:01] "POST / HTTP/1.1" 200 -
+2026-07-30 23:10:02,040 - INFO - 127.0.0.1 - - [30/Jul/2026 23:10:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-07-30 23:10:02,044 - INFO - 127.0.0.1 - - [30/Jul/2026 23:10:02] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-07-30 23:10:02,046 - INFO - 127.0.0.1 - - [30/Jul/2026 23:10:02] "[36mGET /static/images/united-kingdom.png HTTP/1.1[0m" 304 -
+2026-07-30 23:10:02,049 - INFO - 127.0.0.1 - - [30/Jul/2026 23:10:02] "[36mGET /static/images/germany.png HTTP/1.1[0m" 304 -
+2026-07-30 23:10:02,051 - INFO - 127.0.0.1 - - [30/Jul/2026 23:10:02] "[36mGET /static/images/french.png HTTP/1.1[0m" 304 -
+2026-07-30 23:10:02,053 - INFO - 127.0.0.1 - - [30/Jul/2026 23:10:02] "[36mGET /static/js/data-language.js HTTP/1.1[0m" 304 -
+2026-07-30 23:10:02,354 - INFO - 127.0.0.1 - - [30/Jul/2026 23:10:02] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-07-30 23:10:02,357 - INFO - 127.0.0.1 - - [30/Jul/2026 23:10:02] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-07-30 23:10:02,357 - INFO - 127.0.0.1 - - [30/Jul/2026 23:10:02] "[36mGET /static/js/import-dataset.js HTTP/1.1[0m" 304 -
+2026-07-30 23:10:02,360 - INFO - 127.0.0.1 - - [30/Jul/2026 23:10:02] "[36mGET /static/images/bulgaria.png HTTP/1.1[0m" 304 -
+2026-07-30 23:10:02,365 - INFO - 127.0.0.1 - - [30/Jul/2026 23:10:02] "[36mGET /static/images/greece.png HTTP/1.1[0m" 304 -
+2026-07-30 23:10:02,368 - INFO - 127.0.0.1 - - [30/Jul/2026 23:10:02] "[36mGET /static/images/italy.png HTTP/1.1[0m" 304 -
+2026-07-30 23:10:02,665 - INFO - 127.0.0.1 - - [30/Jul/2026 23:10:02] "[36mGET /static/images/portugal.png HTTP/1.1[0m" 304 -
+2026-07-30 23:10:02,668 - INFO - 127.0.0.1 - - [30/Jul/2026 23:10:02] "[36mGET /static/images/russia.png HTTP/1.1[0m" 304 -
+2026-07-30 23:10:02,671 - INFO - 127.0.0.1 - - [30/Jul/2026 23:10:02] "[36mGET /static/images/spain.png HTTP/1.1[0m" 304 -
+2026-07-30 23:10:02,676 - INFO - 127.0.0.1 - - [30/Jul/2026 23:10:02] "[36mGET /static/images/china.png HTTP/1.1[0m" 304 -
+2026-07-30 23:10:02,677 - INFO - 127.0.0.1 - - [30/Jul/2026 23:10:02] "[36mGET /static/images/japan.png HTTP/1.1[0m" 304 -
+2026-07-30 23:10:09,655 - INFO - Recommendation process started
+2026-07-30 23:10:10,664 - INFO - Regression prediction completed
+2026-07-30 23:10:10,712 - INFO - Classification completed
+2026-07-30 23:10:10,717 - INFO - TOPSIS ranking completed
+2026-07-30 23:10:10,935 - INFO - 127.0.0.1 - - [30/Jul/2026 23:10:10] "GET /export_pdf HTTP/1.1" 200 -
+2026-07-30 23:10:51,055 - INFO - 127.0.0.1 - - [30/Jul/2026 23:10:51] "POST /import_dataset HTTP/1.1" 200 -
+2026-07-30 23:10:54,679 - INFO - 127.0.0.1 - - [30/Jul/2026 23:10:54] "GET / HTTP/1.1" 200 -
+2026-07-30 23:10:55,020 - INFO - 127.0.0.1 - - [30/Jul/2026 23:10:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-07-30 23:10:55,024 - INFO - 127.0.0.1 - - [30/Jul/2026 23:10:55] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-07-30 23:10:55,025 - INFO - 127.0.0.1 - - [30/Jul/2026 23:10:55] "[36mGET /static/images/united-kingdom.png HTTP/1.1[0m" 304 -
+2026-07-30 23:10:55,033 - INFO - 127.0.0.1 - - [30/Jul/2026 23:10:55] "[36mGET /static/images/germany.png HTTP/1.1[0m" 304 -
+2026-07-30 23:10:55,033 - INFO - 127.0.0.1 - - [30/Jul/2026 23:10:55] "[36mGET /static/images/french.png HTTP/1.1[0m" 304 -
+2026-07-30 23:10:55,034 - INFO - 127.0.0.1 - - [30/Jul/2026 23:10:55] "[36mGET /static/js/data-language.js HTTP/1.1[0m" 304 -
+2026-07-30 23:10:55,342 - INFO - 127.0.0.1 - - [30/Jul/2026 23:10:55] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-07-30 23:10:55,344 - INFO - 127.0.0.1 - - [30/Jul/2026 23:10:55] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-07-30 23:10:55,348 - INFO - 127.0.0.1 - - [30/Jul/2026 23:10:55] "[36mGET /static/js/import-dataset.js HTTP/1.1[0m" 304 -
+2026-07-30 23:10:55,350 - INFO - 127.0.0.1 - - [30/Jul/2026 23:10:55] "[36mGET /static/images/bulgaria.png HTTP/1.1[0m" 304 -
+2026-07-30 23:10:55,354 - INFO - 127.0.0.1 - - [30/Jul/2026 23:10:55] "[36mGET /static/images/greece.png HTTP/1.1[0m" 304 -
+2026-07-30 23:10:55,356 - INFO - 127.0.0.1 - - [30/Jul/2026 23:10:55] "[36mGET /static/images/italy.png HTTP/1.1[0m" 304 -
+2026-07-30 23:10:55,660 - INFO - 127.0.0.1 - - [30/Jul/2026 23:10:55] "[36mGET /static/images/portugal.png HTTP/1.1[0m" 304 -
+2026-07-30 23:10:55,661 - INFO - 127.0.0.1 - - [30/Jul/2026 23:10:55] "[36mGET /static/images/russia.png HTTP/1.1[0m" 304 -
+2026-07-30 23:10:55,664 - INFO - 127.0.0.1 - - [30/Jul/2026 23:10:55] "[36mGET /static/images/spain.png HTTP/1.1[0m" 304 -
+2026-07-30 23:10:55,666 - INFO - 127.0.0.1 - - [30/Jul/2026 23:10:55] "[36mGET /static/images/china.png HTTP/1.1[0m" 304 -
+2026-07-30 23:10:55,667 - INFO - 127.0.0.1 - - [30/Jul/2026 23:10:55] "[36mGET /static/images/japan.png HTTP/1.1[0m" 304 -
+2026-07-30 23:11:37,193 - INFO - Recommendation process started
+2026-07-30 23:11:37,200 - INFO - Regression prediction completed
+2026-07-30 23:11:37,213 - INFO - Classification completed
+2026-07-30 23:11:37,217 - INFO - TOPSIS ranking completed
+2026-07-30 23:11:37,286 - INFO - 127.0.0.1 - - [30/Jul/2026 23:11:37] "POST / HTTP/1.1" 200 -
+2026-07-30 23:11:37,444 - INFO - 127.0.0.1 - - [30/Jul/2026 23:11:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-07-30 23:11:37,645 - INFO - 127.0.0.1 - - [30/Jul/2026 23:11:37] "[36mGET /static/images/united-kingdom.png HTTP/1.1[0m" 304 -
+2026-07-30 23:11:37,645 - INFO - 127.0.0.1 - - [30/Jul/2026 23:11:37] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-07-30 23:11:37,649 - INFO - 127.0.0.1 - - [30/Jul/2026 23:11:37] "[36mGET /static/images/germany.png HTTP/1.1[0m" 304 -
+2026-07-30 23:11:37,650 - INFO - 127.0.0.1 - - [30/Jul/2026 23:11:37] "[36mGET /static/images/french.png HTTP/1.1[0m" 304 -
+2026-07-30 23:11:37,653 - INFO - 127.0.0.1 - - [30/Jul/2026 23:11:37] "[36mGET /static/js/data-language.js HTTP/1.1[0m" 304 -
+2026-07-30 23:11:37,759 - INFO - 127.0.0.1 - - [30/Jul/2026 23:11:37] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-07-30 23:11:37,962 - INFO - 127.0.0.1 - - [30/Jul/2026 23:11:37] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-07-30 23:11:37,963 - INFO - 127.0.0.1 - - [30/Jul/2026 23:11:37] "[36mGET /static/js/import-dataset.js HTTP/1.1[0m" 304 -
+2026-07-30 23:11:37,965 - INFO - 127.0.0.1 - - [30/Jul/2026 23:11:37] "[36mGET /static/images/bulgaria.png HTTP/1.1[0m" 304 -
+2026-07-30 23:11:37,970 - INFO - 127.0.0.1 - - [30/Jul/2026 23:11:37] "[36mGET /static/images/greece.png HTTP/1.1[0m" 304 -
+2026-07-30 23:11:37,973 - INFO - 127.0.0.1 - - [30/Jul/2026 23:11:37] "[36mGET /static/images/italy.png HTTP/1.1[0m" 304 -
+2026-07-30 23:11:38,070 - INFO - 127.0.0.1 - - [30/Jul/2026 23:11:38] "[36mGET /static/images/portugal.png HTTP/1.1[0m" 304 -
+2026-07-30 23:11:38,275 - INFO - 127.0.0.1 - - [30/Jul/2026 23:11:38] "[36mGET /static/images/russia.png HTTP/1.1[0m" 304 -
+2026-07-30 23:11:38,276 - INFO - 127.0.0.1 - - [30/Jul/2026 23:11:38] "[36mGET /static/images/spain.png HTTP/1.1[0m" 304 -
+2026-07-30 23:11:38,280 - INFO - 127.0.0.1 - - [30/Jul/2026 23:11:38] "[36mGET /static/images/china.png HTTP/1.1[0m" 304 -
+2026-07-30 23:11:38,281 - INFO - 127.0.0.1 - - [30/Jul/2026 23:11:38] "[36mGET /static/images/japan.png HTTP/1.1[0m" 304 -
+2026-07-30 23:12:05,265 - INFO - Recommendation process started
+2026-07-30 23:12:05,272 - INFO - Regression prediction completed
+2026-07-30 23:12:05,285 - INFO - Classification completed
+2026-07-30 23:12:05,290 - INFO - TOPSIS ranking completed
+2026-07-30 23:12:05,361 - INFO - 127.0.0.1 - - [30/Jul/2026 23:12:05] "POST / HTTP/1.1" 200 -
+2026-07-30 23:12:05,510 - INFO - 127.0.0.1 - - [30/Jul/2026 23:12:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-07-30 23:12:05,711 - INFO - 127.0.0.1 - - [30/Jul/2026 23:12:05] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-07-30 23:12:05,713 - INFO - 127.0.0.1 - - [30/Jul/2026 23:12:05] "[36mGET /static/images/united-kingdom.png HTTP/1.1[0m" 304 -
+2026-07-30 23:12:05,716 - INFO - 127.0.0.1 - - [30/Jul/2026 23:12:05] "[36mGET /static/images/germany.png HTTP/1.1[0m" 304 -
+2026-07-30 23:12:05,718 - INFO - 127.0.0.1 - - [30/Jul/2026 23:12:05] "[36mGET /static/images/french.png HTTP/1.1[0m" 304 -
+2026-07-30 23:12:05,720 - INFO - 127.0.0.1 - - [30/Jul/2026 23:12:05] "[36mGET /static/js/data-language.js HTTP/1.1[0m" 304 -
+2026-07-30 23:12:05,826 - INFO - 127.0.0.1 - - [30/Jul/2026 23:12:05] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-07-30 23:12:06,023 - INFO - 127.0.0.1 - - [30/Jul/2026 23:12:06] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-07-30 23:12:06,025 - INFO - 127.0.0.1 - - [30/Jul/2026 23:12:06] "[36mGET /static/js/import-dataset.js HTTP/1.1[0m" 304 -
+2026-07-30 23:12:06,028 - INFO - 127.0.0.1 - - [30/Jul/2026 23:12:06] "[36mGET /static/images/bulgaria.png HTTP/1.1[0m" 304 -
+2026-07-30 23:12:06,031 - INFO - 127.0.0.1 - - [30/Jul/2026 23:12:06] "[36mGET /static/images/greece.png HTTP/1.1[0m" 304 -
+2026-07-30 23:12:06,033 - INFO - 127.0.0.1 - - [30/Jul/2026 23:12:06] "[36mGET /static/images/italy.png HTTP/1.1[0m" 304 -
+2026-07-30 23:12:06,133 - INFO - 127.0.0.1 - - [30/Jul/2026 23:12:06] "[36mGET /static/images/portugal.png HTTP/1.1[0m" 304 -
+2026-07-30 23:12:06,328 - INFO - 127.0.0.1 - - [30/Jul/2026 23:12:06] "[36mGET /static/images/russia.png HTTP/1.1[0m" 304 -
+2026-07-30 23:12:06,331 - INFO - 127.0.0.1 - - [30/Jul/2026 23:12:06] "[36mGET /static/images/spain.png HTTP/1.1[0m" 304 -
+2026-07-30 23:12:06,334 - INFO - 127.0.0.1 - - [30/Jul/2026 23:12:06] "[36mGET /static/images/china.png HTTP/1.1[0m" 304 -
+2026-07-30 23:12:06,343 - INFO - 127.0.0.1 - - [30/Jul/2026 23:12:06] "[36mGET /static/images/japan.png HTTP/1.1[0m" 304 -
+2026-07-30 23:12:21,543 - INFO - Recommendation process started
+2026-07-30 23:12:21,546 - INFO - No matching processors found
+2026-07-30 23:12:21,579 - INFO - 127.0.0.1 - - [30/Jul/2026 23:12:21] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2026-07-30 23:12:21,860 - INFO - 127.0.0.1 - - [30/Jul/2026 23:12:21] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2026-07-30 23:12:21,972 - INFO - 127.0.0.1 - - [30/Jul/2026 23:12:21] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2026-07-30 23:12:21,994 - INFO - 127.0.0.1 - - [30/Jul/2026 23:12:21] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=XvwQ7GHpA31NE1VjiBkR HTTP/1.1" 200 -
+2026-07-30 23:12:22,360 - INFO - 127.0.0.1 - - [30/Jul/2026 23:12:22] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2026-07-31 08:46:20,939 - INFO - Application started
+2026-07-31 08:46:22,829 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-07-31 08:46:22,829 - INFO - [33mPress CTRL+C to quit[0m
+2026-07-31 08:46:51,775 - INFO - 127.0.0.1 - - [31/Jul/2026 08:46:51] "GET / HTTP/1.1" 200 -
+2026-07-31 08:46:51,845 - INFO - 127.0.0.1 - - [31/Jul/2026 08:46:51] "GET /static/style.css HTTP/1.1" 200 -
+2026-07-31 08:46:52,260 - INFO - 127.0.0.1 - - [31/Jul/2026 08:46:52] "GET /static/images/united-kingdom.png HTTP/1.1" 200 -
+2026-07-31 08:46:52,260 - INFO - 127.0.0.1 - - [31/Jul/2026 08:46:52] "GET /static/images/CPU.png HTTP/1.1" 200 -
+2026-07-31 08:46:52,378 - INFO - 127.0.0.1 - - [31/Jul/2026 08:46:52] "GET /static/images/germany.png HTTP/1.1" 200 -
+2026-07-31 08:46:52,551 - INFO - 127.0.0.1 - - [31/Jul/2026 08:46:52] "GET /static/images/french.png HTTP/1.1" 200 -
+2026-07-31 08:46:52,591 - INFO - 127.0.0.1 - - [31/Jul/2026 08:46:52] "GET /static/js/data-language.js HTTP/1.1" 200 -
+2026-07-31 08:46:52,622 - INFO - 127.0.0.1 - - [31/Jul/2026 08:46:52] "GET /static/js/script.js HTTP/1.1" 200 -
+2026-07-31 08:46:52,851 - INFO - 127.0.0.1 - - [31/Jul/2026 08:46:52] "GET /static/js/language.js HTTP/1.1" 200 -
+2026-07-31 08:46:52,882 - INFO - 127.0.0.1 - - [31/Jul/2026 08:46:52] "GET /static/js/import-dataset.js HTTP/1.1" 200 -
+2026-07-31 08:46:52,924 - INFO - 127.0.0.1 - - [31/Jul/2026 08:46:52] "GET /static/images/bulgaria.png HTTP/1.1" 200 -
+2026-07-31 08:46:52,945 - INFO - 127.0.0.1 - - [31/Jul/2026 08:46:52] "GET /static/images/greece.png HTTP/1.1" 200 -
+2026-07-31 08:46:53,181 - INFO - 127.0.0.1 - - [31/Jul/2026 08:46:53] "GET /static/images/italy.png HTTP/1.1" 200 -
+2026-07-31 08:46:53,211 - INFO - 127.0.0.1 - - [31/Jul/2026 08:46:53] "GET /static/images/portugal.png HTTP/1.1" 200 -
+2026-07-31 08:46:53,354 - INFO - 127.0.0.1 - - [31/Jul/2026 08:46:53] "GET /static/images/russia.png HTTP/1.1" 200 -
+2026-07-31 08:46:53,418 - INFO - 127.0.0.1 - - [31/Jul/2026 08:46:53] "GET /static/images/spain.png HTTP/1.1" 200 -
+2026-07-31 08:46:53,513 - INFO - 127.0.0.1 - - [31/Jul/2026 08:46:53] "GET /static/images/china.png HTTP/1.1" 200 -
+2026-07-31 08:46:53,527 - INFO - 127.0.0.1 - - [31/Jul/2026 08:46:53] "GET /static/images/japan.png HTTP/1.1" 200 -
+2026-07-31 08:46:53,673 - INFO - 127.0.0.1 - - [31/Jul/2026 08:46:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-07-31 08:47:42,750 - INFO - 127.0.0.1 - - [31/Jul/2026 08:47:42] "POST /import_dataset HTTP/1.1" 200 -
+2026-07-31 08:47:46,490 - INFO - 127.0.0.1 - - [31/Jul/2026 08:47:46] "GET / HTTP/1.1" 200 -
+2026-07-31 08:47:46,682 - INFO - 127.0.0.1 - - [31/Jul/2026 08:47:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-07-31 08:47:46,839 - INFO - 127.0.0.1 - - [31/Jul/2026 08:47:46] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-07-31 08:47:46,840 - INFO - 127.0.0.1 - - [31/Jul/2026 08:47:46] "[36mGET /static/images/united-kingdom.png HTTP/1.1[0m" 304 -
+2026-07-31 08:47:46,842 - INFO - 127.0.0.1 - - [31/Jul/2026 08:47:46] "[36mGET /static/images/germany.png HTTP/1.1[0m" 304 -
+2026-07-31 08:47:46,846 - INFO - 127.0.0.1 - - [31/Jul/2026 08:47:46] "[36mGET /static/images/french.png HTTP/1.1[0m" 304 -
+2026-07-31 08:47:46,848 - INFO - 127.0.0.1 - - [31/Jul/2026 08:47:46] "[36mGET /static/js/data-language.js HTTP/1.1[0m" 304 -
+2026-07-31 08:47:46,993 - INFO - 127.0.0.1 - - [31/Jul/2026 08:47:46] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-07-31 08:47:47,149 - INFO - 127.0.0.1 - - [31/Jul/2026 08:47:47] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-07-31 08:47:47,153 - INFO - 127.0.0.1 - - [31/Jul/2026 08:47:47] "[36mGET /static/js/import-dataset.js HTTP/1.1[0m" 304 -
+2026-07-31 08:47:47,155 - INFO - 127.0.0.1 - - [31/Jul/2026 08:47:47] "[36mGET /static/images/bulgaria.png HTTP/1.1[0m" 304 -
+2026-07-31 08:47:47,159 - INFO - 127.0.0.1 - - [31/Jul/2026 08:47:47] "[36mGET /static/images/greece.png HTTP/1.1[0m" 304 -
+2026-07-31 08:47:47,161 - INFO - 127.0.0.1 - - [31/Jul/2026 08:47:47] "[36mGET /static/images/italy.png HTTP/1.1[0m" 304 -
+2026-07-31 08:47:47,303 - INFO - 127.0.0.1 - - [31/Jul/2026 08:47:47] "[36mGET /static/images/portugal.png HTTP/1.1[0m" 304 -
+2026-07-31 08:47:47,462 - INFO - 127.0.0.1 - - [31/Jul/2026 08:47:47] "[36mGET /static/images/russia.png HTTP/1.1[0m" 304 -
+2026-07-31 08:47:47,464 - INFO - 127.0.0.1 - - [31/Jul/2026 08:47:47] "[36mGET /static/images/spain.png HTTP/1.1[0m" 304 -
+2026-07-31 08:47:47,465 - INFO - 127.0.0.1 - - [31/Jul/2026 08:47:47] "[36mGET /static/images/china.png HTTP/1.1[0m" 304 -
+2026-07-31 08:47:47,467 - INFO - 127.0.0.1 - - [31/Jul/2026 08:47:47] "[36mGET /static/images/japan.png HTTP/1.1[0m" 304 -
+2026-07-31 09:10:01,372 - INFO - Application started
+2026-07-31 09:10:02,706 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-07-31 09:10:02,707 - INFO - [33mPress CTRL+C to quit[0m
+2026-07-31 09:10:07,115 - INFO - 127.0.0.1 - - [31/Jul/2026 09:10:07] "GET / HTTP/1.1" 200 -
+2026-07-31 09:10:07,189 - INFO - 127.0.0.1 - - [31/Jul/2026 09:10:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-07-31 09:10:07,489 - INFO - 127.0.0.1 - - [31/Jul/2026 09:10:07] "[36mGET /static/images/united-kingdom.png HTTP/1.1[0m" 304 -
+2026-07-31 09:10:07,490 - INFO - 127.0.0.1 - - [31/Jul/2026 09:10:07] "[36mGET /static/images/germany.png HTTP/1.1[0m" 304 -
+2026-07-31 09:10:07,491 - INFO - 127.0.0.1 - - [31/Jul/2026 09:10:07] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-07-31 09:10:07,493 - INFO - 127.0.0.1 - - [31/Jul/2026 09:10:07] "[36mGET /static/images/french.png HTTP/1.1[0m" 304 -
+2026-07-31 09:10:07,504 - INFO - 127.0.0.1 - - [31/Jul/2026 09:10:07] "[36mGET /static/js/data-language.js HTTP/1.1[0m" 304 -
+2026-07-31 09:10:07,594 - INFO - 127.0.0.1 - - [31/Jul/2026 09:10:07] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-07-31 09:10:07,826 - INFO - 127.0.0.1 - - [31/Jul/2026 09:10:07] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-07-31 09:10:07,838 - INFO - 127.0.0.1 - - [31/Jul/2026 09:10:07] "[36mGET /static/images/bulgaria.png HTTP/1.1[0m" 304 -
+2026-07-31 09:10:07,840 - INFO - 127.0.0.1 - - [31/Jul/2026 09:10:07] "[36mGET /static/images/greece.png HTTP/1.1[0m" 304 -
+2026-07-31 09:10:07,846 - INFO - 127.0.0.1 - - [31/Jul/2026 09:10:07] "[36mGET /static/js/import-dataset.js HTTP/1.1[0m" 304 -
+2026-07-31 09:10:07,847 - INFO - 127.0.0.1 - - [31/Jul/2026 09:10:07] "[36mGET /static/images/italy.png HTTP/1.1[0m" 304 -
+2026-07-31 09:10:07,925 - INFO - 127.0.0.1 - - [31/Jul/2026 09:10:07] "[36mGET /static/images/portugal.png HTTP/1.1[0m" 304 -
+2026-07-31 09:10:08,143 - INFO - 127.0.0.1 - - [31/Jul/2026 09:10:08] "[36mGET /static/images/russia.png HTTP/1.1[0m" 304 -
+2026-07-31 09:10:08,155 - INFO - 127.0.0.1 - - [31/Jul/2026 09:10:08] "[36mGET /static/images/spain.png HTTP/1.1[0m" 304 -
+2026-07-31 09:10:08,156 - INFO - 127.0.0.1 - - [31/Jul/2026 09:10:08] "[36mGET /static/images/china.png HTTP/1.1[0m" 304 -
+2026-07-31 09:10:08,167 - INFO - 127.0.0.1 - - [31/Jul/2026 09:10:08] "[36mGET /static/images/japan.png HTTP/1.1[0m" 304 -
+2026-07-31 09:10:27,296 - INFO - 127.0.0.1 - - [31/Jul/2026 09:10:27] "POST /import_dataset HTTP/1.1" 200 -
+2026-07-31 09:10:31,383 - INFO - 127.0.0.1 - - [31/Jul/2026 09:10:31] "GET / HTTP/1.1" 200 -
+2026-07-31 09:10:31,741 - INFO - 127.0.0.1 - - [31/Jul/2026 09:10:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-07-31 09:10:31,743 - INFO - 127.0.0.1 - - [31/Jul/2026 09:10:31] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-07-31 09:10:31,744 - INFO - 127.0.0.1 - - [31/Jul/2026 09:10:31] "[36mGET /static/images/united-kingdom.png HTTP/1.1[0m" 304 -
+2026-07-31 09:10:31,747 - INFO - 127.0.0.1 - - [31/Jul/2026 09:10:31] "[36mGET /static/images/germany.png HTTP/1.1[0m" 304 -
+2026-07-31 09:10:31,751 - INFO - 127.0.0.1 - - [31/Jul/2026 09:10:31] "[36mGET /static/images/french.png HTTP/1.1[0m" 304 -
+2026-07-31 09:10:31,752 - INFO - 127.0.0.1 - - [31/Jul/2026 09:10:31] "[36mGET /static/images/bulgaria.png HTTP/1.1[0m" 304 -
+2026-07-31 09:10:32,051 - INFO - 127.0.0.1 - - [31/Jul/2026 09:10:32] "[36mGET /static/js/data-language.js HTTP/1.1[0m" 304 -
+2026-07-31 09:10:32,053 - INFO - 127.0.0.1 - - [31/Jul/2026 09:10:32] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-07-31 09:10:32,055 - INFO - 127.0.0.1 - - [31/Jul/2026 09:10:32] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-07-31 09:10:32,060 - INFO - 127.0.0.1 - - [31/Jul/2026 09:10:32] "[36mGET /static/js/import-dataset.js HTTP/1.1[0m" 304 -
+2026-07-31 09:10:32,062 - INFO - 127.0.0.1 - - [31/Jul/2026 09:10:32] "[36mGET /static/images/greece.png HTTP/1.1[0m" 304 -
+2026-07-31 09:10:32,063 - INFO - 127.0.0.1 - - [31/Jul/2026 09:10:32] "[36mGET /static/images/italy.png HTTP/1.1[0m" 304 -
+2026-07-31 09:10:32,363 - INFO - 127.0.0.1 - - [31/Jul/2026 09:10:32] "[36mGET /static/images/portugal.png HTTP/1.1[0m" 304 -
+2026-07-31 09:10:32,364 - INFO - 127.0.0.1 - - [31/Jul/2026 09:10:32] "[36mGET /static/images/russia.png HTTP/1.1[0m" 304 -
+2026-07-31 09:10:32,368 - INFO - 127.0.0.1 - - [31/Jul/2026 09:10:32] "[36mGET /static/images/spain.png HTTP/1.1[0m" 304 -
+2026-07-31 09:10:32,369 - INFO - 127.0.0.1 - - [31/Jul/2026 09:10:32] "[36mGET /static/images/china.png HTTP/1.1[0m" 304 -
+2026-07-31 09:10:32,370 - INFO - 127.0.0.1 - - [31/Jul/2026 09:10:32] "[36mGET /static/images/japan.png HTTP/1.1[0m" 304 -
+2026-07-31 09:11:04,365 - INFO - Recommendation process started
+2026-07-31 09:11:04,372 - INFO - Regression prediction completed
+2026-07-31 09:11:04,385 - INFO - Classification completed
+2026-07-31 09:11:04,392 - INFO - TOPSIS ranking completed
+2026-07-31 09:11:04,444 - INFO - 127.0.0.1 - - [31/Jul/2026 09:11:04] "POST / HTTP/1.1" 200 -
+2026-07-31 09:11:04,628 - INFO - 127.0.0.1 - - [31/Jul/2026 09:11:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-07-31 09:11:04,799 - INFO - 127.0.0.1 - - [31/Jul/2026 09:11:04] "[36mGET /static/images/united-kingdom.png HTTP/1.1[0m" 304 -
+2026-07-31 09:11:04,800 - INFO - 127.0.0.1 - - [31/Jul/2026 09:11:04] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-07-31 09:11:04,802 - INFO - 127.0.0.1 - - [31/Jul/2026 09:11:04] "[36mGET /static/images/germany.png HTTP/1.1[0m" 304 -
+2026-07-31 09:11:04,805 - INFO - 127.0.0.1 - - [31/Jul/2026 09:11:04] "[36mGET /static/images/french.png HTTP/1.1[0m" 304 -
+2026-07-31 09:11:04,807 - INFO - 127.0.0.1 - - [31/Jul/2026 09:11:04] "[36mGET /static/js/data-language.js HTTP/1.1[0m" 304 -
+2026-07-31 09:11:04,938 - INFO - 127.0.0.1 - - [31/Jul/2026 09:11:04] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-07-31 09:11:05,111 - INFO - 127.0.0.1 - - [31/Jul/2026 09:11:05] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-07-31 09:11:05,113 - INFO - 127.0.0.1 - - [31/Jul/2026 09:11:05] "[36mGET /static/js/import-dataset.js HTTP/1.1[0m" 304 -
+2026-07-31 09:11:05,114 - INFO - 127.0.0.1 - - [31/Jul/2026 09:11:05] "[36mGET /static/images/bulgaria.png HTTP/1.1[0m" 304 -
+2026-07-31 09:11:05,118 - INFO - 127.0.0.1 - - [31/Jul/2026 09:11:05] "[36mGET /static/images/greece.png HTTP/1.1[0m" 304 -
+2026-07-31 09:11:05,120 - INFO - 127.0.0.1 - - [31/Jul/2026 09:11:05] "[36mGET /static/images/italy.png HTTP/1.1[0m" 304 -
+2026-07-31 09:11:05,249 - INFO - 127.0.0.1 - - [31/Jul/2026 09:11:05] "[36mGET /static/images/portugal.png HTTP/1.1[0m" 304 -
+2026-07-31 09:11:05,422 - INFO - 127.0.0.1 - - [31/Jul/2026 09:11:05] "[36mGET /static/images/russia.png HTTP/1.1[0m" 304 -
+2026-07-31 09:11:05,424 - INFO - 127.0.0.1 - - [31/Jul/2026 09:11:05] "[36mGET /static/images/spain.png HTTP/1.1[0m" 304 -
+2026-07-31 09:11:05,426 - INFO - 127.0.0.1 - - [31/Jul/2026 09:11:05] "[36mGET /static/images/china.png HTTP/1.1[0m" 304 -
+2026-07-31 09:11:05,429 - INFO - 127.0.0.1 - - [31/Jul/2026 09:11:05] "[36mGET /static/images/japan.png HTTP/1.1[0m" 304 -
+2026-07-31 09:11:14,873 - INFO - Recommendation process started
+2026-07-31 09:11:14,880 - INFO - Regression prediction completed
+2026-07-31 09:11:14,893 - INFO - Classification completed
+2026-07-31 09:11:14,898 - INFO - TOPSIS ranking completed
+2026-07-31 09:11:14,917 - INFO - 127.0.0.1 - - [31/Jul/2026 09:11:14] "POST / HTTP/1.1" 200 -
+2026-07-31 09:11:15,124 - INFO - 127.0.0.1 - - [31/Jul/2026 09:11:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-07-31 09:11:15,265 - INFO - 127.0.0.1 - - [31/Jul/2026 09:11:15] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-07-31 09:11:15,267 - INFO - 127.0.0.1 - - [31/Jul/2026 09:11:15] "[36mGET /static/images/germany.png HTTP/1.1[0m" 304 -
+2026-07-31 09:11:15,268 - INFO - 127.0.0.1 - - [31/Jul/2026 09:11:15] "[36mGET /static/images/united-kingdom.png HTTP/1.1[0m" 304 -
+2026-07-31 09:11:15,272 - INFO - 127.0.0.1 - - [31/Jul/2026 09:11:15] "[36mGET /static/images/french.png HTTP/1.1[0m" 304 -
+2026-07-31 09:11:15,273 - INFO - 127.0.0.1 - - [31/Jul/2026 09:11:15] "[36mGET /static/js/data-language.js HTTP/1.1[0m" 304 -
+2026-07-31 09:11:15,435 - INFO - 127.0.0.1 - - [31/Jul/2026 09:11:15] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-07-31 09:11:15,577 - INFO - 127.0.0.1 - - [31/Jul/2026 09:11:15] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-07-31 09:11:15,578 - INFO - 127.0.0.1 - - [31/Jul/2026 09:11:15] "[36mGET /static/images/bulgaria.png HTTP/1.1[0m" 304 -
+2026-07-31 09:11:15,578 - INFO - 127.0.0.1 - - [31/Jul/2026 09:11:15] "[36mGET /static/js/import-dataset.js HTTP/1.1[0m" 304 -
+2026-07-31 09:11:15,583 - INFO - 127.0.0.1 - - [31/Jul/2026 09:11:15] "[36mGET /static/images/greece.png HTTP/1.1[0m" 304 -
+2026-07-31 09:11:15,585 - INFO - 127.0.0.1 - - [31/Jul/2026 09:11:15] "[36mGET /static/images/italy.png HTTP/1.1[0m" 304 -
+2026-07-31 09:11:15,751 - INFO - 127.0.0.1 - - [31/Jul/2026 09:11:15] "[36mGET /static/images/portugal.png HTTP/1.1[0m" 304 -
+2026-07-31 09:11:15,894 - INFO - 127.0.0.1 - - [31/Jul/2026 09:11:15] "[36mGET /static/images/russia.png HTTP/1.1[0m" 304 -
+2026-07-31 09:11:15,894 - INFO - 127.0.0.1 - - [31/Jul/2026 09:11:15] "[36mGET /static/images/spain.png HTTP/1.1[0m" 304 -
+2026-07-31 09:11:15,895 - INFO - 127.0.0.1 - - [31/Jul/2026 09:11:15] "[36mGET /static/images/china.png HTTP/1.1[0m" 304 -
+2026-07-31 09:11:15,897 - INFO - 127.0.0.1 - - [31/Jul/2026 09:11:15] "[36mGET /static/images/japan.png HTTP/1.1[0m" 304 -
+2026-07-31 09:11:21,698 - INFO - Recommendation process started
+2026-07-31 09:11:21,706 - INFO - Regression prediction completed
+2026-07-31 09:11:21,719 - INFO - Classification completed
+2026-07-31 09:11:21,723 - INFO - TOPSIS ranking completed
+2026-07-31 09:11:21,759 - INFO - 127.0.0.1 - - [31/Jul/2026 09:11:21] "GET /export_pdf HTTP/1.1" 200 -
+2026-07-31 09:11:29,735 - INFO - Recommendation process started
+2026-07-31 09:11:29,743 - INFO - Regression prediction completed
+2026-07-31 09:11:29,755 - INFO - Classification completed
+2026-07-31 09:11:29,760 - INFO - TOPSIS ranking completed
+2026-07-31 09:11:29,780 - INFO - 127.0.0.1 - - [31/Jul/2026 09:11:29] "GET /export_csv HTTP/1.1" 200 -
+2026-07-31 09:11:40,607 - INFO - Recommendation process started
+2026-07-31 09:11:40,614 - INFO - Regression prediction completed
+2026-07-31 09:11:40,627 - INFO - Classification completed
+2026-07-31 09:11:40,632 - INFO - TOPSIS ranking completed
+2026-07-31 09:11:40,684 - INFO - 127.0.0.1 - - [31/Jul/2026 09:11:40] "GET /export/excel HTTP/1.1" 200 -
+2026-07-31 09:12:43,258 - INFO - Recommendation process started
+2026-07-31 09:12:43,265 - INFO - Regression prediction completed
+2026-07-31 09:12:43,278 - INFO - Classification completed
+2026-07-31 09:12:43,283 - INFO - TOPSIS ranking completed
+2026-07-31 09:12:43,302 - INFO - 127.0.0.1 - - [31/Jul/2026 09:12:43] "POST / HTTP/1.1" 200 -
+2026-07-31 09:12:43,522 - INFO - 127.0.0.1 - - [31/Jul/2026 09:12:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-07-31 09:12:43,662 - INFO - 127.0.0.1 - - [31/Jul/2026 09:12:43] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-07-31 09:12:43,663 - INFO - 127.0.0.1 - - [31/Jul/2026 09:12:43] "[36mGET /static/images/united-kingdom.png HTTP/1.1[0m" 304 -
+2026-07-31 09:12:43,665 - INFO - 127.0.0.1 - - [31/Jul/2026 09:12:43] "[36mGET /static/images/germany.png HTTP/1.1[0m" 304 -
+2026-07-31 09:12:43,668 - INFO - 127.0.0.1 - - [31/Jul/2026 09:12:43] "[36mGET /static/images/french.png HTTP/1.1[0m" 304 -
+2026-07-31 09:12:43,671 - INFO - 127.0.0.1 - - [31/Jul/2026 09:12:43] "[36mGET /static/js/data-language.js HTTP/1.1[0m" 304 -
+2026-07-31 09:12:43,832 - INFO - 127.0.0.1 - - [31/Jul/2026 09:12:43] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-07-31 09:12:43,971 - INFO - 127.0.0.1 - - [31/Jul/2026 09:12:43] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-07-31 09:12:43,974 - INFO - 127.0.0.1 - - [31/Jul/2026 09:12:43] "[36mGET /static/js/import-dataset.js HTTP/1.1[0m" 304 -
+2026-07-31 09:12:43,978 - INFO - 127.0.0.1 - - [31/Jul/2026 09:12:43] "[36mGET /static/images/bulgaria.png HTTP/1.1[0m" 304 -
+2026-07-31 09:12:43,980 - INFO - 127.0.0.1 - - [31/Jul/2026 09:12:43] "[36mGET /static/images/greece.png HTTP/1.1[0m" 304 -
+2026-07-31 09:12:43,983 - INFO - 127.0.0.1 - - [31/Jul/2026 09:12:43] "[36mGET /static/images/italy.png HTTP/1.1[0m" 304 -
+2026-07-31 09:12:44,144 - INFO - 127.0.0.1 - - [31/Jul/2026 09:12:44] "[36mGET /static/images/portugal.png HTTP/1.1[0m" 304 -
+2026-07-31 09:12:44,285 - INFO - 127.0.0.1 - - [31/Jul/2026 09:12:44] "[36mGET /static/images/russia.png HTTP/1.1[0m" 304 -
+2026-07-31 09:12:44,287 - INFO - 127.0.0.1 - - [31/Jul/2026 09:12:44] "[36mGET /static/images/spain.png HTTP/1.1[0m" 304 -
+2026-07-31 09:12:44,288 - INFO - 127.0.0.1 - - [31/Jul/2026 09:12:44] "[36mGET /static/images/china.png HTTP/1.1[0m" 304 -
+2026-07-31 09:12:44,292 - INFO - 127.0.0.1 - - [31/Jul/2026 09:12:44] "[36mGET /static/images/japan.png HTTP/1.1[0m" 304 -
+2026-07-31 09:12:58,790 - INFO - 127.0.0.1 - - [31/Jul/2026 09:12:58] "POST /restore_dataset HTTP/1.1" 200 -
+2026-07-31 09:13:00,295 - INFO - 127.0.0.1 - - [31/Jul/2026 09:13:00] "GET / HTTP/1.1" 200 -
+2026-07-31 09:13:00,328 - INFO - 127.0.0.1 - - [31/Jul/2026 09:13:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-07-31 09:13:00,640 - INFO - 127.0.0.1 - - [31/Jul/2026 09:13:00] "[36mGET /static/images/CPU.png HTTP/1.1[0m" 304 -
+2026-07-31 09:13:00,640 - INFO - 127.0.0.1 - - [31/Jul/2026 09:13:00] "[36mGET /static/images/united-kingdom.png HTTP/1.1[0m" 304 -
+2026-07-31 09:13:00,648 - INFO - 127.0.0.1 - - [31/Jul/2026 09:13:00] "[36mGET /static/images/french.png HTTP/1.1[0m" 304 -
+2026-07-31 09:13:00,649 - INFO - 127.0.0.1 - - [31/Jul/2026 09:13:00] "[36mGET /static/images/germany.png HTTP/1.1[0m" 304 -
+2026-07-31 09:13:00,649 - INFO - 127.0.0.1 - - [31/Jul/2026 09:13:00] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-07-31 09:13:00,650 - INFO - 127.0.0.1 - - [31/Jul/2026 09:13:00] "[36mGET /static/js/data-language.js HTTP/1.1[0m" 304 -
+2026-07-31 09:13:00,951 - INFO - 127.0.0.1 - - [31/Jul/2026 09:13:00] "[36mGET /static/js/language.js HTTP/1.1[0m" 304 -
+2026-07-31 09:13:00,954 - INFO - 127.0.0.1 - - [31/Jul/2026 09:13:00] "[36mGET /static/js/import-dataset.js HTTP/1.1[0m" 304 -
+2026-07-31 09:13:00,956 - INFO - 127.0.0.1 - - [31/Jul/2026 09:13:00] "[36mGET /static/images/bulgaria.png HTTP/1.1[0m" 304 -
+2026-07-31 09:13:00,959 - INFO - 127.0.0.1 - - [31/Jul/2026 09:13:00] "[36mGET /static/images/greece.png HTTP/1.1[0m" 304 -
+2026-07-31 09:13:00,962 - INFO - 127.0.0.1 - - [31/Jul/2026 09:13:00] "[36mGET /static/images/italy.png HTTP/1.1[0m" 304 -
+2026-07-31 09:13:00,963 - INFO - 127.0.0.1 - - [31/Jul/2026 09:13:00] "[36mGET /static/images/portugal.png HTTP/1.1[0m" 304 -
+2026-07-31 09:13:01,266 - INFO - 127.0.0.1 - - [31/Jul/2026 09:13:01] "[36mGET /static/images/russia.png HTTP/1.1[0m" 304 -
+2026-07-31 09:13:01,268 - INFO - 127.0.0.1 - - [31/Jul/2026 09:13:01] "[36mGET /static/images/spain.png HTTP/1.1[0m" 304 -
+2026-07-31 09:13:01,269 - INFO - 127.0.0.1 - - [31/Jul/2026 09:13:01] "[36mGET /static/images/china.png HTTP/1.1[0m" 304 -
+2026-07-31 09:13:01,271 - INFO - 127.0.0.1 - - [31/Jul/2026 09:13:01] "[36mGET /static/images/japan.png HTTP/1.1[0m" 304 -

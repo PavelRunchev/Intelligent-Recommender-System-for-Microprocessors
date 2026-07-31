@@ -11,8 +11,10 @@ from export.excel_export import create_excel_report
 from export.csv_export import create_csv_report
 from export.pdf_export import create_pdf_report
 from data.new_dataset_after_import import import_dataset_from_user
-from data.temporary_context import get_context, remove_context
+from data.temporary_context import get_context, remove_context, get_active_context
+from utils.export_utils import get_last_filters
 from utils.session_manager import get_session_id
+from services.content_based_filtering import get_dataset
 
 load_dotenv()
 logging.basicConfig(filename="app.log", level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
@@ -31,32 +33,35 @@ def index():
     context = get_context(get_session_id())
     has_imported_dataset = context is not None
 
+    current_dataset = get_dataset()
     #default table with CPU by performance order
-    top_cpus = get_top_cpus()
+    top_cpus = get_top_cpus(current_dataset)
 
     result = None
     user_features = None
     searched = False
     if request.method == "POST":
         try:
-            brand = request.form.get("brand") or data["brand"].unique().tolist()
-            model = request.form.get("cpuName") or data["cpuName"].unique().tolist()
-            category = request.form.get("category") or data["category"].unique().tolist()
+            brand = request.form.get("brand") or None
+            model = request.form.get("cpuName") or None
+            category = request.form.get("category") or None
             budget = int(request.form.get("budget"))
             performance = int(request.form.get("cpuMark"))
             cores = int(request.form.get("cores"))
 
-            user_features, error = validate_input(data, brand, model, category, budget, performance, cores)
+            user_features, error = validate_input(current_dataset, brand, model, category, budget, performance, cores)
 
             if error:
                 return error, 400
 
             result = run_pipeline(user_features)
-            context = get_context(get_session_id())
+            context = get_active_context()
 
             if context:
                 context["last_filters"] = user_features
                 context["last_results"] = result.copy()
+            else:
+                session["filters"] = user_features
             searched = True
         except (ValueError, TypeError):
             return "Invalid input data!", 400
@@ -65,7 +70,7 @@ def index():
     return render_template("index.html",
             searched=searched,
             result=result.to_dict(orient='records') if result is not None else [],
-            data=data.to_dict(orient='records'),
+            data=current_dataset.to_dict(orient='records'),
             top_cpus=top_cpus.to_dict(orient='records'),
             user=user_features,
             has_imported_dataset=has_imported_dataset
@@ -73,12 +78,7 @@ def index():
 
 @app.route("/export/excel")
 def export_excel():
-    context = get_context(get_session_id())
-
-    if context is None:
-        return "No imported dataset available.", 400
-
-    filters = context.get("last_filters")
+    filters = get_last_filters()
 
     if not filters:
         return "No search available to export.", 400
@@ -92,13 +92,10 @@ def export_excel():
 
 @app.route("/export_pdf")
 def export_pdf():
-    context = get_context(get_session_id())
 
-    if context is None:
-        return "No imported dataset available.", 400
 
-    filters = context.get("last_filters")
-
+    filters = get_last_filters()
+    print(filters)
     if not filters:
         return "No search form available to export", 400
 
@@ -111,12 +108,7 @@ def export_pdf():
 
 @app.route("/export_csv")
 def export_csv():
-    context = get_context(get_session_id())
-
-    if context is None:
-        return "No imported dataset available.", 400
-
-    filters = context.get("last_filters")
+    filters = get_last_filters()
 
     if not filters:
         return "No search form available to export", 400

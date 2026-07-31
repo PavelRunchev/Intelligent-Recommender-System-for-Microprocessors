@@ -37,15 +37,8 @@ def clean_data():
     return df.reset_index(drop=True)
 
 
-def get_top_cpus():
-    context = get_context(get_session_id())
-
-    if context:
-        df = context["dataset"].copy()
-    else:
-        df = clean_data()
-
-    return df.sort_values(by='cpuMark', ascending=False).head(100)
+def get_top_cpus(data):
+    return data.sort_values(by='cpuMark', ascending=False).head(100)
 
 
 def process_missing_values():
